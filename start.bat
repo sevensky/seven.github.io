@@ -1,0 +1,1 @@
+activate dev3.5 & nikola serve -a 127.0.0.1 -p 80 --browser
