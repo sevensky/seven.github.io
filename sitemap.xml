@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
+  <lastmod>2016-01-13T10:46:00Z</lastmod>
  </url>
  <url>
   <loc>/2013/</loc>
@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>/archive.html</loc>
-  <lastmod>2016-01-13T08:16:00Z</lastmod>
+  <lastmod>2016-01-13T10:50:00Z</lastmod>
  </url>
  <url>
   <loc>/categories/</loc>
@@ -44,6 +44,10 @@
  <url>
   <loc>/listings/</loc>
   <lastmod>2016-01-13T06:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/output/</loc>
+  <lastmod>2016-01-13T10:46:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/</loc>
