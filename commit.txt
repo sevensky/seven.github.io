@@ -11,7 +11,7 @@ git pull git@github.com:xxx/xxx.git
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin git@github.com:sevensky/seven.github.io.git
+git remote add origin git@github.com:sevensky/sevensky.github.io.git
 git push origin source
 
 git checkout -b source
