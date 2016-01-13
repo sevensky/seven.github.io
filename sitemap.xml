@@ -7,150 +7,78 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>/</loc>
-<<<<<<< HEAD
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/archive.html</loc>
+  <lastmod>2016-01-13T15:13:00Z</lastmod>
  </url>
  <url>
   <loc>/archive/2013/</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/archive/2016/</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/archive/archive.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/categories/nikola.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/categories/python.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/categories/web.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/0101-python-overview.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/bb.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/doc-pyautogui.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/ms-office-with-pywin32com.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/nikola-install4me.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/nikola-web.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/ss.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/posts/untitled.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/stories/bb.html</loc>
-  <lastmod>2016-01-13T15:05:00Z</lastmod>
+  <lastmod>2016-01-13T15:24:00Z</lastmod>
  </url>
  <url>
   <loc>/tags.html</loc>
   <lastmod>2016-01-13T15:05:00Z</lastmod>
-=======
-  <lastmod>2016-01-13T10:46:00Z</lastmod>
- </url>
- <url>
-  <loc>/2013/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>/2016/</loc>
-  <lastmod>2016-01-13T06:37:00Z</lastmod>
- </url>
- <url>
-  <loc>/archive.html</loc>
-  <lastmod>2016-01-13T10:50:00Z</lastmod>
- </url>
- <url>
-  <loc>/categories/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>/categories/nikola/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>/categories/python/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>/categories/web/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>/galleries/</loc>
-  <lastmod>2016-01-13T06:09:00Z</lastmod>
- </url>
- <url>
-  <loc>/listings/</loc>
-  <lastmod>2016-01-13T06:09:00Z</lastmod>
- </url>
- <url>
-  <loc>/output/</loc>
-  <lastmod>2016-01-13T10:46:00Z</lastmod>
- </url>
- <url>
-  <loc>/posts/</loc>
-  <lastmod>2016-01-13T07:52:00Z</lastmod>
- </url>
- <url>
-  <loc>/posts/0101-python-overview/</loc>
-  <lastmod>2016-01-13T07:51:00Z</lastmod>
- </url>
- <url>
-  <loc>/posts/bb/</loc>
-  <lastmod>2016-01-13T07:07:00Z</lastmod>
- </url>
- <url>
-  <loc>/posts/nikola-install4me/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>/posts/nikola-web/</loc>
-  <lastmod>2016-01-13T07:30:00Z</lastmod>
- </url>
- <url>
-  <loc>/posts/ss/</loc>
-  <lastmod>2016-01-13T07:07:00Z</lastmod>
- </url>
- <url>
-  <loc>/posts/untitled/</loc>
-  <lastmod>2016-01-13T07:50:00Z</lastmod>
- </url>
- <url>
-  <loc>/stories/bb/</loc>
-  <lastmod>2016-01-13T06:35:00Z</lastmod>
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
  </url>
 </urlset>

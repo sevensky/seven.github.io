@@ -5,31 +5,4 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<<<<<<< HEAD
-=======
- <sitemap>
-  <loc>/categories/nikola.xml</loc>
-  <lastmod>2016-01-13T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>/categories/python.xml</loc>
-  <lastmod>2016-01-13T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>/categories/web.xml</loc>
-  <lastmod>2016-01-13T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>/galleries/rss.xml</loc>
-  <lastmod>2016-01-13T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>/rss.xml</loc>
-  <lastmod>2016-01-13T10:50:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>/sitemap.xml</loc>
-  <lastmod>2016-01-13T10:50:00Z</lastmod>
- </sitemap>
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 </sitemapindex>
