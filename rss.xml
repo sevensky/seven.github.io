@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>博客</title><link>/</link><description>description</description><atom:link href="/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>zh_cn</language><lastBuildDate>Wed, 13 Jan 2016 08:14:54 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>ss</title><link>/posts/ss/</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>/posts/ss/</guid><pubDate>Wed, 13 Jan 2016 06:36:51 GMT</pubDate></item><item><title>bb</title><link>/posts/bb/</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your page here.&lt;/p&gt;</description><guid>/posts/bb/</guid><pubDate>Wed, 13 Jan 2016 06:34:41 GMT</pubDate></item><item><title>nikola build 报错</title><link>/posts/nikola-install4me/</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;p&gt;tzutil /g
+python -c "import sys;  print (sys.stdout.encoding)"
+python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
+&lt;p&gt;Traceback (most recent call last):
+  File "&lt;string&gt;", line 1, in &lt;module&gt;
+  File "f:\Anaconda2\envs\dev3.5\lib\site-packages\dateutil\tz.py", line 964, in gettz
+    tz = tzwin(name)
+  File "f:\Anaconda2\envs\dev3.5\lib\site-packages\dateutil\tzwin.py", line 92, in &lt;strong&gt;init&lt;/strong&gt;
+    self._stdname = keydict["Std"].encode("iso-8859-1")&lt;/module&gt;&lt;/string&gt;&lt;/p&gt;
+&lt;p&gt;UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)&lt;/p&gt;
+&lt;p&gt;https://github.com/getnikola/nikola/issues/1806
+    https://github.com/dateutil/dateutil/issues/92&lt;/p&gt;
+&lt;h2&gt;fix&lt;/h2&gt;
+&lt;p&gt;https://github.com/aschatten/dateutil/commit/81f684ff6c03b336e820cd849cf557b01d2017f9
+ self._stdname = keydict["Std"].encode("iso-8859-1")
+ -        self._dstname = keydict["Dlt"].encode("iso-8859-1")
+ +        self._stdname = keydict["Std"]
+ +        self._dstname = keydict["Dlt"]&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;      self._display = keydict["Display"]
+&lt;/pre&gt;
+
+
+&lt;p&gt;@@ -129,8 +132,8 @@ def &lt;strong&gt;init&lt;/strong&gt;(self):
+              with winreg.OpenKey(handle, TZLOCALKEYNAME) as tzlocalkey:
+                  keydict = valuestodict(tzlocalkey)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;self._stdname = keydict["StandardName"].encode("iso-8859-1")&lt;/li&gt;
+&lt;li&gt;self._dstname = keydict["DaylightName"].encode("iso-8859-1")&lt;/li&gt;
+&lt;li&gt;self._stdname = keydict["StandardName"]&lt;/li&gt;
+&lt;li&gt;self._dstname = keydict["DaylightName"]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;File "f:\anaconda2\envs\dev3.5\lib\site-packages\nikola\plugins\compile\ipynb.py", line 38, in &lt;module&gt;
+    from jupyter_client import kernelspec
+  File "f:\anaconda2\envs\dev3.5\lib\site-packages\jupyter_client__init__.py", line 7, in &lt;module&gt;
+    from .manager import KernelManager, run_kernel
+  File "f:\anaconda2\envs\dev3.5\lib\site-packages\jupyter_client\manager.py", line 32, in &lt;module&gt;
+    from .session import Session
+  File "f:\anaconda2\envs\dev3.5\lib\site-packages\jupyter_client\session.py", line 53, in &lt;module&gt;
+    from jupyter_client.jsonutil import extract_dates, squash_dates, date_default
+  File "f:\anaconda2\envs\dev3.5\lib\site-packages\jupyter_client\jsonutil.py", line 25, in &lt;module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/p&gt;
+&lt;p&gt;-注释掉    datetime.strptime("1", "%d")&lt;/p&gt;
+&lt;p&gt;............. datetime.strptime("1998072012", "%Y%m%d%H") 
+ python -c "from datetime import datetime;  print (datetime.strptime('1', '%d') )"&lt;/p&gt;&lt;/div&gt;</description><guid>/posts/nikola-install4me/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="中文Python笔记"&gt;中文Python笔记&lt;a class="anchor-link" href="/posts/#%E4%B8%AD%E6%96%87Python%E7%AC%94%E8%AE%B0"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;blockquote&gt;&lt;p&gt;版本：0.0.1&lt;br&gt;
+作者：李金&lt;br&gt;
+邮件：lijinwithyou@gmail.com&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;hr&gt;
+&lt;h3 id="简介"&gt;简介&lt;a class="anchor-link" href="/posts/#%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;大部分内容来自网络。&lt;/p&gt;
+&lt;p&gt;默认安装了&lt;code&gt;python 2.7&lt;/code&gt;，以及相关的第三方包 &lt;code&gt;ipython&lt;/code&gt;， &lt;code&gt;numpy&lt;/code&gt;， &lt;code&gt;scipy&lt;/code&gt;，&lt;code&gt;pandas&lt;/code&gt;。&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;life is short. use python.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;推荐使用 &lt;a href="http://www.continuum.io/downloads"&gt;anaconda&lt;/a&gt;，这个IDE集成了大部分常用的包。&lt;/p&gt;
+&lt;p&gt;笔记内容使用&lt;code&gt;ipython notebook&lt;/code&gt;来展示。&lt;/p&gt;
+&lt;p&gt;安装好&lt;code&gt;python&lt;/code&gt;和相应的包之后，可以在命令行下输入：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ipython notebook&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;来进入&lt;code&gt;ipython notebook&lt;/code&gt;。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;hr&gt;
+&lt;h3 id="基本环境配置"&gt;基本环境配置&lt;a class="anchor-link" href="/posts/#%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;安装 &lt;a href="http://www.continuum.io/downloads"&gt;anaconda&lt;/a&gt; 或者 &lt;a href="http://conda.pydata.org/miniconda.html"&gt;miniconda&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更新环境&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda update conda
+conda update anaconda&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;hr&gt;
+&lt;h3 id="目录"&gt;目录&lt;a class="anchor-link" href="/posts/#%E7%9B%AE%E5%BD%95"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;可以在&lt;a href="http://nbviewer.ipython.org/github/lijin-THU/python-tutorial/blob/master/index.ipynb"&gt;nbviewer&lt;/a&gt;中查看该笔记。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/01.%20python%20tools"&gt;01. &lt;strong&gt;Python 工具&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.01%20python%20overview.ipynb"&gt;01.01 Python简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.02%20ipython%20interpreter.ipynb"&gt;01.02 Ipython 解释器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.03%20ipython%20notebook.ipynb"&gt;01.03 Ipython notebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.04%20use%20anaconda.ipynb"&gt;01.04 使用 Anaconda&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials"&gt;02. &lt;strong&gt;Python 基础&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.01%20a%20tour%20of%20python.ipynb"&gt;02.01 Python 入门演示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.02%20python%20data%20types.ipynb"&gt;02.02 Python 数据类型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.03%20numbers.ipynb"&gt;02.03 数字&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.04%20strings.ipynb"&gt;02.04 字符串&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.05%20indexing%20and%20slicing.ipynb"&gt;02.05 索引和分片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.06%20lists.ipynb"&gt;02.06 列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.07%20mutable%20and%20immutable%20data%20types.ipynb"&gt;02.07 可变和不可变类型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.08%20tuples.ipynb"&gt;02.08 元组&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.09%20speed%20comparison%20between%20list%20&amp;amp;%20tuple.ipynb"&gt;02.09 列表与元组的速度比较&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.10%20dictionaries.ipynb"&gt;02.10 字典&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.11%20sets.ipynb"&gt;02.11 集合&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.12%20frozen%20sets.ipynb"&gt;02.12 不可变集合&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.13%20how%20python%20assignment%20works.ipynb"&gt;02.13 Python 赋值机制&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.14%20if%20statement.ipynb"&gt;02.14 判断语句&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.15%20loops.ipynb"&gt;02.15 循环&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.16%20list%20comprehension.ipynb"&gt;02.16 列表推导式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.17%20functions.ipynb"&gt;02.17 函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.18%20modules%20and%20packages.ipynb"&gt;02.18 模块和包&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.19%20exceptions.ipynb"&gt;02.19 异常&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.20%20warnings.ipynb"&gt;02.20 警告&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.21%20file%20IO.ipynb"&gt;02.21 文件读写&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy"&gt;03. &lt;strong&gt;Numpy&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.01%20numpy%20overview.ipynb"&gt;03.01 Numpy 简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.02%20matplotlib%20basics.ipynb"&gt;03.02 Matplotlib 基础&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.03%20numpy%20arrays.ipynb"&gt;03.03 Numpy 数组及其索引&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.04%20array%20types.ipynb"&gt;03.04 数组类型&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.05%20array%20calculation%20method.ipynb"&gt;03.05 数组方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.06%20sorting%20numpy%20arrays.ipynb"&gt;03.06 数组排序&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.07%20array%20shapes.ipynb"&gt;03.07 数组形状&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.08%20diagonals.ipynb"&gt;03.08 对角线&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.09%20data%20to%20&amp;amp;%20from%20string.ipynb"&gt;03.09 数组与字符串的转换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.10%20array%20attribute%20&amp;amp;%20method%20overview%20.ipynb"&gt;03.10 数组属性方法总结&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.11%20array%20creation%20functions.ipynb"&gt;03.11 生成数组的函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.12%20matrix%20object.ipynb"&gt;03.12 矩阵&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.13%20general%20functions.ipynb"&gt;03.13 一般函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.14%20vectorizing%20functions.ipynb"&gt;03.14 向量化函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.15%20binary%20operators.ipynb"&gt;03.15 二元运算&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.16%20universal%20functions.ipynb"&gt;03.16 ufunc 对象&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.17%20choose.ipynb"&gt;03.17 choose 函数实现条件筛选&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.18%20array%20broadcasting.ipynb"&gt;03.18 数组广播机制&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.19%20reading%20and%20writing%20arrays.ipynb"&gt;03.19 数组读写&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.20%20structured%20arrays.ipynb"&gt;03.20 结构化数组&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.21%20record%20arrays.ipynb"&gt;03.21 记录数组&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.22%20memory%20maps.ipynb"&gt;03.22 内存映射&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.23%20from%20matlab%20to%20numpy.ipynb"&gt;03.23 从 Matlab 到 Numpy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy"&gt;04. &lt;strong&gt;Scipy&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.01%20scienticfic%20python%20overview.ipynb"&gt;04.01 SCIentific PYthon 简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.02%20interpolation%20with%20scipy.ipynb"&gt;04.02 插值&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.03%20statistics%20with%20scipy.ipynb"&gt;04.03 概率统计方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.04%20curve%20fitting.ipynb"&gt;04.04 曲线拟合&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.05%20minimization%20in%20python.ipynb"&gt;04.05 最小化函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.06%20integration%20in%20python.ipynb"&gt;04.06 积分&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.07%20ODEs.ipynb"&gt;04.07 解微分方程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.08%20sparse%20matrix.ipynb"&gt;04.08 稀疏矩阵&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python"&gt;05. &lt;strong&gt;Python 进阶&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.01%20overview%20of%20the%20sys%20module.ipynb"&gt;05.01 sys 模块简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.02%20interacting%20with%20the%20OS%20-%20os.ipynb"&gt;05.02 与操作系统进行交互：os 模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.03%20comma%20separated%20values.ipynb"&gt;05.03 CSV 文件和 csv 模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.04%20regular%20expression.ipynb"&gt;05.04 正则表达式和 re 模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.05%20datetime.ipynb"&gt;05.05 datetime 模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.06%20sql%20databases.ipynb"&gt;05.06 SQL 数据库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.07%20object-relational%20mappers.ipynb"&gt;05.07 对象关系映射&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.08%20functions.ipynb"&gt;05.08 函数进阶：参数传递，高阶函数，lambda 匿名函数，global 变量，递归&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.09%20iterators.ipynb"&gt;05.09 迭代器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.10%20generators.ipynb"&gt;05.10 生成器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.11%20context%20managers%20and%20the%20with%20statement.ipynb"&gt;05.11 with 语句和上下文管理器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.12%20decorators.ipynb"&gt;05.12 修饰符&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.13%20decorator%20usage.ipynb"&gt;05.13 修饰符的使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.14%20the%20operator%20functools%20itertools%20toolz%20fn%20funcy%20module.ipynb"&gt;05.14 operator, functools, itertools, toolz, fn, funcy 模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.15%20scope.ipynb"&gt;05.15 作用域&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.16%20dynamic%20code%20execution.ipynb"&gt;05.16 动态编译&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib"&gt;06. &lt;strong&gt;Matplotlib&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.01%20pyplot%20tutorial.ipynb"&gt;06.01 Pyplot 教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.02%20customizing%20plots%20with%20style%20sheets.ipynb"&gt;06.02 使用 style 来配置 pyplot 风格&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.03%20%20working%20with%20text%20-%20basic.ipynb"&gt;06.03 处理文本（基础）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.04%20working%20with%20text%20-%20math%20expression.ipynb"&gt;06.04 处理文本（数学表达式）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.05%20image%20tutorial.ipynb"&gt;06.05 图像基础&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.06%20annotating%20axes.ipynb"&gt;06.06 注释&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.07%20legend.ipynb"&gt;06.07 标签&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.08%20figures,%20subplots,%20axes%20and%20ticks.ipynb"&gt;06.08 figures, subplots, axes 和 ticks 对象&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.09%20do%20not%20trust%20the%20defaults.ipynb"&gt;06.09 不要迷信默认设置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.10%20different%20plots.ipynb"&gt;06.10 各种绘图实例&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages"&gt;07. &lt;strong&gt;使用其他语言进行扩展&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.01%20introduction.ipynb"&gt;07.01 简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.02%20python%20extension%20modules.ipynb"&gt;07.02 Python 扩展模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.03%20cython%20part%201.ipynb"&gt;07.03 Cython：Cython 基础，将源代码转换成扩展模块&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.04%20cython%20part%202.ipynb"&gt;07.04 Cython：Cython 语法，调用其他C库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.05%20cython%20part%203.ipynb"&gt;07.05 Cython：class 和 cdef class，使用 C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.06%20cython%20part%204.ipynb"&gt;07.06 Cython：Typed memoryviews&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.07%20profiling%20with%20annotations.ipynb"&gt;07.07 生成编译注释&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.08%20ctypes.ipynb"&gt;07.08 ctypes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming"&gt;08. &lt;strong&gt;面向对象编程&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.01%20oop%20introduction.ipynb"&gt;08.01 简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.02%20using%20oop%20model%20a%20forest%20fire.ipynb"&gt;08.02 使用 OOP 对森林火灾建模&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.03%20what%20is%20a%20object.ipynb"&gt;08.03 什么是对象？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.04%20writing%20classes.ipynb"&gt;08.04 定义 class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.05%20special%20method.ipynb"&gt;08.05 特殊方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.06%20properties.ipynb"&gt;08.06 属性&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.07%20forest%20fire%20simulation.ipynb"&gt;08.07 森林火灾模拟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.08%20inheritance.ipynb"&gt;08.08 继承&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.09%20super.ipynb"&gt;08.09 super() 函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.10%20refactoring%20the%20forest%20fire%20simutation.ipynb"&gt;08.10 重定义森林火灾模拟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.11%20interfaces.ipynb"&gt;08.11 接口&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.12%20public%20private%20special%20in%20python.ipynb"&gt;08.12 共有，私有和特殊方法和属性&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.13%20multiple%20inheritance.ipynb"&gt;08.13 多重继承&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano"&gt;09. &lt;strong&gt;Theano&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.01%20introduction%20and%20installation.ipynb"&gt;09.01 Theano 简介及其安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.02%20theano%20basics.ipynb"&gt;09.02 Theano 基础&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.03%20gpu%20on%20windows.ipynb"&gt;09.03 Windows 上配置 theano 的 GPU 模式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.04%20linear%20regression.ipynb"&gt;09.04 线性回归&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.05%20logistic%20regression%20.ipynb"&gt;09.05 logistic 回归&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.06%20graph%20structures.ipynb"&gt;09.06 符号图结构&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.07%20softmax%20on%20mnist.ipynb"&gt;09.07 Softmax 回归：MNIST 数据集&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/09.%20theano/09.08%20net.ipynb"&gt;09.08 人工神经网络&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/10.%20something%20interesting"&gt;10. &lt;strong&gt;有趣的第三方模块&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/10.%20something%20interesting/10.01%20maps%20using%20basemap.ipynb"&gt;10.01 使用 basemap 画地图&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/10.%20something%20interesting/10.02%20maps%20using%20cartopy.ipynb"&gt;10.02 使用 cartopy 画地图&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools"&gt;11. &lt;strong&gt;有用的工具&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools/11.01%20pprint.ipynb"&gt;11.01 pprint 模块：打印 Python 对象&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools/11.02%20pickle%20and%20cPickle.ipynb"&gt;11.02 pickle, cPickle 模块：序列化 Python 对象&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools/11.03%20json.ipynb"&gt;11.03 json 模块：处理 JSON 数据&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</description><guid>/posts/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Untitled</title><link>/posts/untitled/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
+
+
+&lt;div class="output_text output_subarea output_execute_result"&gt;
+&lt;pre&gt;2&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</description><guid>/posts/untitled/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/0101-python-overview/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Python简介"&gt;Python简介&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="Python历史"&gt;&lt;strong&gt;Python&lt;/strong&gt;历史&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E5%8E%86%E5%8F%B2"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Python的创始人为荷兰人吉多·范罗苏姆（Guido van Rossum）。1989年的圣诞节期间，吉多·范罗苏姆为了在阿姆斯特丹打发时间，决心开发一个新的脚本解释程序，作为ABC语言的一种继承。之所以选中Python作为程序的名字，是因为他是BBC电视剧——蒙提·派森的飞行马戏团（Monty Python's Flying Circus）的爱好者。&lt;/p&gt;
+&lt;p&gt;1991年，第一个Python编译器诞生。它是用C语言实现的，并能够调用C语言的库文件。&lt;/p&gt;
+&lt;p&gt;Python 2.0于2000年10月16日发布，增加了实现完整的垃圾回收，并且支持Unicode。&lt;/p&gt;
+&lt;p&gt;Python 3.0于2008年12月3日发布，此版不完全兼容之前的Python源代码。不过，很多新特性后来也被移植到旧的Python 2.6/2.7版本。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="第一行Python代码"&gt;第一行Python代码&lt;a class="anchor-link" href="/posts/0101-python-overview/#%E7%AC%AC%E4%B8%80%E8%A1%8CPython%E4%BB%A3%E7%A0%81"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;安装好Python之后，在命令行下输入：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;就可以进入Python解释器的页面。&lt;/p&gt;
+&lt;p&gt;按照惯例，第一行代码应该是输出 &lt;code&gt;"hello world!"&lt;/code&gt;：&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;"hello world!"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;hello world!
+hello world!
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;相对&lt;strong&gt;Java&lt;/strong&gt;，&lt;strong&gt;C&lt;/strong&gt;等语言来说，&lt;strong&gt;Python&lt;/strong&gt;仅仅使用一行语句就完成的了这个任务。&lt;/p&gt;
+&lt;p&gt;可以将这句话的内容保存到一个文本文件中，并使用后缀名 &lt;code&gt;.py&lt;/code&gt; 结尾，例如 &lt;code&gt;hello_world.py&lt;/code&gt;，在命令行下运行这个程序：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python hello_world.py
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;也会输出 &lt;code&gt;"hello world!"&lt;/code&gt; 的结果。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="Python之禅"&gt;Python之禅&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E4%B9%8B%E7%A6%85"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;在&lt;strong&gt;Python&lt;/strong&gt;解释器下输入 &lt;code&gt;import this&lt;/code&gt;，会出来这样一首小诗：&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;this&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;这首诗反映了&lt;strong&gt;Python&lt;/strong&gt;的设计哲学——&lt;strong&gt;Python&lt;/strong&gt;是一种追求优雅，明确，简单的编程语言，但事实上，产生这首诗的代码并没有写的那么简单易懂：&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"""Gur Mra bs Clguba, ol Gvz Crgref&lt;/span&gt;
+
+&lt;span class="s"&gt;Ornhgvshy vf orggre guna htyl.&lt;/span&gt;
+&lt;span class="s"&gt;Rkcyvpvg vf orggre guna vzcyvpvg.&lt;/span&gt;
+&lt;span class="s"&gt;Fvzcyr vf orggre guna pbzcyrk.&lt;/span&gt;
+&lt;span class="s"&gt;Pbzcyrk vf orggre guna pbzcyvpngrq.&lt;/span&gt;
+&lt;span class="s"&gt;Syng vf orggre guna arfgrq.&lt;/span&gt;
+&lt;span class="s"&gt;Fcnefr vf orggre guna qrafr.&lt;/span&gt;
+&lt;span class="s"&gt;Ernqnovyvgl pbhagf.&lt;/span&gt;
+&lt;span class="s"&gt;Fcrpvny pnfrf nera'g fcrpvny rabhtu gb oernx gur ehyrf.&lt;/span&gt;
+&lt;span class="s"&gt;Nygubhtu cenpgvpnyvgl orngf chevgl.&lt;/span&gt;
+&lt;span class="s"&gt;Reebef fubhyq arire cnff fvyragyl.&lt;/span&gt;
+&lt;span class="s"&gt;Hayrff rkcyvpvgyl fvyraprq.&lt;/span&gt;
+&lt;span class="s"&gt;Va gur snpr bs nzovthvgl, ershfr gur grzcgngvba gb thrff.&lt;/span&gt;
+&lt;span class="s"&gt;Gurer fubhyq or bar-- naq cersrenoyl bayl bar --boivbhf jnl gb qb vg.&lt;/span&gt;
+&lt;span class="s"&gt;Nygubhtu gung jnl znl abg or boivbhf ng svefg hayrff lbh'er Qhgpu.&lt;/span&gt;
+&lt;span class="s"&gt;Abj vf orggre guna arire.&lt;/span&gt;
+&lt;span class="s"&gt;Nygubhtu arire vf bsgra orggre guna *evtug* abj.&lt;/span&gt;
+&lt;span class="s"&gt;Vs gur vzcyrzragngvba vf uneq gb rkcynva, vg'f n onq vqrn.&lt;/span&gt;
+&lt;span class="s"&gt;Vs gur vzcyrzragngvba vf rnfl gb rkcynva, vg znl or n tbbq vqrn.&lt;/span&gt;
+&lt;span class="s"&gt;Anzrfcnprf ner bar ubaxvat terng vqrn -- yrg'f qb zber bs gubfr!"""&lt;/span&gt;
+
+&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;65&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;97&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;chr&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;26&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;blockquote&gt;&lt;p&gt;Life is short. Use Python.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</description><guid>/posts/0101-python-overview/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Nikola: 静态博客A.K.A引擎，我是怎样创建Shisaa.jp</title><link>/posts/nikola-web/</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;h3&gt;写在前面的话&lt;/h3&gt;
+&lt;p&gt;当我在Google搜索用git做博客的时候我看到github提供了免费静态页面服务，而且提供Jekyll工具，允许用户用轻量级标记语言（比如Markdown）来写文章，然后生成博客页面。同类的工具还有Octopress。但用的是Ruby语言，在windows下安装环境特别麻烦。因我比较喜欢用Python，再继续搜索，看到了Pelican，只支持Python2.7以上版本，把本地的Python版本更新到2.7版本，好不容易安装好了Pelican环境，但发现Pelican用Makefile来管理项目，而Makefile在Windows下就是一个恶梦。最后看到了Nikola，按照官方文档很快就上手了，而且默认的样式还是特好看的，所以就最终选择了Nikola来建立静态博客。&lt;/p&gt;
+&lt;p&gt;在Nikola的有一篇文章&lt;a href="http://shisaa.jp/postset/nikola-web.html" title="Goes from installing to developing a custom theme."&gt;Tutorial by Tim van der Linden&lt;/a&gt;，正好解决了我对Nikola的一些问题，为了日后查阅方便，也为了能让更多母语是中文的网络爱好者认识Nikola，故翻译了这篇文章。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;前言&lt;/h3&gt;
+&lt;p&gt;首先，非常感谢Nikola创作者Roberto Alsina，给这篇文章&lt;a href="http://getnikola.com/blog/new-nikola-tutorial.html" title="基于Nikola建立博客shisaa.jp"&gt;很高的评价&lt;/a&gt;，并将其嵌入到Nikola文档中！&lt;/p&gt;
+&lt;p&gt;当我设计Shisaa.jp的时候我花一些时间思考用怎么样的“后端”。什么样的系统建站...使用CMS吗？
+我使用Drupal有丰富的经验，这可能是我的首选......但熟悉Drupal的，也知道一些难以忽视的事实：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drupal是用PHP编写的，这不是我所向往的编程语言。&lt;/li&gt;
+&lt;li&gt;Drupal有很强大的工具，但运行会慢得像蜗牛，这是一个典型的多用途CMS的负担，几乎这样的框架系统都是这样。&lt;/li&gt;
+&lt;li&gt;Drupal 8即将推出，这是一个全新和充满亮点的版本，是建立另一框架之上（symfony），所以它是框架之上的框架...在正常的情况下，意味着它将变得更慢。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此，不用Drupal，那用什么呢？Wordpress, Joomla...？这...永远...不可能，它们都是用PHP做后端的语言。&lt;/p&gt;
+&lt;p&gt;好，不用PHP驱动系统...我更喜欢用Python，所以可能是Plone, Pylons, Pyramid, ...？&lt;/p&gt;
+&lt;p&gt;可能……&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/nikola-web/"&gt;更多…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>nikola</category><category>python</category><category>web</category><guid>/posts/nikola-web/</guid><pubDate>Thu, 01 Aug 2013 10:52:05 GMT</pubDate></item></channel></rss>
