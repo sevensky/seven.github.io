@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>博客</title><link>/</link><description>description</description><atom:link href="/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>zh_cn</language><lastBuildDate>Wed, 13 Jan 2016 15:05:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>ss</title><link>/posts/ss.html</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>/posts/ss.html</guid><pubDate>Wed, 13 Jan 2016 06:36:51 GMT</pubDate></item><item><title>bb</title><link>/posts/bb.html</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your page here.&lt;/p&gt;</description><guid>/posts/bb.html</guid><pubDate>Wed, 13 Jan 2016 06:34:41 GMT</pubDate></item><item><title>nikola build 报错</title><link>/posts/nikola-install4me.html</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;p&gt;tzutil /g
+=======
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客</title><link>/</link><description>description</description><atom:link type="application/rss+xml" rel="self" href="/rss.xml"></atom:link><language>zh_cn</language><lastBuildDate>Wed, 13 Jan 2016 10:50:25 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>ss</title><link>/posts/ss/</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>/posts/ss/</guid><pubDate>Wed, 13 Jan 2016 06:36:51 GMT</pubDate></item><item><title>bb</title><link>/posts/bb/</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your page here.&lt;/p&gt;</description><guid>/posts/bb/</guid><pubDate>Wed, 13 Jan 2016 06:34:41 GMT</pubDate></item><item><title>nikola build 报错</title><link>/posts/nikola-install4me/</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;p&gt;tzutil /g
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 python -c "import sys;  print (sys.stdout.encoding)"
 python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
 &lt;p&gt;Traceback (most recent call last):
@@ -41,6 +45,7 @@ python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
   File "f:\anaconda2\envs\dev3.5\lib\site-packages\jupyter_client\jsonutil.py", line 25, in &lt;module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/p&gt;
 &lt;p&gt;-注释掉    datetime.strptime("1", "%d")&lt;/p&gt;
 &lt;p&gt;............. datetime.strptime("1998072012", "%Y%m%d%H") 
+<<<<<<< HEAD
  python -c "from datetime import datetime;  print (datetime.strptime('1', '%d') )"&lt;/p&gt;&lt;/div&gt;</description><guid>/posts/nikola-install4me.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/ms-office-with-pywin32com.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
@@ -51,6 +56,9 @@ python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Python调用COM的API实现Microsoft Office(PPT, Excel, Word)办公自动化&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/ms-office-with-pywin32com.html"&gt;更多…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>/posts/ms-office-with-pywin32com.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+=======
+ python -c "from datetime import datetime;  print (datetime.strptime('1', '%d') )"&lt;/p&gt;&lt;/div&gt;</description><guid>/posts/nikola-install4me/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -287,6 +295,7 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+<<<<<<< HEAD
 </description><guid>/posts/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/doc-pyautogui.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
@@ -313,6 +322,9 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;同时推荐一本Python网络数据采集（图灵社区取的名字^_^）的基础书籍&lt;a href="http://shop.oreilly.com/product/0636920034391.do"&gt;Ryan Mitchell的《Web Scraping with Python》&lt;/a&gt;，可以和PyAutoGUI结合使用。&lt;/p&gt;
 &lt;p&gt;tl;dr&lt;/p&gt;
 &lt;p&gt;&lt;a href="/posts/doc-pyautogui.html"&gt;更多…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>/posts/doc-pyautogui.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Untitled</title><link>/posts/untitled.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+=======
+</description><guid>/posts/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Untitled</title><link>/posts/untitled/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
@@ -346,7 +358,11 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+<<<<<<< HEAD
 </description><guid>/posts/untitled.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/0101-python-overview.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+=======
+</description><guid>/posts/untitled/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/0101-python-overview/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -354,7 +370,11 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+<<<<<<< HEAD
 &lt;h2 id="Python简介"&gt;Python简介&lt;a class="anchor-link" href="/posts/0101-python-overview.html#Python%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+=======
+&lt;h2 id="Python简介"&gt;Python简介&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -363,7 +383,11 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+<<<<<<< HEAD
 &lt;h3 id="Python历史"&gt;&lt;strong&gt;Python&lt;/strong&gt;历史&lt;a class="anchor-link" href="/posts/0101-python-overview.html#Python%E5%8E%86%E5%8F%B2"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+=======
+&lt;h3 id="Python历史"&gt;&lt;strong&gt;Python&lt;/strong&gt;历史&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E5%8E%86%E5%8F%B2"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -385,7 +409,11 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+<<<<<<< HEAD
 &lt;h3 id="第一行Python代码"&gt;第一行Python代码&lt;a class="anchor-link" href="/posts/0101-python-overview.html#%E7%AC%AC%E4%B8%80%E8%A1%8CPython%E4%BB%A3%E7%A0%81"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+=======
+&lt;h3 id="第一行Python代码"&gt;第一行Python代码&lt;a class="anchor-link" href="/posts/0101-python-overview/#%E7%AC%AC%E4%B8%80%E8%A1%8CPython%E4%BB%A3%E7%A0%81"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -454,7 +482,11 @@ hello world!
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+<<<<<<< HEAD
 &lt;h3 id="Python之禅"&gt;Python之禅&lt;a class="anchor-link" href="/posts/0101-python-overview.html#Python%E4%B9%8B%E7%A6%85"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+=======
+&lt;h3 id="Python之禅"&gt;Python之禅&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E4%B9%8B%E7%A6%85"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -654,7 +686,11 @@ Namespaces are one honking great idea -- let's do more of those!
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+<<<<<<< HEAD
 </description><guid>/posts/0101-python-overview.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Nikola: 静态博客A.K.A引擎，我是怎样创建Shisaa.jp</title><link>/posts/nikola-web.html</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;h3&gt;写在前面的话&lt;/h3&gt;
+=======
+</description><guid>/posts/0101-python-overview/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Nikola: 静态博客A.K.A引擎，我是怎样创建Shisaa.jp</title><link>/posts/nikola-web/</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;h3&gt;写在前面的话&lt;/h3&gt;
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;p&gt;当我在Google搜索用git做博客的时候我看到github提供了免费静态页面服务，而且提供Jekyll工具，允许用户用轻量级标记语言（比如Markdown）来写文章，然后生成博客页面。同类的工具还有Octopress。但用的是Ruby语言，在windows下安装环境特别麻烦。因我比较喜欢用Python，再继续搜索，看到了Pelican，只支持Python2.7以上版本，把本地的Python版本更新到2.7版本，好不容易安装好了Pelican环境，但发现Pelican用Makefile来管理项目，而Makefile在Windows下就是一个恶梦。最后看到了Nikola，按照官方文档很快就上手了，而且默认的样式还是特好看的，所以就最终选择了Nikola来建立静态博客。&lt;/p&gt;
 &lt;p&gt;在Nikola的有一篇文章&lt;a href="http://shisaa.jp/postset/nikola-web.html" title="Goes from installing to developing a custom theme."&gt;Tutorial by Tim van der Linden&lt;/a&gt;，正好解决了我对Nikola的一些问题，为了日后查阅方便，也为了能让更多母语是中文的网络爱好者认识Nikola，故翻译了这篇文章。&lt;/p&gt;
 &lt;hr&gt;
@@ -670,4 +706,8 @@ Namespaces are one honking great idea -- let's do more of those!
 &lt;p&gt;因此，不用Drupal，那用什么呢？Wordpress, Joomla...？这...永远...不可能，它们都是用PHP做后端的语言。&lt;/p&gt;
 &lt;p&gt;好，不用PHP驱动系统...我更喜欢用Python，所以可能是Plone, Pylons, Pyramid, ...？&lt;/p&gt;
 &lt;p&gt;可能……&lt;/p&gt;
+<<<<<<< HEAD
 &lt;p&gt;&lt;a href="/posts/nikola-web.html"&gt;更多…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>nikola</category><category>python</category><category>web</category><guid>/posts/nikola-web.html</guid><pubDate>Thu, 01 Aug 2013 10:52:05 GMT</pubDate></item></channel></rss>
+=======
+&lt;p&gt;&lt;a href="/posts/nikola-web/"&gt;更多…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>nikola</category><category>python</category><category>web</category><guid>/posts/nikola-web/</guid><pubDate>Thu, 01 Aug 2013 10:52:05 GMT</pubDate></item></channel></rss>
+>>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
