@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "posts"
+		},
+		{
+			"folder_exclude_patterns":
+			[
+				"files",
+				"cache",
+				"plugins",
+				"themes",
+				"output"
+			],
+			"path": "."
+		}
+	]
+}

@@ -236,7 +236,7 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = True
+ONE_FILE_POSTS = True
 
 # If this is set to True, the DEFAULT_LANG version will be displayed for
 # untranslated posts.
@@ -322,7 +322,7 @@ POSTS_SECTIONS = True
 # See TAG_PATH's "list of tags" for the default setting value. Can be overwritten
 # here any path relative to the output directory.
  # (translatable)
-# TAGS_INDEX_PATH = "tags.html"
+TAGS_INDEX_PATH = "tags.html"
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -365,15 +365,15 @@ HIDDEN_TAGS = ['mathjax']
 # CATEGORY_PATH = "categories"
 # CATEGORY_PREFIX = "cat_"
 
-# If CATEGORY_ALLOW_HIERARCHIES is set to True, categories can be organized in
+# If CATEGORY_ALLOW_HIERARCHIES层次 is set to True, categories can be organized in
 # hierarchies. For a post, the whole path in the hierarchy must be specified,
 # using a forward slash ('/') to separate paths. Use a backslash ('\') to escape
 # a forward slash or a backslash (i.e. '\//\\' is a path specifying the
 # subcategory called '\' of the top-level category called '/').
-CATEGORY_ALLOW_HIERARCHIES = False
+CATEGORY_ALLOW_HIERARCHIES = True
 # If CATEGORY_OUTPUT_FLAT_HIERARCHY is set to True, the output written to output
 # contains only the name of the leaf category and not the whole path.
-CATEGORY_OUTPUT_FLAT_HIERARCHY = False
+CATEGORY_OUTPUT_FLAT_HIERARCHY = True
 
 # If CATEGORY_PAGES_ARE_INDEXES is set to True, each category's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -436,7 +436,7 @@ HIDDEN_AUTHORS = ['Guest']
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # INDEX_PATH = ""
 
-# Create per-month archives instead of per-year
+#Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
 # Create one large archive instead of per-year
 # CREATE_SINGLE_ARCHIVE = False
@@ -446,12 +446,13 @@ HIDDEN_AUTHORS = ['Guest']
 # If monthly archives or full archives are created, adds also one archive per day
 # CREATE_DAILY_ARCHIVE = False
 # Final locations for the archives are:
+#	存档 
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / DAY / index.html
-# ARCHIVE_PATH = ""
-# ARCHIVE_FILENAME = "archive.html"
+ARCHIVE_PATH = "archive"
+#ARCHIVE_FILENAME = "archive.html"
 
 # If ARCHIVES_ARE_INDEXES is set to True, each archive page which contains a list
 # of posts will contain the posts themselves. If set to False, it will be just a
@@ -592,15 +593,15 @@ CACHE_FOLDER = 'cache'
 # "source/" and the results will be located in
 # "OUTPUT_PATH/relative_destination/gallery_name"
 # Default is:
-# GALLERY_FOLDERS = {"galleries": "galleries"}
+GALLERY_FOLDERS = {"galleries": "galleries"}
 # More gallery options:
-# THUMBNAIL_SIZE = 180
-# MAX_IMAGE_SIZE = 1280
-# USE_FILENAME_AS_TITLE = True
-# EXTRA_IMAGE_EXTENSIONS = []
+THUMBNAIL_SIZE = 180
+MAX_IMAGE_SIZE = 1280
+USE_FILENAME_AS_TITLE = True
+EXTRA_IMAGE_EXTENSIONS = []
 #
 # If set to False, it will sort by filename instead. Defaults to True
-# GALLERY_SORT_BY_DATE = True
+GALLERY_SORT_BY_DATE = True
 #
 # Folders containing images to be used in normal posts or pages. Images will be
 # scaled down according to IMAGE_THUMBNAIL_SIZE and MAX_IMAGE_SIZE options, but
@@ -780,12 +781,12 @@ CONTENT_FOOTER_FORMATS = {
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, googleplus, intensedebate, isso, livefyre, muut
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = ""
+#COMMENT_SYSTEM = "disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = ""
+#COMMENT_SYSTEM_ID = "nikolademo"
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
@@ -834,8 +835,9 @@ STRIP_INDEXES = True
 # No web server configuration is required. Also enables STRIP_INDEXES.
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
+#漂亮路径 漂亮个蛋
 # to the metadata.
-PRETTY_URLS = True
+PRETTY_URLS = False
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.

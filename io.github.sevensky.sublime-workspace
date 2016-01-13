@@ -1,0 +1,1021 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bu",
+				"button7y	statement"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"trig",
+				"trigger1	statement"
+			],
+			[
+				"i",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"win",
+				"WindowCommand	(class)"
+			],
+			[
+				"e",
+				"elif	keyword"
+			],
+			[
+				"el",
+				"else	keyword"
+			],
+			[
+				"ge",
+				"get_edit	(function)"
+			],
+			[
+				"print",
+				"print	(keyword)"
+			],
+			[
+				"t",
+				"tkinter"
+			],
+			[
+				"dir",
+				"dir_	param"
+			],
+			[
+				"pdb",
+				"Pdb"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"cal",
+				"classThree"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/sublime-builder/variants.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/sublime-builder/custom_builder.sublime-build",
+					""
+				],
+				[
+					"Packages/User/sublime-builder/python(dev).sublime-build",
+					""
+				],
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					""
+				],
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					"List Python Files"
+				],
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					"Word Count (current file)"
+				],
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					""
+				],
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					"List Python Files"
+				],
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					"Word Count (current file)"
+				],
+				[
+					"Packages/User/sublime-builder/variants.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/sublime-builder/variants.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: a",
+				"Snippet: assert_is_instance"
+			],
+			[
+				"Snippet: nos",
+				"Snippet: noseboiler"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"run",
+				"Anaconda: Run Current File Tests"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"st",
+				"Stack Overflow Snippets"
+			],
+			[
+				"sto",
+				"Stack Overflow Snippets"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"code",
+				"Code Search"
+			],
+			[
+				"search",
+				"Search Anywhere: From Selection"
+			],
+			[
+				"easy ",
+				"Google Search: Search any"
+			],
+			[
+				"reload",
+				"GitSavvy: reload modules (debug)"
+			],
+			[
+				"google",
+				"Google Translate Print the available translate variants"
+			],
+			[
+				"you",
+				"YouDao Translate"
+			],
+			[
+				"YOU",
+				"YouDao Translate"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"y",
+				"Set Syntax: YAML"
+			],
+			[
+				"goog",
+				"Google Translate selected text"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"insert",
+				"Insert Filepath"
+			],
+			[
+				"INSERT",
+				"Insert Filepath"
+			],
+			[
+				"INSER",
+				"Insert Filepath"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"GitSavvy: help"
+			],
+			[
+				"status",
+				"git: status"
+			],
+			[
+				"git f",
+				"git: fetch"
+			],
+			[
+				"statu",
+				"git: status"
+			],
+			[
+				"gitsta",
+				"git: status"
+			],
+			[
+				"gits",
+				"GitSavvy: enable logging"
+			],
+			[
+				"git view",
+				"GitSavvy: view recorded log"
+			],
+			[
+				"git sta",
+				"git: status"
+			],
+			[
+				"git pu",
+				"git: pull"
+			],
+			[
+				"git stat",
+				"git: status"
+			],
+			[
+				"Package Control: en",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"gitsa",
+				"GitSavvy: enable logging"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"subli",
+				"Sublimerge"
+			],
+			[
+				"gitst",
+				"GitStatus: Changed files"
+			],
+			[
+				"sub",
+				"subprocess_in_cwd"
+			],
+			[
+				"RUN",
+				"Run: ConEmu64"
+			],
+			[
+				"runc",
+				"Run: ConEmu64"
+			],
+			[
+				"she",
+				"Shell Exec: Open"
+			],
+			[
+				"shell",
+				"shell_prompt"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"readlin",
+				"readline_history_change"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"scro",
+				"1SyncScroll"
+			],
+			[
+				"3",
+				"Git (SideBarGit): Log: diffs of changes last 30"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"qu",
+				"quick_goto_variable"
+			],
+			[
+				"quic",
+				"quick_goto_file"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"GIT",
+				"Git GUI Clients: Gitk"
+			],
+			[
+				"note",
+				"Open IPython Notebook"
+			],
+			[
+				"noteb",
+				"Interrupt IPython Notebook Kernel"
+			],
+			[
+				"noteboo",
+				"Set Syntax: IPython Notebook"
+			],
+			[
+				"open",
+				"Open Current Notebook As Ipynb File"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"find",
+				"File: New Folder Relative to Current View"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Python Snippets: signed off"
+			],
+			[
+				"Snippet: class",
+				"Snippet: New Class"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"disp",
+				"Anaconda: Display object docs"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"go to",
+				"Traceback: Go To Line"
+			],
+			[
+				"jedi",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"DISP",
+				"Anaconda: Display object docs"
+			],
+			[
+				"DISPLA",
+				"Anaconda: Display object docs"
+			],
+			[
+				"Anaconda:FIN",
+				"Anaconda: Goto object definition"
+			],
+			[
+				"find u",
+				"Anaconda: Find object usage"
+			],
+			[
+				"package Control:",
+				"Package Control: List Packages"
+			],
+			[
+				"package Control:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Anaconda: Vagrant Enable"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 646.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"3",
+			"2",
+			"6",
+			"2",
+			"1",
+			"2",
+			"1",
+			"2",
+			"1",
+			"3",
+			"d",
+			"2",
+			"3",
+			"1",
+			"r",
+			"ipconfig",
+			"view.viewport_position()",
+			"view",
+			"self.view.viewport_position()",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)",
+			"sublime.log_result_regex(True)",
+			"sublime.log_build_systems(True)",
+			"sublime.log_indexing(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(true)",
+			"sublime.log_commands(1)",
+			"sublime.log_commands(2)",
+			"sublime.windows()",
+			"sublime.log_commands(false)",
+			"sublime",
+			"sublime.",
+			"sublime",
+			"sublime.log_commands(True)",
+			"view.run_command(\"example\")",
+			"print(3)",
+			"print(d)",
+			"print 2",
+			"help()",
+			"help",
+			"windows()",
+			"d",
+			"ls",
+			"1+1",
+			"display",
+			"d"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/1GitHub/nikolaenv/io.github.sevensky"
+	],
+	"file_history":
+	[
+		"/E/1GitHub/Python/pyautogui/PyStart/PyStart.pyw",
+		"/E/1GitHub/Python/pyautogui/baidutieba_autosign/main.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/pyautotrade.py",
+		"/E/1GitHub/nikolaenv/mysite/conf.py",
+		"/E/1GitHub/nikolaenv/mysite/README.md",
+		"/E/1GitHub/nikolaenv/sevensky.github.io/README.md",
+		"/D/Program Files (x86)/Sublime Text 3/使用笔记.md",
+		"/E/1GitHub/Python/pyautogui/chriskiehl/Burrito-Bot/desktop_magic.py",
+		"/E/1GitHub/Python/pyautogui/chriskiehl/Burrito-Bot/bison.py",
+		"/E/1GitHub/Python/pyautogui/chriskiehl/Burrito-Bot/Burrito-bot_OLD/README.md",
+		"/E/1GitHub/Python/pyautogui/chriskiehl/Burrito-Bot/Burrito-bot_OLD/bison.py",
+		"/E/1GitHub/Python/pyautogui/chriskiehl/Burrito-Bot/readme.md",
+		"/E/1GitHub/Python/pyautogui/AutoSchedule/AutoSchedule.py",
+		"/E/1GitHub/Python/pyautogui/baidutieba_autosign/hostile.py",
+		"/E/1GitHub/Python/amyproj1/python.md",
+		"/F/Anaconda2/envs/dev/lib/logging/__init__.py",
+		"/F/Anaconda2/envs/dev/lib/site-packages/pyscreeze/__init__.py",
+		"/E/1GitHub/Python/pyautogui/baidutieba_autosign/my_screenshot.png",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
+		"/E/1GitHub/Python/pyautogui/baidutieba_autosign/README.md",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/winguiauto.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/test/test3.py",
+		"/E/1GitHub/Python/pyautogui/AutoSchedule/style.qss",
+		"/E/1GitHub/Python/pyautogui/AutoSchedule/README.md",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/test/test_winguiauto.py",
+		"/E/1GitHub/Python/1firstRead/1PyAutoTrading/allisnone-pytrade/README.md",
+		"/E/1GitHub/Python/1firstRead/1PyAutoTrading/allisnone-pytrade/readme.rd",
+		"/E/1GitHub/Python/1firstRead/scottjzou_xQuant/README.md",
+		"/D/PortableApps/cmder_mini/使用技巧kc.md",
+		"/E/1kuaipan/[Python/正则/TweakRecon.py",
+		"/F/Anaconda2/Lib/site-packages/PyQt4/examples/demos/qtdemo/qtdemo.pyw",
+		"/E/1GitHub/Python/Pywin32/movepoint/doc/source/Core.rst",
+		"/C/Users/Administrator/AppData/Local/Temp/Rar$DIa0.323/rst2html.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/bunch.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/back_trader_tutle.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/fileoperation.py",
+		"/E/1GitHub/Python/amyproj1/amyproj1.sublime-project",
+		"/E/1GitHub/Python/amyproj1/calculus/test/test_base_1.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/back_trader.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/test/unittest2.py",
+		"/E/1GitHub/Python/amyproj1/calculus/base_1.py",
+		"/E/1GitHub/Python/amyproj1/calculus/__init__.py",
+		"/E/1GitHub/Python/amyproj1/calculus/base_2.py",
+		"/E/1GitHub/Python/amyproj1/calculus/remote_1.py",
+		"/E/1GitHub/Python/amyproj1/calculus/test/test_base_2.py",
+		"/E/1GitHub/Python/Doc/translation/README.md",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/Anaconda.sublime-settings",
+		"/F/Anaconda2/envs/dev/Scripts/trial.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Anaconda/README.md",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Anaconda/Anaconda.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/E/1GitHub/Python/amyproj1/calculus/test/__init__.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/test/unittest1.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/unittest1.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/FuzzyFilePath/TestIntegration.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Search Anywhere/searchanywhere.py",
+		"/D/Program Files (x86)/Sublime Text 3/sublime_plugin.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Youdao-Translate-For-Sublime/youdaoTranslate.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/PyAutoTrading.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/Vagrant.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/SublimePython.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/HaoGist.sublime-settings",
+		"/E/1GitHub/GistCache/duplicate_remove_2.php",
+		"/E/1GitHub/GistCache/eval-shell.php",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/HaoGist/config/settings/HaoGist.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/SidebarSeparator/SidebarSeparator.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Gist/Gist.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Vagrant/Vagrant.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/CodeSearch/CodeSearch.sublime-settings",
+		"/C/Users/Administrator/Dropbox/Notes/4.note",
+		"/C/Users/Administrator/Dropbox/Notes/.archive/.brain/Inbox.note",
+		"/C/Users/Administrator/Dropbox/Notes/.brain/Inbox.note",
+		"/C/Users/Administrator/Dropbox/Notes/.archive/.brain",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/PyDOC/messages/install.txt",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/EasyMotion/Default (Windows).sublime-keymap",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/PlainNotes/Notes.sublime-settings",
+		"/E/1GitHub/Python/pyautogui/Beyond/README.md",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/Run App.sublime-commands",
+		"/E/1GitHub/Python.DataYes/trade/trade.sublime-project",
+		"/E/1GitHub/Python/pyautogui/loginGUI/AutoLoginBot.py",
+		"/E/1GitHub/Python/pyautogui/byClientServer/test.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/myutils.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/fileoperation.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/dboperation.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/sql_test.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/sqlbase.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/sysTreeList.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/pyautotrading.ini",
+		"/F/Anaconda2/envs/dev/lib/threading.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/goTranslate.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/core/translate.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/goTranslate.py",
+		"/F/Anaconda2/envs/dev/lib/json/__init__.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/Default.sublime-commands",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/core/handler_st3.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/test/testtranslate.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/test/socks.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/goTranslate.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Inline Google Translate/Default (Windows).sublime-keymap",
+		"/E/1GitHub/Python/amyproj1/demo2.py",
+		"/E/1GitHub/Python/amyproj1/MyPackage/__init__.py",
+		"/E/1GitHub/Python/amyproj1/MyPackage/classOne.py",
+		"/F/Anaconda2/lib/lib-tk/Tkinter.py",
+		"/E/1GitHub/Python/amyproj1/demo3.py",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/f/Anaconda2/Lib/pdb.py",
+		"/F/Anaconda2/lib/lib-tk/ttk.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/mypy2exe.py",
+		"/E/1GitHub/Python/1firstRead/1llmofang/TradeAgent/src/Event.py",
+		"/E/1GitHub/Python/1firstRead/harveywwu_pyktrader/README.md",
+		"/E/1GitHub/Python/1firstRead/harveywwu_pyktrader/bktest_dual_thrust.py",
+		"/E/1GitHub/Python/1firstRead/1llmofang/TradeAgent/README.md",
+		"/D/Program Files (x86)/Shadowsocks/XXnet技术说明.txt",
+		"/C/Users/Administrator/AppData/Roaming/Lantern/lantern-2.0.10.yaml",
+		"/E/1GitHub/Python/1firstRead/harveywwu_pyktrader/strats/全自动动态突破型交易系统.txt",
+		"/E/1GitHub/Python/1firstRead/harveywwu_pyktrader/strats/分形操作突破法.txt",
+		"/E/1GitHub/Python/1firstRead/harveywwu_pyktrader/strats/多重均线系统.txt",
+		"/E/1GitHub/Python/1firstRead/harveywwu_pyktrader/strats/Swing/Bollinger Bands_Stop_v2 .mq4",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/SublimeLinter.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/E/1GitHub/Python/1firstRead/1llmofang/TradeAgent/src/run_check.bat",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/JSON.sublime-settings",
+		"/D/Users/Administrator/Desktop/amh.sh",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/mailSMS.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/latest.py",
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/README.md"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"E:\\1GitHub\\Python",
+			"E:\\1GitHub\\Pythonpyautogui",
+			"D:\\Program Files (x86)\\Sublime Text 3\\Data\\Packages"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"asd",
+			"button7y",
+			"button7x",
+			")\n",
+			"aaaaa",
+			"screen",
+			"screenshot",
+			"tab",
+			"as",
+			"hotkey",
+			"test",
+			"sublime_plugin.WindowCommand",
+			"sublime_plugin.TextCommand",
+			"sel(",
+			"sel",
+			"SearchAnywhereDefaultCommand",
+			"getWindowClass",
+			"print",
+			"+",
+			"__top_hwnd",
+			"OperationTdx",
+			"OperationThs",
+			"OperationTdx",
+			"set_stocks_info",
+			"pickCodeFromItems",
+			"stock_codes",
+			"actual_stocks_info",
+			"getStockData",
+			"ts.",
+			"threading",
+			"messagebox",
+			"fix_google",
+			"ERR_SERVICE_NOT_AVAIBLE_TRY_AGAIN_OR_USE_RPOXY",
+			"proxy",
+			"req",
+			"alt+`",
+			"begin_edit",
+			"edit_token",
+			"result",
+			"begin_edit",
+			"json",
+			"try",
+			"plase",
+			"errorCode",
+			"result",
+			"阿勒泰",
+			"pagedown",
+			"\"],",
+			"九五号",
+			"checksourceformatting",
+			"formate",
+			"auto",
+			"pyautogui",
+			"now_timestamp",
+			"com",
+			"pymysql",
+			"is_trade_time_now",
+			"pdsql",
+			"tkinter.messagebox",
+			"messagebox",
+			"tkinter",
+			"getListViewInfo",
+			"ROOT_DIR",
+			"1ictxiangxin",
+			"path",
+			"ctrl+alt+r",
+			"ctrl+alt+space",
+			"ctrl+b",
+			"show_panel_on_build",
+			"build",
+			"builder",
+			"ctrl+j",
+			"ctrl+shift+[",
+			"ctrl+shift+j",
+			"ctrl+shift",
+			"s\nsdsd\nsdsdsd\nsdsdsdsd\n\nsdsdsdsdd\nsdsdsdsddsd\nsdsdsdsddsds",
+			"print",
+			"gitk",
+			"notebooks",
+			"notebook",
+			"note",
+			"`",
+			"termi",
+			"function",
+			"Vintage",
+			"tree_animation_enabled",
+			"line",
+			"index",
+			"ctrl+p",
+			"+p",
+			"		",
+			"       	      ",
+			"git",
+			"Sublime",
+			"word_wrap",
+			"snippet",
+			"auto_python_builder_enabled",
+			"pep8_ignore",
+			"enable_signatures_tooltip",
+			"display_signatures",
+			"python_interpreter",
+			"env",
+			"replopen",
+			"windows",
+			"window",
+			"windows",
+			"build",
+			"API",
+			"\"\"\"",
+			"test_before_command",
+			"log",
+			"complete_all_parameters",
+			"Build",
+			"log",
+			"display_signatures",
+			"enable_signatures_tooltip",
+			"auto_project_switch",
+			"'''\n",
+			"pdb",
+			"DataSource",
+			"设置",
+			"插件设置",
+			"浏览插件",
+			"插件设置",
+			"首选项",
+			"行尾",
+			"注释",
+			"\"mnemonic\": \"[a-z]\""
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"messagebox",
+			"3",
+			"\"mnemonic\": \"\\1\"",
+			"2",
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 227.0
+	},
+	"output.exec":
+	{
+		"height": 244.0
+	},
+	"output.find_results":
+	{
+		"height": 122.0
+	},
+	"output.gist_error":
+	{
+		"height": 128.0
+	},
+	"output.jotter":
+	{
+		"height": 128.0
+	},
+	"output.rope_python_documentation":
+	{
+		"height": 188.0
+	},
+	"output.show_commit_info":
+	{
+		"height": 128.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 128.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "io.github.sevensky.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"dif",
+				"AlgoTrading\\notebooks\\presentation\\Python in Finance.ipynb"
+			],
+			[
+				"",
+				"D:\\Program Files (x86)\\Sublime Text 3\\使用笔记.rst"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\1GitHub\\Python.DataYes\\trade\\trade.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"_vintageous_last_char_search_command": "vi_f",
+		"_vintageous_last_character_search": "c",
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "D:\\Program Files (x86)\\Sublime Text 3\\Data\\Packages\\User"
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 306.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
