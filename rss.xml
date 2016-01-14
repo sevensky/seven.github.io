@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>博客</title><link>/</link><description>description</description><atom:link href="/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>zh_cn</language><lastBuildDate>Wed, 13 Jan 2016 15:05:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>ss</title><link>/posts/ss.html</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>/posts/ss.html</guid><pubDate>Wed, 13 Jan 2016 06:36:51 GMT</pubDate></item><item><title>bb</title><link>/posts/bb.html</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your page here.&lt;/p&gt;</description><guid>/posts/bb.html</guid><pubDate>Wed, 13 Jan 2016 06:34:41 GMT</pubDate></item><item><title>nikola build 报错</title><link>/posts/nikola-install4me.html</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;p&gt;tzutil /g
-=======
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客</title><link>/</link><description>description</description><atom:link type="application/rss+xml" rel="self" href="/rss.xml"></atom:link><language>zh_cn</language><lastBuildDate>Wed, 13 Jan 2016 10:50:25 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>ss</title><link>/posts/ss/</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>/posts/ss/</guid><pubDate>Wed, 13 Jan 2016 06:36:51 GMT</pubDate></item><item><title>bb</title><link>/posts/bb/</link><dc:creator>七</dc:creator><description>&lt;p&gt;Write your page here.&lt;/p&gt;</description><guid>/posts/bb/</guid><pubDate>Wed, 13 Jan 2016 06:34:41 GMT</pubDate></item><item><title>nikola build 报错</title><link>/posts/nikola-install4me/</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;p&gt;tzutil /g
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>博客</title><link>/</link><description>description</description><atom:link rel="self" href="/rss.xml" type="application/rss+xml"></atom:link><language>zh_cn</language><lastBuildDate>Thu, 14 Jan 2016 18:49:19 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>nikola build 报错</title><link>/posts/nikola-install4me.html</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;p&gt;tzutil /g
 python -c "import sys;  print (sys.stdout.encoding)"
 python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
 &lt;p&gt;Traceback (most recent call last):
@@ -45,8 +41,7 @@ python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
   File "f:\anaconda2\envs\dev3.5\lib\site-packages\jupyter_client\jsonutil.py", line 25, in &lt;module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/module&gt;&lt;/p&gt;
 &lt;p&gt;-注释掉    datetime.strptime("1", "%d")&lt;/p&gt;
 &lt;p&gt;............. datetime.strptime("1998072012", "%Y%m%d%H") 
-<<<<<<< HEAD
- python -c "from datetime import datetime;  print (datetime.strptime('1', '%d') )"&lt;/p&gt;&lt;/div&gt;</description><guid>/posts/nikola-install4me.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/ms-office-with-pywin32com.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+ python -c "from datetime import datetime;  print (datetime.strptime('1', '%d') )"&lt;/p&gt;&lt;/div&gt;</description><guid>/posts/nikola-install4me.html</guid><pubDate>Thu, 14 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/ms-office-with-pywin32com.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -55,10 +50,7 @@ python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Python调用COM的API实现Microsoft Office(PPT, Excel, Word)办公自动化&lt;/p&gt;
-&lt;p&gt;&lt;a href="/posts/ms-office-with-pywin32com.html"&gt;更多…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>/posts/ms-office-with-pywin32com.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-=======
- python -c "from datetime import datetime;  print (datetime.strptime('1', '%d') )"&lt;/p&gt;&lt;/div&gt;</description><guid>/posts/nikola-install4me/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
+&lt;p&gt;&lt;a href="/posts/ms-office-with-pywin32com.html"&gt;更多…&lt;/a&gt; (10 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>/posts/ms-office-with-pywin32com.html</guid><pubDate>Thu, 14 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/doc-pyautogui.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -66,245 +58,7 @@ python -c "import dateutil.tz; print( dateutil.tz.gettz('UTC'))"&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="中文Python笔记"&gt;中文Python笔记&lt;a class="anchor-link" href="/posts/#%E4%B8%AD%E6%96%87Python%E7%AC%94%E8%AE%B0"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;blockquote&gt;&lt;p&gt;版本：0.0.1&lt;br&gt;
-作者：李金&lt;br&gt;
-邮件：lijinwithyou@gmail.com&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;hr&gt;
-&lt;h3 id="简介"&gt;简介&lt;a class="anchor-link" href="/posts/#%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;大部分内容来自网络。&lt;/p&gt;
-&lt;p&gt;默认安装了&lt;code&gt;python 2.7&lt;/code&gt;，以及相关的第三方包 &lt;code&gt;ipython&lt;/code&gt;， &lt;code&gt;numpy&lt;/code&gt;， &lt;code&gt;scipy&lt;/code&gt;，&lt;code&gt;pandas&lt;/code&gt;。&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;life is short. use python.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;推荐使用 &lt;a href="http://www.continuum.io/downloads"&gt;anaconda&lt;/a&gt;，这个IDE集成了大部分常用的包。&lt;/p&gt;
-&lt;p&gt;笔记内容使用&lt;code&gt;ipython notebook&lt;/code&gt;来展示。&lt;/p&gt;
-&lt;p&gt;安装好&lt;code&gt;python&lt;/code&gt;和相应的包之后，可以在命令行下输入：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ipython notebook&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;来进入&lt;code&gt;ipython notebook&lt;/code&gt;。&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;hr&gt;
-&lt;h3 id="基本环境配置"&gt;基本环境配置&lt;a class="anchor-link" href="/posts/#%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;安装 &lt;a href="http://www.continuum.io/downloads"&gt;anaconda&lt;/a&gt; 或者 &lt;a href="http://conda.pydata.org/miniconda.html"&gt;miniconda&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;更新环境&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda update conda
-conda update anaconda&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;hr&gt;
-&lt;h3 id="目录"&gt;目录&lt;a class="anchor-link" href="/posts/#%E7%9B%AE%E5%BD%95"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;可以在&lt;a href="http://nbviewer.ipython.org/github/lijin-THU/python-tutorial/blob/master/index.ipynb"&gt;nbviewer&lt;/a&gt;中查看该笔记。&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/01.%20python%20tools"&gt;01. &lt;strong&gt;Python 工具&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.01%20python%20overview.ipynb"&gt;01.01 Python简介&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.02%20ipython%20interpreter.ipynb"&gt;01.02 Ipython 解释器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.03%20ipython%20notebook.ipynb"&gt;01.03 Ipython notebook&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/01.%20python%20tools/01.04%20use%20anaconda.ipynb"&gt;01.04 使用 Anaconda&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials"&gt;02. &lt;strong&gt;Python 基础&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.01%20a%20tour%20of%20python.ipynb"&gt;02.01 Python 入门演示&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.02%20python%20data%20types.ipynb"&gt;02.02 Python 数据类型&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.03%20numbers.ipynb"&gt;02.03 数字&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.04%20strings.ipynb"&gt;02.04 字符串&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.05%20indexing%20and%20slicing.ipynb"&gt;02.05 索引和分片&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.06%20lists.ipynb"&gt;02.06 列表&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.07%20mutable%20and%20immutable%20data%20types.ipynb"&gt;02.07 可变和不可变类型&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.08%20tuples.ipynb"&gt;02.08 元组&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.09%20speed%20comparison%20between%20list%20&amp;amp;%20tuple.ipynb"&gt;02.09 列表与元组的速度比较&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.10%20dictionaries.ipynb"&gt;02.10 字典&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.11%20sets.ipynb"&gt;02.11 集合&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.12%20frozen%20sets.ipynb"&gt;02.12 不可变集合&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.13%20how%20python%20assignment%20works.ipynb"&gt;02.13 Python 赋值机制&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.14%20if%20statement.ipynb"&gt;02.14 判断语句&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.15%20loops.ipynb"&gt;02.15 循环&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.16%20list%20comprehension.ipynb"&gt;02.16 列表推导式&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.17%20functions.ipynb"&gt;02.17 函数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.18%20modules%20and%20packages.ipynb"&gt;02.18 模块和包&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.19%20exceptions.ipynb"&gt;02.19 异常&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.20%20warnings.ipynb"&gt;02.20 警告&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/02.%20python%20essentials/02.21%20file%20IO.ipynb"&gt;02.21 文件读写&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy"&gt;03. &lt;strong&gt;Numpy&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.01%20numpy%20overview.ipynb"&gt;03.01 Numpy 简介&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.02%20matplotlib%20basics.ipynb"&gt;03.02 Matplotlib 基础&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.03%20numpy%20arrays.ipynb"&gt;03.03 Numpy 数组及其索引&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.04%20array%20types.ipynb"&gt;03.04 数组类型&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.05%20array%20calculation%20method.ipynb"&gt;03.05 数组方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.06%20sorting%20numpy%20arrays.ipynb"&gt;03.06 数组排序&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.07%20array%20shapes.ipynb"&gt;03.07 数组形状&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.08%20diagonals.ipynb"&gt;03.08 对角线&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.09%20data%20to%20&amp;amp;%20from%20string.ipynb"&gt;03.09 数组与字符串的转换&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.10%20array%20attribute%20&amp;amp;%20method%20overview%20.ipynb"&gt;03.10 数组属性方法总结&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.11%20array%20creation%20functions.ipynb"&gt;03.11 生成数组的函数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.12%20matrix%20object.ipynb"&gt;03.12 矩阵&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.13%20general%20functions.ipynb"&gt;03.13 一般函数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.14%20vectorizing%20functions.ipynb"&gt;03.14 向量化函数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.15%20binary%20operators.ipynb"&gt;03.15 二元运算&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.16%20universal%20functions.ipynb"&gt;03.16 ufunc 对象&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.17%20choose.ipynb"&gt;03.17 choose 函数实现条件筛选&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.18%20array%20broadcasting.ipynb"&gt;03.18 数组广播机制&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.19%20reading%20and%20writing%20arrays.ipynb"&gt;03.19 数组读写&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.20%20structured%20arrays.ipynb"&gt;03.20 结构化数组&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.21%20record%20arrays.ipynb"&gt;03.21 记录数组&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.22%20memory%20maps.ipynb"&gt;03.22 内存映射&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/03.%20numpy/03.23%20from%20matlab%20to%20numpy.ipynb"&gt;03.23 从 Matlab 到 Numpy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy"&gt;04. &lt;strong&gt;Scipy&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.01%20scienticfic%20python%20overview.ipynb"&gt;04.01 SCIentific PYthon 简介&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.02%20interpolation%20with%20scipy.ipynb"&gt;04.02 插值&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.03%20statistics%20with%20scipy.ipynb"&gt;04.03 概率统计方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.04%20curve%20fitting.ipynb"&gt;04.04 曲线拟合&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.05%20minimization%20in%20python.ipynb"&gt;04.05 最小化函数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.06%20integration%20in%20python.ipynb"&gt;04.06 积分&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.07%20ODEs.ipynb"&gt;04.07 解微分方程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/04.%20scipy/04.08%20sparse%20matrix.ipynb"&gt;04.08 稀疏矩阵&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python"&gt;05. &lt;strong&gt;Python 进阶&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.01%20overview%20of%20the%20sys%20module.ipynb"&gt;05.01 sys 模块简介&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.02%20interacting%20with%20the%20OS%20-%20os.ipynb"&gt;05.02 与操作系统进行交互：os 模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.03%20comma%20separated%20values.ipynb"&gt;05.03 CSV 文件和 csv 模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.04%20regular%20expression.ipynb"&gt;05.04 正则表达式和 re 模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.05%20datetime.ipynb"&gt;05.05 datetime 模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.06%20sql%20databases.ipynb"&gt;05.06 SQL 数据库&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.07%20object-relational%20mappers.ipynb"&gt;05.07 对象关系映射&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.08%20functions.ipynb"&gt;05.08 函数进阶：参数传递，高阶函数，lambda 匿名函数，global 变量，递归&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.09%20iterators.ipynb"&gt;05.09 迭代器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.10%20generators.ipynb"&gt;05.10 生成器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.11%20context%20managers%20and%20the%20with%20statement.ipynb"&gt;05.11 with 语句和上下文管理器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.12%20decorators.ipynb"&gt;05.12 修饰符&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.13%20decorator%20usage.ipynb"&gt;05.13 修饰符的使用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.14%20the%20operator%20functools%20itertools%20toolz%20fn%20funcy%20module.ipynb"&gt;05.14 operator, functools, itertools, toolz, fn, funcy 模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.15%20scope.ipynb"&gt;05.15 作用域&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/05.%20advanced%20python/05.16%20dynamic%20code%20execution.ipynb"&gt;05.16 动态编译&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib"&gt;06. &lt;strong&gt;Matplotlib&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.01%20pyplot%20tutorial.ipynb"&gt;06.01 Pyplot 教程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.02%20customizing%20plots%20with%20style%20sheets.ipynb"&gt;06.02 使用 style 来配置 pyplot 风格&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.03%20%20working%20with%20text%20-%20basic.ipynb"&gt;06.03 处理文本（基础）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.04%20working%20with%20text%20-%20math%20expression.ipynb"&gt;06.04 处理文本（数学表达式）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.05%20image%20tutorial.ipynb"&gt;06.05 图像基础&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.06%20annotating%20axes.ipynb"&gt;06.06 注释&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.07%20legend.ipynb"&gt;06.07 标签&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.08%20figures,%20subplots,%20axes%20and%20ticks.ipynb"&gt;06.08 figures, subplots, axes 和 ticks 对象&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.09%20do%20not%20trust%20the%20defaults.ipynb"&gt;06.09 不要迷信默认设置&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/06.%20matplotlib/06.10%20different%20plots.ipynb"&gt;06.10 各种绘图实例&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages"&gt;07. &lt;strong&gt;使用其他语言进行扩展&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.01%20introduction.ipynb"&gt;07.01 简介&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.02%20python%20extension%20modules.ipynb"&gt;07.02 Python 扩展模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.03%20cython%20part%201.ipynb"&gt;07.03 Cython：Cython 基础，将源代码转换成扩展模块&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.04%20cython%20part%202.ipynb"&gt;07.04 Cython：Cython 语法，调用其他C库&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.05%20cython%20part%203.ipynb"&gt;07.05 Cython：class 和 cdef class，使用 C++&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.06%20cython%20part%204.ipynb"&gt;07.06 Cython：Typed memoryviews&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.07%20profiling%20with%20annotations.ipynb"&gt;07.07 生成编译注释&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/07.%20interfacing%20with%20other%20languages/07.08%20ctypes.ipynb"&gt;07.08 ctypes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming"&gt;08. &lt;strong&gt;面向对象编程&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.01%20oop%20introduction.ipynb"&gt;08.01 简介&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.02%20using%20oop%20model%20a%20forest%20fire.ipynb"&gt;08.02 使用 OOP 对森林火灾建模&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.03%20what%20is%20a%20object.ipynb"&gt;08.03 什么是对象？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.04%20writing%20classes.ipynb"&gt;08.04 定义 class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.05%20special%20method.ipynb"&gt;08.05 特殊方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.06%20properties.ipynb"&gt;08.06 属性&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.07%20forest%20fire%20simulation.ipynb"&gt;08.07 森林火灾模拟&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.08%20inheritance.ipynb"&gt;08.08 继承&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.09%20super.ipynb"&gt;08.09 super() 函数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.10%20refactoring%20the%20forest%20fire%20simutation.ipynb"&gt;08.10 重定义森林火灾模拟&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.11%20interfaces.ipynb"&gt;08.11 接口&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.12%20public%20private%20special%20in%20python.ipynb"&gt;08.12 共有，私有和特殊方法和属性&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/08.%20object-oriented%20programming/08.13%20multiple%20inheritance.ipynb"&gt;08.13 多重继承&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano"&gt;09. &lt;strong&gt;Theano&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.01%20introduction%20and%20installation.ipynb"&gt;09.01 Theano 简介及其安装&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.02%20theano%20basics.ipynb"&gt;09.02 Theano 基础&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.03%20gpu%20on%20windows.ipynb"&gt;09.03 Windows 上配置 theano 的 GPU 模式&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.04%20linear%20regression.ipynb"&gt;09.04 线性回归&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.05%20logistic%20regression%20.ipynb"&gt;09.05 logistic 回归&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.06%20graph%20structures.ipynb"&gt;09.06 符号图结构&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.07%20softmax%20on%20mnist.ipynb"&gt;09.07 Softmax 回归：MNIST 数据集&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/09.%20theano/09.08%20net.ipynb"&gt;09.08 人工神经网络&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/10.%20something%20interesting"&gt;10. &lt;strong&gt;有趣的第三方模块&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/10.%20something%20interesting/10.01%20maps%20using%20basemap.ipynb"&gt;10.01 使用 basemap 画地图&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/10.%20something%20interesting/10.02%20maps%20using%20cartopy.ipynb"&gt;10.02 使用 cartopy 画地图&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools"&gt;11. &lt;strong&gt;有用的工具&lt;/strong&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools/11.01%20pprint.ipynb"&gt;11.01 pprint 模块：打印 Python 对象&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools/11.02%20pickle%20and%20cPickle.ipynb"&gt;11.02 pickle, cPickle 模块：序列化 Python 对象&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/posts/11.%20useful%20tools/11.03%20json.ipynb"&gt;11.03 json 模块：处理 JSON 数据&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-<<<<<<< HEAD
-</description><guid>/posts/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/doc-pyautogui.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-    &lt;div class="container" id="notebook-container"&gt;
-
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="PyAutoGUI——让所有GUI都自动化"&gt;PyAutoGUI——让所有GUI都自动化&lt;a class="anchor-link" href="/posts/doc-pyautogui.html#PyAutoGUI%E2%80%94%E2%80%94%E8%AE%A9%E6%89%80%E6%9C%89GUI%E9%83%BD%E8%87%AA%E5%8A%A8%E5%8C%96"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="PyAutoGUI笔记"&gt;PyAutoGUI笔记&lt;a class="anchor-link" href="/posts/doc-pyautogui.html#PyAutoGUI%E7%AC%94%E8%AE%B0"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -316,53 +70,108 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;本教程译自大神&lt;a href="http://inventwithpython.com/"&gt;Al Sweigart&lt;/a&gt;的&lt;a href="https://pyautogui.readthedocs.org/"&gt;PyAutoGUI&lt;/a&gt;项目，Python自动化工具，更适合处理GUI任务，网页任务推荐：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://selenium-python.readthedocs.org/"&gt;Selenium&lt;/a&gt;+Firefox记录（Chromedriver和Phantomjs也很给力，Phantomjs虽然是无头浏览器，但有时定位不准），然后用Python写单元测试&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.python-requests.org/en/latest/"&gt;request&lt;/a&gt;处理get/post请求写一堆代码自动化处理，都在后台运行，不用运行浏览器，非常适合处理表单&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://www.python-requests.org/en/latest/"&gt;request&lt;/a&gt;处理get/post请求写一堆代码自动化处理，都在后台运行，不用运行浏览器，非常适合处理表单&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://pypi.python.org/pypi/PyAutoGUI/0.9.33"&gt;pypi/PyAutoGUI&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;没有&lt;a href="http://www.sikuli.org/"&gt;sikuli&lt;/a&gt;功能多，但是Python让生活更简单，&lt;a href="http://cn.pycon.org/2015/"&gt;人生苦短，Python当歌&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;同时推荐一本Python网络数据采集（图灵社区取的名字^_^）的基础书籍&lt;a href="http://shop.oreilly.com/product/0636920034391.do"&gt;Ryan Mitchell的《Web Scraping with Python》&lt;/a&gt;，可以和PyAutoGUI结合使用。&lt;/p&gt;
+&lt;p&gt;同时推荐一本Python网络数据采集的基础书籍&lt;a href="http://shop.oreilly.com/product/0636920034391.do"&gt;Ryan Mitchell的《Web Scraping with Python》&lt;/a&gt;，可以和PyAutoGUI结合使用。&lt;/p&gt;
 &lt;p&gt;tl;dr&lt;/p&gt;
-&lt;p&gt;&lt;a href="/posts/doc-pyautogui.html"&gt;更多…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>/posts/doc-pyautogui.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Untitled</title><link>/posts/untitled.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-=======
-</description><guid>/posts/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Untitled</title><link>/posts/untitled/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
+&lt;p&gt;&lt;a href="/posts/doc-pyautogui.html"&gt;更多…&lt;/a&gt; (6 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>/posts/doc-pyautogui.html</guid><pubDate>Thu, 14 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/pyautoguipywinauto.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="PyAutoGUI&amp;amp;PyWinAuto"&gt;PyAutoGUI&amp;amp;PyWinAuto&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#PyAutoGUI&amp;amp;PyWinAuto"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h3&gt;&lt;img src="http://winsupersite.com/content/content/128528/win7/win7_ff_calc_rtm_02.jpg" alt=""&gt;&lt;/h3&gt;
+&lt;p&gt;這篇文章主要說明遇到 Windows native UI 時候或是Windows Application 時，如何進行自動化測試?&lt;/p&gt;
+&lt;p&gt;Selenium的自動化測試僅限於 Web UI，對於 Windows UI 或是 Windows 應用程式(例如小算盤)往往無法處理。&lt;/p&gt;
+&lt;p&gt;有什麼方式可以直接在 python 處理Windows UI 而不需要額外呼叫外部 AutoIT 所編譯的 EXE?&lt;/p&gt;
+&lt;p&gt;這篇文章介紹兩個方式，不儘 Windows 適用，Mac/Linux 也可以。最後給完整的程式範例說明。&lt;/p&gt;
+&lt;h3 id="方法一：畫面圖形比對的方式-PyAutoGUI"&gt;方法一：畫面圖形比對的方式 PyAutoGUI&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E7%95%AB%E9%9D%A2%E5%9C%96%E5%BD%A2%E6%AF%94%E5%B0%8D%E7%9A%84%E6%96%B9%E5%BC%8F-PyAutoGUI"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;工具主角:PyAutoGUI&lt;/p&gt;
+&lt;h4 id="安裝方式"&gt;安裝方式&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;pip    install   PyAutoGUI&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4 id="優缺點"&gt;優缺點&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E5%84%AA%E7%BC%BA%E9%BB%9E"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;這個方式最大的好處是跨平台 Windows, Mac, Linux 都可以適用，因為採用圖形比對的關係也比較直覺。&lt;/p&gt;
+&lt;p&gt;缺點就是圖形比對來找畫面元件的操作方式，誤判或是失敗的機率會比較高。&lt;/p&gt;
+&lt;p&gt;另外，由於主要是用滑鼠作標的關係，因此螢幕解析度也有可能會影響程式的進行。&lt;/p&gt;
+&lt;h4 id="實作範例"&gt;實作範例&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;我們主要用小算盤為例子。舉例來說，如果我們要點擊小算盤的 “7”。&lt;/p&gt;
+&lt;p&gt;我們可以截取一張圖如下，檔名為cal7.png。(檔案格式一定要是PNG)&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pyautogui.readthedocs.org/en/latest/_images/calc7key.png" alt="_images/calc7key.png"&gt;&lt;/p&gt;
+&lt;p&gt;執行下列 python 程式後，就會點擊到 7&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import pyautogui
+#pyautogui.moveTo( pyautogui.size(),duration=2)
+
+button7location = pyautogui.locateOnScreen('c:\\cal7.png')
+
+pyautogui.click(button7location)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;要注意的是如果執行時小算盤被其他畫面遮到，那麼執行就會失敗。&lt;/p&gt;
+&lt;p&gt;因此，執行這類的程式時，必須要確保小算盤在螢幕上可以被看見。沒有被其他 Window 遮住。&lt;/p&gt;
+&lt;h4 id="技術參考資料"&gt;技術參考資料&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E6%8A%80%E8%A1%93%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;a href="https://pypi.python.org/pypi/PyAutoGUI"&gt;https://pypi.python.org/pypi/PyAutoGUI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pyautogui.readthedocs.org/en/latest/index.html"&gt;https://pyautogui.readthedocs.org/en/latest/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="分法二:-Windows-ObjectID-的方式-PyWinAuto-+-SWAPY"&gt;分法二: Windows ObjectID 的方式 PyWinAuto + SWAPY&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E5%88%86%E6%B3%95%E4%BA%8C:-Windows-ObjectID-%E7%9A%84%E6%96%B9%E5%BC%8F-PyWinAuto-+-SWAPY"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;工具主角: PyWinAuto + SWAPY&lt;/p&gt;
+&lt;h4 id="安裝方式"&gt;安裝方式&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;1. 首先安裝 PyWinAuto&lt;/p&gt;
+&lt;table style="height: 32px;" width="250"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;pip   install    pyWinAuto&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;2. 下載 SWAPY (&lt;a href="https://code.google.com/p/swapy/"&gt;Simple Windows Automation on Python&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;SWAPY 為一個獨立的執行工具 ，可以在這裡下載安裝：&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://swapy.googlecode.com/files/swapy-ob-0.4.3.exe"&gt;https://swapy.googlecode.com/files/swapy-ob-0.4.3.exe&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="優缺點"&gt;優缺點&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E5%84%AA%E7%BC%BA%E9%BB%9E"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;PyWinAuto 這個方式主要透過 Windows Object locator 來定位 Windows 元件。&lt;/p&gt;
+&lt;p&gt;缺點是只能限定在 Windows 平台使用。&lt;/p&gt;
+&lt;p&gt;優點是透過 ObjectID 的方式定位，比較不會像圖形比對那樣失敗或是受到畫面修改的影響。&lt;/p&gt;
+&lt;p&gt;另外一個最大的優點是，我們可以透過 “SWAPY”這個工具自動產生程式!&lt;/p&gt;
+&lt;h3 id="測試情境"&gt;測試情境&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E6%B8%AC%E8%A9%A6%E6%83%85%E5%A2%83"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;我們主要會自動執行下列動作：&lt;/p&gt;
+&lt;p&gt;1. 啟動 notepad&lt;/p&gt;
+&lt;p&gt;2. 用電腦自動點選 Help &amp;gt; About Notepad&lt;/p&gt;
+&lt;h3 id="為什麼用-SWAPY實作"&gt;為什麼用 SWAPY實作&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E7%82%BA%E4%BB%80%E9%BA%BC%E7%94%A8-SWAPY%E5%AF%A6%E4%BD%9C"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;雖然我們可以直接寫 PyWinAuto 的程式，但是筆者還是建議用 SWAPY 這個工具來直接產生。因為這個工具 SWAPY 就好比是瀏覽器的  Web element inspector ，可以看 Windows 物件的狀況，幫助我們定位並且做適當的動作 (click..)&lt;/p&gt;
+&lt;p&gt;1. 首先先啟動 notepad.exe&lt;/p&gt;
+&lt;p&gt;2. 接著再啟動 SWAPY。&lt;/p&gt;
+&lt;p&gt;因為 SWAPY 沒有 refresh 的功能，所以如果先啟動 SWAPY 之後再啟動 notepad的話，SWAPY 會找不到 notepad.exe&lt;/p&gt;
+&lt;p&gt;如果開啟的視窗比較多的話，一開始啟動的時間會比較久一些。&lt;/p&gt;
+&lt;h3 id="SWAPY-實作使用步驟"&gt;SWAPY 實作使用步驟&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#SWAPY-%E5%AF%A6%E4%BD%9C%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;1. 啟動SWAPY之後，找到 “Untitled – Notepad” &amp;gt; 右鍵 &amp;gt; “Set Focus”&lt;/p&gt;
+&lt;p&gt;2. 展開 menu &amp;gt; &amp;amp;About Notepad &amp;gt;  右鍵 &amp;gt; “(click” 如下圖所示)&lt;/p&gt;
+&lt;p&gt;3. SWAPY 就會自動完成，右手邊 Editor 的相關 python 程式! 是不是很方便。&lt;/p&gt;
+&lt;p&gt;[&lt;img src="/posts/images/SWAPY-use1.png" alt="SWAPY use1"&gt;&lt;/p&gt;
+&lt;p&gt;由於notepad.exe 是我們手動所啟動，所以要將該 python 程式自動化執行，每次都會自動啟動 notepad&lt;/p&gt;
+&lt;p&gt;所以上述自動產生程式最上面再加入這行：&lt;/p&gt;
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;pwa_app.start_(‘notepad.exe’)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3 id="完整Python程式碼範例-(SWAPY自動產生)"&gt;完整Python程式碼範例 (SWAPY自動產生)&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E5%AE%8C%E6%95%B4Python%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%AF%84%E4%BE%8B-(SWAPY%E8%87%AA%E5%8B%95%E7%94%A2%E7%94%9F)"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;import pywinauto
+
+
+pwa_app = pywinauto.application.Application()
+
+# Add this line to launch notepad.exe. The other parts of source code were generated by SWAPY
+pwa_app.start_('notepad.exe')
+
+w_handle = pywinauto.findwindows.find_windows(title=u'Untitled - Notepad', class_name='Notepad')[0]
+window = pwa_app.window_(handle=w_handle)
+window.SetFocus()
+window.MenuItem(u'&amp;amp;Help-&amp;gt;&amp;amp;About Notepad').Click()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="http://pywinauto.github.io/docs/"&gt;http://pywinauto.github.io/docs/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/pywinauto/pywinauto"&gt;https://github.com/pywinauto/pywinauto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/pywinauto/pywinauto/tree/f0e892cce6f367d94b675bb1b9e5db20f0425747/examples"&gt;https://github.com/pywinauto/pywinauto/tree/f0e892cce6f367d94b675bb1b9e5db20f0425747/examples&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="AutoIT"&gt;AutoIT&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#AutoIT"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;另外可以使用AutoIT，將自動化程式編譯成EXE&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.autoitscript.com/site/autoit/"&gt;https://www.autoitscript.com/site/autoit/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="PyAutoGUI與PyWinAuto比較"&gt;PyAutoGUI與PyWinAuto比較&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#PyAutoGUI%E8%88%87PyWinAuto%E6%AF%94%E8%BC%83"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;table style="height: 307px;" width="833"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;工具&lt;/td&gt;&lt;td&gt;**PyAutoGUI**&lt;/td&gt;&lt;td&gt;**PyWinAuto + SWAPY**&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;定位方式&lt;/td&gt;&lt;td&gt;透過圖形PNG&lt;/td&gt;&lt;td&gt; Windows objectID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;實作&lt;/td&gt;&lt;td&gt;必須要透過截圖程式抓取要點選的畫面&lt;/td&gt;&lt;td&gt;使用SWAPY工具&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;程式失敗的可能原因&lt;/td&gt;&lt;td&gt;圖形比對失敗螢幕解析度該畫面被其他視窗遮蓋&lt;/td&gt;&lt;td&gt;相對穩定&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;適用平台&lt;/td&gt;&lt;td&gt;Mac, Linux, Windows&lt;/td&gt;&lt;td&gt;Windows Only&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;適用應用程式&lt;/td&gt;&lt;td&gt;因為是圖形比對的方式，所以網頁、Java Applet、Flash、Windows UI、Mac UI等都可以適用&lt;/td&gt;&lt;td&gt;Windows Application only&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3 id="pyWinAuto範例程式"&gt;pyWinAuto範例程式&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#pyWinAuto%E7%AF%84%E4%BE%8B%E7%A8%8B%E5%BC%8F"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href="https://github.com/pywinauto/pywinauto/tree/298bb017f91f30cc524988bfa582ee46d7aed775/examples"&gt;https://github.com/pywinauto/pywinauto/tree/298bb017f91f30cc524988bfa582ee46d7aed775/examples&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="来源--(http://www.qa-knowhow.com/?p=2559)"&gt;来源  (&lt;a href="http://www.qa-knowhow.com/?p=2559"&gt;http://www.qa-knowhow.com/?p=2559&lt;/a&gt;)&lt;a class="anchor-link" href="/posts/pyautoguipywinauto.html#%E6%9D%A5%E6%BA%90--(http://www.qa-knowhow.com/?p=2559)"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt; 
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
-
-
-&lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;2&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-<<<<<<< HEAD
-</description><guid>/posts/untitled.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/0101-python-overview.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
-=======
-</description><guid>/posts/untitled/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/0101-python-overview/</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
+</description><guid>/posts/pyautoguipywinauto.html</guid><pubDate>Thu, 14 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"\n",</title><link>/posts/cmdmarkdownzai-xian-bian-ji-qi.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -370,11 +179,18 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-<<<<<<< HEAD
-&lt;h2 id="Python简介"&gt;Python简介&lt;a class="anchor-link" href="/posts/0101-python-overview.html#Python%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-=======
-&lt;h2 id="Python简介"&gt;Python简介&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
+&lt;h2 id="欢迎使用-Cmd-Markdown-编辑阅读器"&gt;欢迎使用 Cmd Markdown 编辑阅读器&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8-Cmd-Markdown-%E7%BC%96%E8%BE%91%E9%98%85%E8%AF%BB%E5%99%A8"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;整理知识，学习笔记&lt;/li&gt;
+&lt;li&gt;发布日记，杂文，所见所想&lt;/li&gt;
+&lt;li&gt;撰写发布技术文稿（代码支持）&lt;/li&gt;
+&lt;li&gt;撰写发布学术论文（LaTeX 公式支持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"&gt;&lt;/p&gt;
+&lt;p&gt;除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：&lt;/p&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -383,11 +199,164 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-<<<<<<< HEAD
+&lt;h4 id="Windows/Mac/Linux-全平台客户端"&gt;&lt;a href="https://www.zybuluo.com/cmd/"&gt;Windows/Mac/Linux 全平台客户端&lt;/a&gt;&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#Windows/Mac/Linux-%E5%85%A8%E5%B9%B3%E5%8F%B0%E5%AE%A2%E6%88%B7%E7%AB%AF"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;blockquote&gt;&lt;p&gt;请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 &lt;i class="icon-file"&gt;&lt;/i&gt; &lt;strong&gt;新文稿&lt;/strong&gt; 或者使用快捷键 &lt;code&gt;Ctrl+Alt+N&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="什么是-Markdown"&gt;什么是 Markdown&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#%E4%BB%80%E4%B9%88%E6%98%AF-Markdown"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，&lt;strong&gt;粗体&lt;/strong&gt; 或者 &lt;em&gt;斜体&lt;/em&gt; 某些文字，更棒的是，它还可以&lt;/p&gt;
+&lt;h4 id="1.-制作一份待办事宜-Todo-列表"&gt;1. 制作一份待办事宜 &lt;a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-todo-%E5%88%97%E8%A1%A8"&gt;Todo 列表&lt;/a&gt;&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#1.-%E5%88%B6%E4%BD%9C%E4%B8%80%E4%BB%BD%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-Todo-%E5%88%97%E8%A1%A8"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;[ ] 支持以 PDF 格式导出文稿&lt;/li&gt;
+&lt;li&gt;[ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率&lt;/li&gt;
+&lt;li&gt;[x] 新增 Todo 列表功能&lt;/li&gt;
+&lt;li&gt;[x] 修复 LaTex 公式渲染问题&lt;/li&gt;
+&lt;li&gt;[x] 新增 LaTex 公式编号功能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="2.-书写一个质能守恒公式[^LaTeX]"&gt;2. 书写一个质能守恒公式[^LaTeX]&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#2.-%E4%B9%A6%E5%86%99%E4%B8%80%E4%B8%AA%E8%B4%A8%E8%83%BD%E5%AE%88%E6%81%92%E5%85%AC%E5%BC%8F%5B%5ELaTeX%5D"&gt;¶&lt;/a&gt;&lt;/h4&gt;$$E=mc^2$$
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="3.-高亮一段代码[^code]"&gt;3. 高亮一段代码[^code]&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#3.-%E9%AB%98%E4%BA%AE%E4%B8%80%E6%AE%B5%E4%BB%A3%E7%A0%81%5B%5Ecode%5D"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@requires_authorization&lt;/span&gt;
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeClass&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="c"&gt;# A comment&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;'hello world'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="6.-绘制表格"&gt;6. 绘制表格&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#6.-%E7%BB%98%E5%88%B6%E8%A1%A8%E6%A0%BC"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;项目&lt;/th&gt;
+&lt;th style="text-align:right"&gt;价格&lt;/th&gt;
+&lt;th style="text-align:center"&gt;数量&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;计算机&lt;/td&gt;
+&lt;td style="text-align:right"&gt;\$1600&lt;/td&gt;
+&lt;td style="text-align:center"&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;手机&lt;/td&gt;
+&lt;td style="text-align:right"&gt;\$12&lt;/td&gt;
+&lt;td style="text-align:center"&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;管线&lt;/td&gt;
+&lt;td style="text-align:right"&gt;\$1&lt;/td&gt;
+&lt;td style="text-align:center"&gt;234&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="7.-更详细语法说明"&gt;7. 更详细语法说明&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#7.-%E6%9B%B4%E8%AF%A6%E7%BB%86%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;想要查看更详细的语法说明，可以参考我们准备的 [Cmd Markdown 简明语法手册][1]，进阶用户可以参考 [Cmd Markdown 高阶语法手册][2] 了解更多高级功能。&lt;/p&gt;
+&lt;p&gt;总而言之，不同于其它 &lt;em&gt;所见即所得&lt;/em&gt; 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。&lt;strong&gt;Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。&lt;/strong&gt; 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="什么是-Cmd-Markdown"&gt;什么是 Cmd Markdown&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#%E4%BB%80%E4%B9%88%E6%98%AF-Cmd-Markdown"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 &lt;strong&gt;编辑/发布/阅读&lt;/strong&gt; Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。&lt;/p&gt;
+&lt;h4 id="1.-实时同步预览"&gt;1. 实时同步预览&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#1.-%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5%E9%A2%84%E8%A7%88"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;我们将 Cmd Markdown 的主界面一分为二，左边为&lt;strong&gt;编辑区&lt;/strong&gt;，右边为&lt;strong&gt;预览区&lt;/strong&gt;，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！&lt;/p&gt;
+&lt;h4 id="2.-编辑工具栏"&gt;2. 编辑工具栏&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#2.-%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%E6%A0%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 &lt;strong&gt;编辑区&lt;/strong&gt; 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"&gt;&lt;/p&gt;
+&lt;h4 id="3.-编辑模式"&gt;3. 编辑模式&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#3.-%E7%BC%96%E8%BE%91%E6%A8%A1%E5%BC%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;完全心无旁骛的方式编辑文字：点击 &lt;strong&gt;编辑工具栏&lt;/strong&gt; 最右测的拉伸按钮或者按下 &lt;code&gt;Ctrl + M&lt;/code&gt;，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！&lt;/p&gt;
+&lt;h4 id="4.-实时的云端文稿"&gt;4. 实时的云端文稿&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#4.-%E5%AE%9E%E6%97%B6%E7%9A%84%E4%BA%91%E7%AB%AF%E6%96%87%E7%A8%BF"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 &lt;strong&gt;编辑工具栏&lt;/strong&gt; 的最右侧提示 &lt;code&gt;已保存&lt;/code&gt; 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。&lt;/p&gt;
+&lt;h4 id="5.-离线模式"&gt;5. 离线模式&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#5.-%E7%A6%BB%E7%BA%BF%E6%A8%A1%E5%BC%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。&lt;/p&gt;
+&lt;h4 id="6.-管理工具栏"&gt;6. 管理工具栏&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#6.-%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%A0%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;为了便于管理您的文稿，在 &lt;strong&gt;预览区&lt;/strong&gt; 的顶部放置了如下所示的 &lt;strong&gt;管理工具栏&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"&gt;&lt;/p&gt;
+&lt;p&gt;通过管理工具栏可以：&lt;/p&gt;
+&lt;p&gt;&lt;i class="icon-share"&gt;&lt;/i&gt; 发布：将当前的文稿生成固定链接，在网络上发布，分享
+&lt;i class="icon-file"&gt;&lt;/i&gt; 新建：开始撰写一篇新的文稿
+&lt;i class="icon-trash"&gt;&lt;/i&gt; 删除：删除当前的文稿
+&lt;i class="icon-cloud"&gt;&lt;/i&gt; 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地
+&lt;i class="icon-reorder"&gt;&lt;/i&gt; 列表：所有新增和过往的文稿都可以在这里查看、操作
+&lt;i class="icon-pencil"&gt;&lt;/i&gt; 模式：切换 普通/Vim/Emacs 编辑模式&lt;/p&gt;
+&lt;h4 id="7.-阅读工具栏"&gt;7. 阅读工具栏&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#7.-%E9%98%85%E8%AF%BB%E5%B7%A5%E5%85%B7%E6%A0%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"&gt;&lt;/p&gt;
+&lt;p&gt;通过 &lt;strong&gt;预览区&lt;/strong&gt; 右上角的 &lt;strong&gt;阅读工具栏&lt;/strong&gt;，可以查看当前文稿的目录并增强阅读体验。&lt;/p&gt;
+&lt;p&gt;工具栏上的五个图标依次为：&lt;/p&gt;
+&lt;p&gt;&lt;i class="icon-list"&gt;&lt;/i&gt; 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落
+&lt;i class="icon-chevron-sign-left"&gt;&lt;/i&gt; 视图：互换左边编辑区和右边预览区的位置
+&lt;i class="icon-adjust"&gt;&lt;/i&gt; 主题：内置了黑白两种模式的主题，试试 &lt;strong&gt;黑色主题&lt;/strong&gt;，超炫！
+&lt;i class="icon-desktop"&gt;&lt;/i&gt; 阅读：心无旁骛的阅读模式提供超一流的阅读体验
+&lt;i class="icon-fullscreen"&gt;&lt;/i&gt; 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境&lt;/p&gt;
+&lt;h4 id="8.-阅读模式"&gt;8. 阅读模式&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#8.-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;在 &lt;strong&gt;阅读工具栏&lt;/strong&gt; 点击 &lt;i class="icon-desktop"&gt;&lt;/i&gt; 或者按下 &lt;code&gt;Ctrl+Alt+M&lt;/code&gt; 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。&lt;/p&gt;
+&lt;h4 id="9.-标签、分类和搜索"&gt;9. 标签、分类和搜索&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#9.-%E6%A0%87%E7%AD%BE%E3%80%81%E5%88%86%E7%B1%BB%E5%92%8C%E6%90%9C%E7%B4%A2"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;在编辑区任意行首位置输入以下格式的文字可以标签当前文档：&lt;/p&gt;
+&lt;p&gt;标签： 未分类&lt;/p&gt;
+&lt;p&gt;标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"&gt;&lt;/p&gt;
+&lt;h4 id="10.-文稿发布和分享"&gt;10. 文稿发布和分享&lt;a class="anchor-link" href="/posts/cmdmarkdownzai-xian-bian-ji-qi.html#10.-%E6%96%87%E7%A8%BF%E5%8F%91%E5%B8%83%E5%92%8C%E5%88%86%E4%BA%AB"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 &lt;i class="icon-share"&gt;&lt;/i&gt; (Ctrl+Alt+P) 发布这份文档给好友吧！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;再一次感谢您花费时间阅读这份欢迎稿，点击 &lt;i class="icon-file"&gt;&lt;/i&gt; (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！&lt;/p&gt;
+&lt;p&gt;作者 [@ghosert][3]&lt;br&gt;
+2015 年 06月 15日&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;div class="footnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</description><guid>/posts/cmdmarkdownzai-xian-bian-ji-qi.html</guid><pubDate>Thu, 14 Jan 2016 16:00:00 GMT</pubDate></item><item><title>"source": [</title><link>/posts/0101-python-overview.html</link><dc:creator>七</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Python简介"&gt;Python简介&lt;a class="anchor-link" href="/posts/0101-python-overview.html#Python%E7%AE%80%E4%BB%8B"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h3 id="Python历史"&gt;&lt;strong&gt;Python&lt;/strong&gt;历史&lt;a class="anchor-link" href="/posts/0101-python-overview.html#Python%E5%8E%86%E5%8F%B2"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-=======
-&lt;h3 id="Python历史"&gt;&lt;strong&gt;Python&lt;/strong&gt;历史&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E5%8E%86%E5%8F%B2"&gt;¶&lt;/a&gt;&lt;/h3&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -409,11 +378,7 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-<<<<<<< HEAD
 &lt;h3 id="第一行Python代码"&gt;第一行Python代码&lt;a class="anchor-link" href="/posts/0101-python-overview.html#%E7%AC%AC%E4%B8%80%E8%A1%8CPython%E4%BB%A3%E7%A0%81"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-=======
-&lt;h3 id="第一行Python代码"&gt;第一行Python代码&lt;a class="anchor-link" href="/posts/0101-python-overview/#%E7%AC%AC%E4%B8%80%E8%A1%8CPython%E4%BB%A3%E7%A0%81"&gt;¶&lt;/a&gt;&lt;/h3&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -435,28 +400,13 @@ conda update anaconda&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;"hello world!"&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;hello world!
-hello world!
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -482,11 +432,7 @@ hello world!
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-<<<<<<< HEAD
 &lt;h3 id="Python之禅"&gt;Python之禅&lt;a class="anchor-link" href="/posts/0101-python-overview.html#Python%E4%B9%8B%E7%A6%85"&gt;¶&lt;/a&gt;&lt;/h3&gt;
-=======
-&lt;h3 id="Python之禅"&gt;Python之禅&lt;a class="anchor-link" href="/posts/0101-python-overview/#Python%E4%B9%8B%E7%A6%85"&gt;¶&lt;/a&gt;&lt;/h3&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -509,61 +455,6 @@ hello world!
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -617,61 +508,6 @@ Namespaces are one honking great idea -- let's do more of those!
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
@@ -686,11 +522,7 @@ Namespaces are one honking great idea -- let's do more of those!
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-<<<<<<< HEAD
-</description><guid>/posts/0101-python-overview.html</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Nikola: 静态博客A.K.A引擎，我是怎样创建Shisaa.jp</title><link>/posts/nikola-web.html</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;h3&gt;写在前面的话&lt;/h3&gt;
-=======
-</description><guid>/posts/0101-python-overview/</guid><pubDate>Tue, 12 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Nikola: 静态博客A.K.A引擎，我是怎样创建Shisaa.jp</title><link>/posts/nikola-web/</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;h3&gt;写在前面的话&lt;/h3&gt;
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d
+</description><guid>/posts/0101-python-overview.html</guid><pubDate>Thu, 14 Jan 2016 16:00:00 GMT</pubDate></item><item><title>Nikola: 静态博客A.K.A引擎，我是怎样创建Shisaa.jp</title><link>/posts/nikola-web.html</link><dc:creator>七</dc:creator><description>&lt;div&gt;&lt;h3&gt;写在前面的话&lt;/h3&gt;
 &lt;p&gt;当我在Google搜索用git做博客的时候我看到github提供了免费静态页面服务，而且提供Jekyll工具，允许用户用轻量级标记语言（比如Markdown）来写文章，然后生成博客页面。同类的工具还有Octopress。但用的是Ruby语言，在windows下安装环境特别麻烦。因我比较喜欢用Python，再继续搜索，看到了Pelican，只支持Python2.7以上版本，把本地的Python版本更新到2.7版本，好不容易安装好了Pelican环境，但发现Pelican用Makefile来管理项目，而Makefile在Windows下就是一个恶梦。最后看到了Nikola，按照官方文档很快就上手了，而且默认的样式还是特好看的，所以就最终选择了Nikola来建立静态博客。&lt;/p&gt;
 &lt;p&gt;在Nikola的有一篇文章&lt;a href="http://shisaa.jp/postset/nikola-web.html" title="Goes from installing to developing a custom theme."&gt;Tutorial by Tim van der Linden&lt;/a&gt;，正好解决了我对Nikola的一些问题，为了日后查阅方便，也为了能让更多母语是中文的网络爱好者认识Nikola，故翻译了这篇文章。&lt;/p&gt;
 &lt;hr&gt;
@@ -706,8 +538,4 @@ Namespaces are one honking great idea -- let's do more of those!
 &lt;p&gt;因此，不用Drupal，那用什么呢？Wordpress, Joomla...？这...永远...不可能，它们都是用PHP做后端的语言。&lt;/p&gt;
 &lt;p&gt;好，不用PHP驱动系统...我更喜欢用Python，所以可能是Plone, Pylons, Pyramid, ...？&lt;/p&gt;
 &lt;p&gt;可能……&lt;/p&gt;
-<<<<<<< HEAD
 &lt;p&gt;&lt;a href="/posts/nikola-web.html"&gt;更多…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>nikola</category><category>python</category><category>web</category><guid>/posts/nikola-web.html</guid><pubDate>Thu, 01 Aug 2013 10:52:05 GMT</pubDate></item></channel></rss>
-=======
-&lt;p&gt;&lt;a href="/posts/nikola-web/"&gt;更多…&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>nikola</category><category>python</category><category>web</category><guid>/posts/nikola-web/</guid><pubDate>Thu, 01 Aug 2013 10:52:05 GMT</pubDate></item></channel></rss>
->>>>>>> 3ee2e4fdefe5652e050499c65e1b7f4a88ee997d

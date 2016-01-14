@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="zh_cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>"\n", | 博客</title>
+<link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="#">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="七">
+<meta property="og:site_name" content="博客">
+<meta property="og:title" content='"\n",'>
+<meta property="og:url" content="/posts/pyautoguipywinauto.html">
+<meta property="og:description" content="PyAutoGUI&amp;PyWinAuto¶
+這篇文章主要說明遇到 Windows native UI 時候或是Windows Application 時，如何進行自動化測試?
+Selenium的自動化測試僅限於 Web UI，對於 Windows UI 或是 Windows 應用程式(例如小算盤)往往無法處理。
+有什麼方式可以直接在 python 處理Windows UI 而不需要額外呼叫外部 Au">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-01-15T00:00:00+08:00">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">"\n",</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2016-01-15T00:00:00+08:00">2016-01-15 00:00</time>
+            
+                      |  
+        <a href="pyautoguipywinauto.ipynb" id="sourcelink">源代码</a>
+
+            </div>
+            
+        </div>
+        <div class="body">
+            <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="PyAutoGUI&amp;PyWinAuto">PyAutoGUI&amp;PyWinAuto<a class="anchor-link" href="pyautoguipywinauto.html#PyAutoGUI&amp;PyWinAuto">¶</a>
+</h3>
+<h3><img src="http://winsupersite.com/content/content/128528/win7/win7_ff_calc_rtm_02.jpg" alt=""></h3>
+<p>這篇文章主要說明遇到 Windows native UI 時候或是Windows Application 時，如何進行自動化測試?</p>
+<p>Selenium的自動化測試僅限於 Web UI，對於 Windows UI 或是 Windows 應用程式(例如小算盤)往往無法處理。</p>
+<p>有什麼方式可以直接在 python 處理Windows UI 而不需要額外呼叫外部 AutoIT 所編譯的 EXE?</p>
+<p>這篇文章介紹兩個方式，不儘 Windows 適用，Mac/Linux 也可以。最後給完整的程式範例說明。</p>
+<h3 id="方法一：畫面圖形比對的方式-PyAutoGUI">方法一：畫面圖形比對的方式 PyAutoGUI<a class="anchor-link" href="pyautoguipywinauto.html#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E7%95%AB%E9%9D%A2%E5%9C%96%E5%BD%A2%E6%AF%94%E5%B0%8D%E7%9A%84%E6%96%B9%E5%BC%8F-PyAutoGUI">¶</a>
+</h3>
+<p>工具主角:PyAutoGUI</p>
+<h4 id="安裝方式">安裝方式<a class="anchor-link" href="pyautoguipywinauto.html#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F">¶</a>
+</h4>
+<table><tbody><tr><td>pip    install   PyAutoGUI</td></tr></tbody></table>
+<h4 id="優缺點">優缺點<a class="anchor-link" href="pyautoguipywinauto.html#%E5%84%AA%E7%BC%BA%E9%BB%9E">¶</a>
+</h4>
+<p>這個方式最大的好處是跨平台 Windows, Mac, Linux 都可以適用，因為採用圖形比對的關係也比較直覺。</p>
+<p>缺點就是圖形比對來找畫面元件的操作方式，誤判或是失敗的機率會比較高。</p>
+<p>另外，由於主要是用滑鼠作標的關係，因此螢幕解析度也有可能會影響程式的進行。</p>
+<h4 id="實作範例">實作範例<a class="anchor-link" href="pyautoguipywinauto.html#%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B">¶</a>
+</h4>
+<p>我們主要用小算盤為例子。舉例來說，如果我們要點擊小算盤的 “7”。</p>
+<p>我們可以截取一張圖如下，檔名為cal7.png。(檔案格式一定要是PNG)</p>
+<p><img src="https://pyautogui.readthedocs.org/en/latest/_images/calc7key.png" alt="_images/calc7key.png"></p>
+<p>執行下列 python 程式後，就會點擊到 7</p>
+
+<pre><code>import pyautogui
+#pyautogui.moveTo( pyautogui.size(),duration=2)
+
+button7location = pyautogui.locateOnScreen('c:\\cal7.png')
+
+pyautogui.click(button7location)</code></pre>
+<p>要注意的是如果執行時小算盤被其他畫面遮到，那麼執行就會失敗。</p>
+<p>因此，執行這類的程式時，必須要確保小算盤在螢幕上可以被看見。沒有被其他 Window 遮住。</p>
+<h4 id="技術參考資料">技術參考資料<a class="anchor-link" href="pyautoguipywinauto.html#%E6%8A%80%E8%A1%93%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">¶</a>
+</h4>
+<p><a href="https://pypi.python.org/pypi/PyAutoGUI">https://pypi.python.org/pypi/PyAutoGUI</a></p>
+<p><a href="https://pyautogui.readthedocs.org/en/latest/index.html">https://pyautogui.readthedocs.org/en/latest/index.html</a></p>
+<h3 id="分法二:-Windows-ObjectID-的方式-PyWinAuto-+-SWAPY">分法二: Windows ObjectID 的方式 PyWinAuto + SWAPY<a class="anchor-link" href="pyautoguipywinauto.html#%E5%88%86%E6%B3%95%E4%BA%8C:-Windows-ObjectID-%E7%9A%84%E6%96%B9%E5%BC%8F-PyWinAuto-+-SWAPY">¶</a>
+</h3>
+<p>工具主角: PyWinAuto + SWAPY</p>
+<h4 id="安裝方式">安裝方式<a class="anchor-link" href="pyautoguipywinauto.html#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F">¶</a>
+</h4>
+<p>1. 首先安裝 PyWinAuto</p>
+<table style="height: 32px;" width="250"><tbody><tr><td>pip   install    pyWinAuto</td></tr></tbody></table>
+<p>2. 下載 SWAPY (<a href="https://code.google.com/p/swapy/">Simple Windows Automation on Python</a>)</p>
+<p>SWAPY 為一個獨立的執行工具 ，可以在這裡下載安裝：</p>
+<p><a href="https://swapy.googlecode.com/files/swapy-ob-0.4.3.exe">https://swapy.googlecode.com/files/swapy-ob-0.4.3.exe</a></p>
+<h4 id="優缺點">優缺點<a class="anchor-link" href="pyautoguipywinauto.html#%E5%84%AA%E7%BC%BA%E9%BB%9E">¶</a>
+</h4>
+<p>PyWinAuto 這個方式主要透過 Windows Object locator 來定位 Windows 元件。</p>
+<p>缺點是只能限定在 Windows 平台使用。</p>
+<p>優點是透過 ObjectID 的方式定位，比較不會像圖形比對那樣失敗或是受到畫面修改的影響。</p>
+<p>另外一個最大的優點是，我們可以透過 “SWAPY”這個工具自動產生程式!</p>
+<h3 id="測試情境">測試情境<a class="anchor-link" href="pyautoguipywinauto.html#%E6%B8%AC%E8%A9%A6%E6%83%85%E5%A2%83">¶</a>
+</h3>
+<p>我們主要會自動執行下列動作：</p>
+<p>1. 啟動 notepad</p>
+<p>2. 用電腦自動點選 Help &gt; About Notepad</p>
+<h3 id="為什麼用-SWAPY實作">為什麼用 SWAPY實作<a class="anchor-link" href="pyautoguipywinauto.html#%E7%82%BA%E4%BB%80%E9%BA%BC%E7%94%A8-SWAPY%E5%AF%A6%E4%BD%9C">¶</a>
+</h3>
+<p>雖然我們可以直接寫 PyWinAuto 的程式，但是筆者還是建議用 SWAPY 這個工具來直接產生。因為這個工具 SWAPY 就好比是瀏覽器的  Web element inspector ，可以看 Windows 物件的狀況，幫助我們定位並且做適當的動作 (click..)</p>
+<p>1. 首先先啟動 notepad.exe</p>
+<p>2. 接著再啟動 SWAPY。</p>
+<p>因為 SWAPY 沒有 refresh 的功能，所以如果先啟動 SWAPY 之後再啟動 notepad的話，SWAPY 會找不到 notepad.exe</p>
+<p>如果開啟的視窗比較多的話，一開始啟動的時間會比較久一些。</p>
+<h3 id="SWAPY-實作使用步驟">SWAPY 實作使用步驟<a class="anchor-link" href="pyautoguipywinauto.html#SWAPY-%E5%AF%A6%E4%BD%9C%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F">¶</a>
+</h3>
+<p>1. 啟動SWAPY之後，找到 “Untitled – Notepad” &gt; 右鍵 &gt; “Set Focus”</p>
+<p>2. 展開 menu &gt; &amp;About Notepad &gt;  右鍵 &gt; “(click” 如下圖所示)</p>
+<p>3. SWAPY 就會自動完成，右手邊 Editor 的相關 python 程式! 是不是很方便。</p>
+<p>[<img src="images/SWAPY-use1.png" alt="SWAPY use1"></p>
+<p>由於notepad.exe 是我們手動所啟動，所以要將該 python 程式自動化執行，每次都會自動啟動 notepad</p>
+<p>所以上述自動產生程式最上面再加入這行：</p>
+<table><tbody><tr><td>pwa_app.start_(‘notepad.exe’)</td></tr></tbody></table>
+<h3 id="完整Python程式碼範例-(SWAPY自動產生)">完整Python程式碼範例 (SWAPY自動產生)<a class="anchor-link" href="pyautoguipywinauto.html#%E5%AE%8C%E6%95%B4Python%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%AF%84%E4%BE%8B-(SWAPY%E8%87%AA%E5%8B%95%E7%94%A2%E7%94%9F)">¶</a>
+</h3>
+<pre><code>import pywinauto
+
+
+pwa_app = pywinauto.application.Application()
+
+# Add this line to launch notepad.exe. The other parts of source code were generated by SWAPY
+pwa_app.start_('notepad.exe')
+
+w_handle = pywinauto.findwindows.find_windows(title=u'Untitled - Notepad', class_name='Notepad')[0]
+window = pwa_app.window_(handle=w_handle)
+window.SetFocus()
+window.MenuItem(u'&amp;Help-&gt;&amp;About Notepad').Click()</code></pre>
+<p><a href="http://pywinauto.github.io/docs/">http://pywinauto.github.io/docs/</a></p>
+<p><a href="https://github.com/pywinauto/pywinauto">https://github.com/pywinauto/pywinauto</a></p>
+<p><a href="https://github.com/pywinauto/pywinauto/tree/f0e892cce6f367d94b675bb1b9e5db20f0425747/examples">https://github.com/pywinauto/pywinauto/tree/f0e892cce6f367d94b675bb1b9e5db20f0425747/examples</a></p>
+<h3 id="AutoIT">AutoIT<a class="anchor-link" href="pyautoguipywinauto.html#AutoIT">¶</a>
+</h3>
+<p>另外可以使用AutoIT，將自動化程式編譯成EXE</p>
+<p><a href="https://www.autoitscript.com/site/autoit/">https://www.autoitscript.com/site/autoit/</a></p>
+<h3 id="PyAutoGUI與PyWinAuto比較">PyAutoGUI與PyWinAuto比較<a class="anchor-link" href="pyautoguipywinauto.html#PyAutoGUI%E8%88%87PyWinAuto%E6%AF%94%E8%BC%83">¶</a>
+</h3>
+<table style="height: 307px;" width="833"><tbody>
+<tr>
+<td>工具</td>
+<td>**PyAutoGUI**</td>
+<td>**PyWinAuto + SWAPY**</td>
+</tr>
+<tr>
+<td>定位方式</td>
+<td>透過圖形PNG</td>
+<td> Windows objectID</td>
+</tr>
+<tr>
+<td>實作</td>
+<td>必須要透過截圖程式抓取要點選的畫面</td>
+<td>使用SWAPY工具</td>
+</tr>
+<tr>
+<td>程式失敗的可能原因</td>
+<td>圖形比對失敗螢幕解析度該畫面被其他視窗遮蓋</td>
+<td>相對穩定</td>
+</tr>
+<tr>
+<td>適用平台</td>
+<td>Mac, Linux, Windows</td>
+<td>Windows Only</td>
+</tr>
+<tr>
+<td>適用應用程式</td>
+<td>因為是圖形比對的方式，所以網頁、Java Applet、Flash、Windows UI、Mac UI等都可以適用</td>
+<td>Windows Application only</td>
+</tr>
+</tbody></table>
+<h3 id="pyWinAuto範例程式">pyWinAuto範例程式<a class="anchor-link" href="pyautoguipywinauto.html#pyWinAuto%E7%AF%84%E4%BE%8B%E7%A8%8B%E5%BC%8F">¶</a>
+</h3>
+<p><a href="https://github.com/pywinauto/pywinauto/tree/298bb017f91f30cc524988bfa582ee46d7aed775/examples">https://github.com/pywinauto/pywinauto/tree/298bb017f91f30cc524988bfa582ee46d7aed775/examples</a></p>
+<h3 id="来源--(http://www.qa-knowhow.com/?p=2559)">来源  (<a href="http://www.qa-knowhow.com/?p=2559">http://www.qa-knowhow.com/?p=2559</a>)<a class="anchor-link" href="pyautoguipywinauto.html#%E6%9D%A5%E6%BA%90--(http://www.qa-knowhow.com/?p=2559)">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="cmdmarkdownzai-xian-bian-ji-qi.html" rel="prev" title='"\n",'>前一篇</a>
+            </li>
+            <li class="next">
+                <a href="doc-pyautogui.html" rel="next" title='"\n",'>后一篇</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="/posts/pyautoguipywinauto.html",
+        disqus_title="\"\\n\",",
+        disqus_identifier="cache\posts\PyAutoGUI&PyWinAuto.html",
+        disqus_config = function () {
+            this.language = "zh_cn";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p>Contents © 2016         <a href="mailto:539234@qq.com">七</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/jquery.timeago.js" type="text/javascript"></script><script src="../assets/js/mathjax.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>
