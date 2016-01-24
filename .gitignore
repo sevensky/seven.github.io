@@ -4,4 +4,4 @@ cache
 __pycache__
 output
 .ipynb_checkpoints
-.sublime*
+*.sublime*

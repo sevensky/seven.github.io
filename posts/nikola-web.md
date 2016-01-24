@@ -6,6 +6,7 @@
 .. link: http://shisaa.jp/postset/nikola-web.html
 -->
 
+
 ## 写在前面的话
 
 当我在Google搜索用git做博客的时候我看到github提供了免费静态页面服务，而且提供Jekyll工具，允许用户用轻量级标记语言（比如Markdown）来写文章，然后生成博客页面。同类的工具还有Octopress。但用的是Ruby语言，在windows下安装环境特别麻烦。因我比较喜欢用Python，再继续搜索，看到了Pelican，只支持Python2.7以上版本，把本地的Python版本更新到2.7版本，好不容易安装好了Pelican环境，但发现Pelican用Makefile来管理项目，而Makefile在Windows下就是一个恶梦。最后看到了Nikola，按照官方文档很快就上手了，而且默认的样式还是特好看的，所以就最终选择了Nikola来建立静态博客。
