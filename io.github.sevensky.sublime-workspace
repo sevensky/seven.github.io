@@ -581,10 +581,10 @@
 	},
 	"expanded_folders":
 	[
-		"/E/1GitHub/nikolaenv/io.github.sevensky"
 	],
 	"file_history":
 	[
+		"/E/1GitHub/nikolaenv/io.github.sevensky.src/commit.txt",
 		"/E/1GitHub/Python/pyautogui/PyStart/PyStart.pyw",
 		"/E/1GitHub/Python/pyautogui/baidutieba_autosign/main.py",
 		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-pytrade-dev/pyautotrade.py",
@@ -711,8 +711,7 @@
 		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/User/JSON.sublime-settings",
 		"/D/Users/Administrator/Desktop/amh.sh",
 		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/mailSMS.py",
-		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/latest.py",
-		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/README.md"
+		"/E/1GitHub/Python/amyproj1/PyAutoTrading/allisnone-tradeStrategy/latest.py"
 	],
 	"find":
 	{
@@ -921,7 +920,7 @@
 	"menu_visible": true,
 	"output.GitSavvy":
 	{
-		"height": 227.0
+		"height": 81.0
 	},
 	"output.exec":
 	{
@@ -983,7 +982,7 @@
 		[
 			[
 				"",
-				"E:\\1GitHub\\Python.DataYes\\trade\\trade.sublime-project"
+				"E:\\1GitHub\\Python\\amyproj1\\amyproj1.sublime-project"
 			]
 		],
 		"width": 380.0
