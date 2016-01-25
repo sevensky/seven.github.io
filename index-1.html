@@ -31,6 +31,690 @@ article: http://ogp.me/ns/article#
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
+            <h1 class="title"><a href="posts/pycharmcao-zuo-zhi-nan.html">alt+`,6 显示版本历史</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-25T00:00:00+08:00">2016-01-25 00:00</time>
+</div>
+                <div class="stats">
+                                <a href="posts/pycharmcao-zuo-zhi-nan.html#disqus_thread" data-disqus-identifier="cache\posts\PyCharm操作指南.html">Comments</a>
+
+
+                </div>
+                
+            </div>
+            <div class="body">
+                <div>
+<h3>书签菜单 F11</h3>
+<pre class="code literal-block">切换书签保存 ctrl+F11
+显示书签 shift+F11
+</pre>
+
+
+<h3>收藏菜单 alt+shift+f alt+2</h3>
+<pre class="code literal-block">ctrl+y ctrl+k
+alt+insert 新建文件
+ctrl+j 插入活动模版
+ctrl+, 工具栏按钮
+ctrl+m 滚动到中心
+ctrl+e 最近打开文件
+
+
+alt+`,6 显示版本历史
+______
+alt+↔ tab切换
+ctrl+alt+↔ 分割切换
+CTRL+P 参数信息
+ctrl+O 继承父类方法重写
+ctrl+I 实现方法
+ctrl+F12 ctrl+t  文件结构
+ctrl+alt+F12 文件路径
+Alt+home 文件导航
+Alt+鼠标上键 显示使用
+#跳转到 [中键]
+    ctrl+B     到声明
+    ctrl+alt+B 到实现
+    ctrl+shift+T 到测试
+
+
+#层次结构 建议更换为 ctrl+r
+    ctrl+H 类型层次结构
+    ctrl+alt+H  call层次结构
+    ctrl+shift+H 方法层次结构
+
+ctrl+shift+space 显示参数信息, 内置可用↓
+    ctrl+Q 快速文档 alt+左键
+    ctrl+shift+i快速定义 alt+下
+
+
+#代码
+##提取
+    ctrl+alt+v 到变量
+</pre>
+</div>
+            </div>
+        </div>
+        <div class="post">
+            <h1 class="title"><a href="posts/pyautoguipywinauto.html">"\n",</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-25T00:00:00+08:00">2016-01-25 00:00</time>
+</div>
+                <div class="stats">
+                                <a href="posts/pyautoguipywinauto.html#disqus_thread" data-disqus-identifier="cache\posts\PyAutoGUI&amp;PyWinAuto.html">Comments</a>
+
+
+                </div>
+                
+            </div>
+            <div class="body">
+                <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="PyAutoGUI&amp;PyWinAuto">PyAutoGUI&amp;PyWinAuto<a class="anchor-link" href="posts/pyautoguipywinauto.html#PyAutoGUI&amp;PyWinAuto">¶</a>
+</h3>
+<h3><img src="http://winsupersite.com/content/content/128528/win7/win7_ff_calc_rtm_02.jpg" alt=""></h3>
+<p>這篇文章主要說明遇到 Windows native UI 時候或是Windows Application 時，如何進行自動化測試?</p>
+<p>Selenium的自動化測試僅限於 Web UI，對於 Windows UI 或是 Windows 應用程式(例如小算盤)往往無法處理。</p>
+<p>有什麼方式可以直接在 python 處理Windows UI 而不需要額外呼叫外部 AutoIT 所編譯的 EXE?</p>
+<p>這篇文章介紹兩個方式，不儘 Windows 適用，Mac/Linux 也可以。最後給完整的程式範例說明。</p>
+<h3 id="方法一：畫面圖形比對的方式-PyAutoGUI">方法一：畫面圖形比對的方式 PyAutoGUI<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E7%95%AB%E9%9D%A2%E5%9C%96%E5%BD%A2%E6%AF%94%E5%B0%8D%E7%9A%84%E6%96%B9%E5%BC%8F-PyAutoGUI">¶</a>
+</h3>
+<p>工具主角:PyAutoGUI</p>
+<h4 id="安裝方式">安裝方式<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F">¶</a>
+</h4>
+<table><tbody><tr><td>pip    install   PyAutoGUI</td></tr></tbody></table>
+<h4 id="優缺點">優缺點<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E5%84%AA%E7%BC%BA%E9%BB%9E">¶</a>
+</h4>
+<p>這個方式最大的好處是跨平台 Windows, Mac, Linux 都可以適用，因為採用圖形比對的關係也比較直覺。</p>
+<p>缺點就是圖形比對來找畫面元件的操作方式，誤判或是失敗的機率會比較高。</p>
+<p>另外，由於主要是用滑鼠作標的關係，因此螢幕解析度也有可能會影響程式的進行。</p>
+<h4 id="實作範例">實作範例<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B">¶</a>
+</h4>
+<p>我們主要用小算盤為例子。舉例來說，如果我們要點擊小算盤的 “7”。</p>
+<p>我們可以截取一張圖如下，檔名為cal7.png。(檔案格式一定要是PNG)</p>
+<p><img src="https://pyautogui.readthedocs.org/en/latest/_images/calc7key.png" alt="_images/calc7key.png"></p>
+<p>執行下列 python 程式後，就會點擊到 7</p>
+
+<pre><code>import pyautogui
+#pyautogui.moveTo( pyautogui.size(),duration=2)
+
+button7location = pyautogui.locateOnScreen('c:\\cal7.png')
+
+pyautogui.click(button7location)</code></pre>
+<p>要注意的是如果執行時小算盤被其他畫面遮到，那麼執行就會失敗。</p>
+<p>因此，執行這類的程式時，必須要確保小算盤在螢幕上可以被看見。沒有被其他 Window 遮住。</p>
+<h4 id="技術參考資料">技術參考資料<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E6%8A%80%E8%A1%93%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">¶</a>
+</h4>
+<p><a href="https://pypi.python.org/pypi/PyAutoGUI">https://pypi.python.org/pypi/PyAutoGUI</a></p>
+<p><a href="https://pyautogui.readthedocs.org/en/latest/index.html">https://pyautogui.readthedocs.org/en/latest/index.html</a></p>
+<h3 id="分法二:-Windows-ObjectID-的方式-PyWinAuto-+-SWAPY">分法二: Windows ObjectID 的方式 PyWinAuto + SWAPY<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E5%88%86%E6%B3%95%E4%BA%8C:-Windows-ObjectID-%E7%9A%84%E6%96%B9%E5%BC%8F-PyWinAuto-+-SWAPY">¶</a>
+</h3>
+<p>工具主角: PyWinAuto + SWAPY</p>
+<h4 id="安裝方式">安裝方式<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F">¶</a>
+</h4>
+<p>1. 首先安裝 PyWinAuto</p>
+<table style="height: 32px;" width="250"><tbody><tr><td>pip   install    pyWinAuto</td></tr></tbody></table>
+<p>2. 下載 SWAPY (<a href="https://code.google.com/p/swapy/">Simple Windows Automation on Python</a>)</p>
+<p>SWAPY 為一個獨立的執行工具 ，可以在這裡下載安裝：</p>
+<p><a href="https://swapy.googlecode.com/files/swapy-ob-0.4.3.exe">https://swapy.googlecode.com/files/swapy-ob-0.4.3.exe</a></p>
+<h4 id="優缺點">優缺點<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E5%84%AA%E7%BC%BA%E9%BB%9E">¶</a>
+</h4>
+<p>PyWinAuto 這個方式主要透過 Windows Object locator 來定位 Windows 元件。</p>
+<p>缺點是只能限定在 Windows 平台使用。</p>
+<p>優點是透過 ObjectID 的方式定位，比較不會像圖形比對那樣失敗或是受到畫面修改的影響。</p>
+<p>另外一個最大的優點是，我們可以透過 “SWAPY”這個工具自動產生程式!</p>
+<h3 id="測試情境">測試情境<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E6%B8%AC%E8%A9%A6%E6%83%85%E5%A2%83">¶</a>
+</h3>
+<p>我們主要會自動執行下列動作：</p>
+<p>1. 啟動 notepad</p>
+<p>2. 用電腦自動點選 Help &gt; About Notepad</p>
+<h3 id="為什麼用-SWAPY實作">為什麼用 SWAPY實作<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E7%82%BA%E4%BB%80%E9%BA%BC%E7%94%A8-SWAPY%E5%AF%A6%E4%BD%9C">¶</a>
+</h3>
+<p>雖然我們可以直接寫 PyWinAuto 的程式，但是筆者還是建議用 SWAPY 這個工具來直接產生。因為這個工具 SWAPY 就好比是瀏覽器的  Web element inspector ，可以看 Windows 物件的狀況，幫助我們定位並且做適當的動作 (click..)</p>
+<p>1. 首先先啟動 notepad.exe</p>
+<p>2. 接著再啟動 SWAPY。</p>
+<p>因為 SWAPY 沒有 refresh 的功能，所以如果先啟動 SWAPY 之後再啟動 notepad的話，SWAPY 會找不到 notepad.exe</p>
+<p>如果開啟的視窗比較多的話，一開始啟動的時間會比較久一些。</p>
+<h3 id="SWAPY-實作使用步驟">SWAPY 實作使用步驟<a class="anchor-link" href="posts/pyautoguipywinauto.html#SWAPY-%E5%AF%A6%E4%BD%9C%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%A9%9F">¶</a>
+</h3>
+<p>1. 啟動SWAPY之後，找到 “Untitled – Notepad” &gt; 右鍵 &gt; “Set Focus”</p>
+<p>2. 展開 menu &gt; &amp;About Notepad &gt;  右鍵 &gt; “(click” 如下圖所示)</p>
+<p>3. SWAPY 就會自動完成，右手邊 Editor 的相關 python 程式! 是不是很方便。</p>
+<p>[<img src="posts/images/SWAPY-use1.png" alt="SWAPY use1"></p>
+<p>由於notepad.exe 是我們手動所啟動，所以要將該 python 程式自動化執行，每次都會自動啟動 notepad</p>
+<p>所以上述自動產生程式最上面再加入這行：</p>
+<table><tbody><tr><td>pwa_app.start_(‘notepad.exe’)</td></tr></tbody></table>
+<h3 id="完整Python程式碼範例-(SWAPY自動產生)">完整Python程式碼範例 (SWAPY自動產生)<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E5%AE%8C%E6%95%B4Python%E7%A8%8B%E5%BC%8F%E7%A2%BC%E7%AF%84%E4%BE%8B-(SWAPY%E8%87%AA%E5%8B%95%E7%94%A2%E7%94%9F)">¶</a>
+</h3>
+<pre><code>import pywinauto
+
+
+pwa_app = pywinauto.application.Application()
+
+# Add this line to launch notepad.exe. The other parts of source code were generated by SWAPY
+pwa_app.start_('notepad.exe')
+
+w_handle = pywinauto.findwindows.find_windows(title=u'Untitled - Notepad', class_name='Notepad')[0]
+window = pwa_app.window_(handle=w_handle)
+window.SetFocus()
+window.MenuItem(u'&amp;Help-&gt;&amp;About Notepad').Click()</code></pre>
+<p><a href="http://pywinauto.github.io/docs/">http://pywinauto.github.io/docs/</a></p>
+<p><a href="https://github.com/pywinauto/pywinauto">https://github.com/pywinauto/pywinauto</a></p>
+<p><a href="https://github.com/pywinauto/pywinauto/tree/f0e892cce6f367d94b675bb1b9e5db20f0425747/examples">https://github.com/pywinauto/pywinauto/tree/f0e892cce6f367d94b675bb1b9e5db20f0425747/examples</a></p>
+<h3 id="AutoIT">AutoIT<a class="anchor-link" href="posts/pyautoguipywinauto.html#AutoIT">¶</a>
+</h3>
+<p>另外可以使用AutoIT，將自動化程式編譯成EXE</p>
+<p><a href="https://www.autoitscript.com/site/autoit/">https://www.autoitscript.com/site/autoit/</a></p>
+<h3 id="PyAutoGUI與PyWinAuto比較">PyAutoGUI與PyWinAuto比較<a class="anchor-link" href="posts/pyautoguipywinauto.html#PyAutoGUI%E8%88%87PyWinAuto%E6%AF%94%E8%BC%83">¶</a>
+</h3>
+<table style="height: 307px;" width="833"><tbody>
+<tr>
+<td>工具</td>
+<td>**PyAutoGUI**</td>
+<td>**PyWinAuto + SWAPY**</td>
+</tr>
+<tr>
+<td>定位方式</td>
+<td>透過圖形PNG</td>
+<td> Windows objectID</td>
+</tr>
+<tr>
+<td>實作</td>
+<td>必須要透過截圖程式抓取要點選的畫面</td>
+<td>使用SWAPY工具</td>
+</tr>
+<tr>
+<td>程式失敗的可能原因</td>
+<td>圖形比對失敗螢幕解析度該畫面被其他視窗遮蓋</td>
+<td>相對穩定</td>
+</tr>
+<tr>
+<td>適用平台</td>
+<td>Mac, Linux, Windows</td>
+<td>Windows Only</td>
+</tr>
+<tr>
+<td>適用應用程式</td>
+<td>因為是圖形比對的方式，所以網頁、Java Applet、Flash、Windows UI、Mac UI等都可以適用</td>
+<td>Windows Application only</td>
+</tr>
+</tbody></table>
+<h3 id="pyWinAuto範例程式">pyWinAuto範例程式<a class="anchor-link" href="posts/pyautoguipywinauto.html#pyWinAuto%E7%AF%84%E4%BE%8B%E7%A8%8B%E5%BC%8F">¶</a>
+</h3>
+<p><a href="https://github.com/pywinauto/pywinauto/tree/298bb017f91f30cc524988bfa582ee46d7aed775/examples">https://github.com/pywinauto/pywinauto/tree/298bb017f91f30cc524988bfa582ee46d7aed775/examples</a></p>
+<h3 id="来源--(http://www.qa-knowhow.com/?p=2559)">来源  (<a href="http://www.qa-knowhow.com/?p=2559">http://www.qa-knowhow.com/?p=2559</a>)<a class="anchor-link" href="posts/pyautoguipywinauto.html#%E6%9D%A5%E6%BA%90--(http://www.qa-knowhow.com/?p=2559)">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+            </div>
+        </div>
+        <div class="post">
+            <h1 class="title"><a href="posts/doing.html">Doing</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-25T00:00:00+08:00">2016-01-25 00:00</time>
+</div>
+                <div class="stats">
+                                <a href="posts/doing.html#disqus_thread" data-disqus-identifier="cache\posts\Doing.html">Comments</a>
+
+
+                </div>
+                
+            </div>
+            <div class="body">
+                <span></span>
+            </div>
+        </div>
+        <div class="post">
+            <h1 class="title"><a href="posts/cmdmarkdownzai-xian-bian-ji-qi.html">"\n",</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-25T00:00:00+08:00">2016-01-25 00:00</time>
+</div>
+                <div class="stats">
+                                <a href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#disqus_thread" data-disqus-identifier="cache\posts\CmdMarkdown在线编辑器.html">Comments</a>
+
+
+                </div>
+                
+            </div>
+            <div class="body">
+                <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="欢迎使用-Cmd-Markdown-编辑阅读器">欢迎使用 Cmd Markdown 编辑阅读器<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8-Cmd-Markdown-%E7%BC%96%E8%BE%91%E9%98%85%E8%AF%BB%E5%99%A8">¶</a>
+</h2>
+<hr>
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+<blockquote><ul>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
+</ul></blockquote>
+<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
+<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Windows/Mac/Linux-全平台客户端">
+<a href="https://www.zybuluo.com/cmd/">Windows/Mac/Linux 全平台客户端</a><a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#Windows/Mac/Linux-%E5%85%A8%E5%B9%B3%E5%8F%B0%E5%AE%A2%E6%88%B7%E7%AB%AF">¶</a>
+</h4>
+<blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+</blockquote>
+<hr>
+<h3 id="什么是-Markdown">什么是 Markdown<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#%E4%BB%80%E4%B9%88%E6%98%AF-Markdown">¶</a>
+</h3>
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<h4 id="1.-制作一份待办事宜-Todo-列表">1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-todo-%E5%88%97%E8%A1%A8">Todo 列表</a><a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#1.-%E5%88%B6%E4%BD%9C%E4%B8%80%E4%BB%BD%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-Todo-%E5%88%97%E8%A1%A8">¶</a>
+</h4>
+<ul>
+<li>[ ] 支持以 PDF 格式导出文稿</li>
+<li>[ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li>[x] 新增 Todo 列表功能</li>
+<li>[x] 修复 LaTex 公式渲染问题</li>
+<li>[x] 新增 LaTex 公式编号功能</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="2.-书写一个质能守恒公式[^LaTeX]">2. 书写一个质能守恒公式[^LaTeX]<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#2.-%E4%B9%A6%E5%86%99%E4%B8%80%E4%B8%AA%E8%B4%A8%E8%83%BD%E5%AE%88%E6%81%92%E5%85%AC%E5%BC%8F%5B%5ELaTeX%5D">¶</a>
+</h4>$$E=mc^2$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="3.-高亮一段代码[^code]">3. 高亮一段代码[^code]<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#3.-%E9%AB%98%E4%BA%AE%E4%B8%80%E6%AE%B5%E4%BB%A3%E7%A0%81%5B%5Ecode%5D">¶</a>
+</h4>
+<div class="highlight"><pre><span class="nd">@requires_authorization</span>
+<span class="k">class</span> <span class="nc">SomeClass</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="c"># A comment</span>
+    <span class="k">print</span> <span class="s">'hello world'</span>
+</pre></div>
+<h4 id="6.-绘制表格">6. 绘制表格<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#6.-%E7%BB%98%E5%88%B6%E8%A1%A8%E6%A0%BC">¶</a>
+</h4>
+<table>
+<thead><tr>
+<th>项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">\$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">\$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align:right">\$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="7.-更详细语法说明">7. 更详细语法说明<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#7.-%E6%9B%B4%E8%AF%A6%E7%BB%86%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E">¶</a>
+</h4>
+<p>想要查看更详细的语法说明，可以参考我们准备的 [Cmd Markdown 简明语法手册][1]，进阶用户可以参考 [Cmd Markdown 高阶语法手册][2] 了解更多高级功能。</p>
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+<hr>
+<h3 id="什么是-Cmd-Markdown">什么是 Cmd Markdown<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#%E4%BB%80%E4%B9%88%E6%98%AF-Cmd-Markdown">¶</a>
+</h3>
+<p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+<h4 id="1.-实时同步预览">1. 实时同步预览<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#1.-%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5%E9%A2%84%E8%A7%88">¶</a>
+</h4>
+<p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+<h4 id="2.-编辑工具栏">2. 编辑工具栏<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#2.-%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%E6%A0%8F">¶</a>
+</h4>
+<p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p>
+<h4 id="3.-编辑模式">3. 编辑模式<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#3.-%E7%BC%96%E8%BE%91%E6%A8%A1%E5%BC%8F">¶</a>
+</h4>
+<p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右测的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+<h4 id="4.-实时的云端文稿">4. 实时的云端文稿<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#4.-%E5%AE%9E%E6%97%B6%E7%9A%84%E4%BA%91%E7%AB%AF%E6%96%87%E7%A8%BF">¶</a>
+</h4>
+<p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+<h4 id="5.-离线模式">5. 离线模式<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#5.-%E7%A6%BB%E7%BA%BF%E6%A8%A1%E5%BC%8F">¶</a>
+</h4>
+<p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+<h4 id="6.-管理工具栏">6. 管理工具栏<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#6.-%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%A0%8F">¶</a>
+</h4>
+<p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p>
+<p>通过管理工具栏可以：</p>
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享
+<i class="icon-file"></i> 新建：开始撰写一篇新的文稿
+<i class="icon-trash"></i> 删除：删除当前的文稿
+<i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地
+<i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作
+<i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+<h4 id="7.-阅读工具栏">7. 阅读工具栏<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#7.-%E9%98%85%E8%AF%BB%E5%B7%A5%E5%85%B7%E6%A0%8F">¶</a>
+</h4>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
+<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
+<p>工具栏上的五个图标依次为：</p>
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落
+<i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置
+<i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！
+<i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验
+<i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+<h4 id="8.-阅读模式">8. 阅读模式<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#8.-%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F">¶</a>
+</h4>
+<p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+<h4 id="9.-标签、分类和搜索">9. 标签、分类和搜索<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#9.-%E6%A0%87%E7%AD%BE%E3%80%81%E5%88%86%E7%B1%BB%E5%92%8C%E6%90%9C%E7%B4%A2">¶</a>
+</h4>
+<p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+<p>标签： 未分类</p>
+<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
+<p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p>
+<h4 id="10.-文稿发布和分享">10. 文稿发布和分享<a class="anchor-link" href="posts/cmdmarkdownzai-xian-bian-ji-qi.html#10.-%E6%96%87%E7%A8%BF%E5%8F%91%E5%B8%83%E5%92%8C%E5%88%86%E4%BA%AB">¶</a>
+</h4>
+<p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<hr>
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+<p>作者 [@ghosert][3]<br>
+2015 年 06月 15日</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="footnotes">
+<hr>
+<ol></ol>
+</div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+            </div>
+        </div>
+        <div class="post">
+            <h1 class="title"><a href="posts/0101-python-overview.html">"source": [</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-25T00:00:00+08:00">2016-01-25 00:00</time>
+</div>
+                <div class="stats">
+                                <a href="posts/0101-python-overview.html#disqus_thread" data-disqus-identifier="cache\posts\01.01 python overview.html">Comments</a>
+
+
+                </div>
+                
+            </div>
+            <div class="body">
+                <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python简介">Python简介<a class="anchor-link" href="posts/0101-python-overview.html#Python%E7%AE%80%E4%BB%8B">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Python历史">
+<strong>Python</strong>历史<a class="anchor-link" href="posts/0101-python-overview.html#Python%E5%8E%86%E5%8F%B2">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Python的创始人为荷兰人吉多·范罗苏姆（Guido van Rossum）。1989年的圣诞节期间，吉多·范罗苏姆为了在阿姆斯特丹打发时间，决心开发一个新的脚本解释程序，作为ABC语言的一种继承。之所以选中Python作为程序的名字，是因为他是BBC电视剧——蒙提·派森的飞行马戏团（Monty Python's Flying Circus）的爱好者。</p>
+<p>1991年，第一个Python编译器诞生。它是用C语言实现的，并能够调用C语言的库文件。</p>
+<p>Python 2.0于2000年10月16日发布，增加了实现完整的垃圾回收，并且支持Unicode。</p>
+<p>Python 3.0于2008年12月3日发布，此版不完全兼容之前的Python源代码。不过，很多新特性后来也被移植到旧的Python 2.6/2.7版本。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="第一行Python代码">第一行Python代码<a class="anchor-link" href="posts/0101-python-overview.html#%E7%AC%AC%E4%B8%80%E8%A1%8CPython%E4%BB%A3%E7%A0%81">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>安装好Python之后，在命令行下输入：</p>
+
+<pre><code>python
+
+</code></pre>
+<p>就可以进入Python解释器的页面。</p>
+<p>按照惯例，第一行代码应该是输出 <code>"hello world!"</code>：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">"hello world!"</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>相对<strong>Java</strong>，<strong>C</strong>等语言来说，<strong>Python</strong>仅仅使用一行语句就完成的了这个任务。</p>
+<p>可以将这句话的内容保存到一个文本文件中，并使用后缀名 <code>.py</code> 结尾，例如 <code>hello_world.py</code>，在命令行下运行这个程序：</p>
+
+<pre><code>python hello_world.py
+
+</code></pre>
+<p>也会输出 <code>"hello world!"</code> 的结果。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Python之禅">Python之禅<a class="anchor-link" href="posts/0101-python-overview.html#Python%E4%B9%8B%E7%A6%85">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>在<strong>Python</strong>解释器下输入 <code>import this</code>，会出来这样一首小诗：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">this</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>这首诗反映了<strong>Python</strong>的设计哲学——<strong>Python</strong>是一种追求优雅，明确，简单的编程语言，但事实上，产生这首诗的代码并没有写的那么简单易懂：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">s</span> <span class="o">=</span> <span class="s">"""Gur Mra bs Clguba, ol Gvz Crgref</span>
+
+<span class="s">Ornhgvshy vf orggre guna htyl.</span>
+<span class="s">Rkcyvpvg vf orggre guna vzcyvpvg.</span>
+<span class="s">Fvzcyr vf orggre guna pbzcyrk.</span>
+<span class="s">Pbzcyrk vf orggre guna pbzcyvpngrq.</span>
+<span class="s">Syng vf orggre guna arfgrq.</span>
+<span class="s">Fcnefr vf orggre guna qrafr.</span>
+<span class="s">Ernqnovyvgl pbhagf.</span>
+<span class="s">Fcrpvny pnfrf nera'g fcrpvny rabhtu gb oernx gur ehyrf.</span>
+<span class="s">Nygubhtu cenpgvpnyvgl orngf chevgl.</span>
+<span class="s">Reebef fubhyq arire cnff fvyragyl.</span>
+<span class="s">Hayrff rkcyvpvgyl fvyraprq.</span>
+<span class="s">Va gur snpr bs nzovthvgl, ershfr gur grzcgngvba gb thrff.</span>
+<span class="s">Gurer fubhyq or bar-- naq cersrenoyl bayl bar --boivbhf jnl gb qb vg.</span>
+<span class="s">Nygubhtu gung jnl znl abg or boivbhf ng svefg hayrff lbh'er Qhgpu.</span>
+<span class="s">Abj vf orggre guna arire.</span>
+<span class="s">Nygubhtu arire vf bsgra orggre guna *evtug* abj.</span>
+<span class="s">Vs gur vzcyrzragngvba vf uneq gb rkcynva, vg'f n onq vqrn.</span>
+<span class="s">Vs gur vzcyrzragngvba vf rnfl gb rkcynva, vg znl or n tbbq vqrn.</span>
+<span class="s">Anzrfcnprf ner bar ubaxvat terng vqrn -- yrg'f qb zber bs gubfr!"""</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">65</span><span class="p">,</span> <span class="mi">97</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">):</span>
+        <span class="n">d</span><span class="p">[</span><span class="nb">chr</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="n">c</span><span class="p">)]</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="mi">13</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">""</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote>
+<p>Life is short. Use Python.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+  </div>
+
+            </div>
+        </div>
+        <div class="post">
             <h1 class="title"><a href="posts/nikola-web.html">Nikola: 静态博客A.K.A引擎，我是怎样创建Shisaa.jp</a></h1>
             <div class="meta">
                 <div class="authordate">

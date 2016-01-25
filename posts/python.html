@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="zh_cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title> Python | 博客</title>
+<link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="#">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="七">
+<meta property="og:site_name" content="博客">
+<meta property="og:title" content=" Python">
+<meta property="og:url" content="/posts/python.html">
+<meta property="og:description" content="Tutorials
+
+Python教程  (Python3版本) by 廖雪峰, python进阶
+零基础学python
+Intermediate Python
+Python Practice Book
+pymbook
+Full Stack Python
+Writing Python 2-3 compatible code | 编写兼容 Python 2 和 Python 3 的代码
+Python">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-01-25T00:00:00+08:00">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name"> Python</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2016-01-25T00:00:00+08:00">2016-01-25 00:00</time>
+            
+                      |  
+        <a href="python.md" id="sourcelink">源代码</a>
+
+            </div>
+            
+        </div>
+        <div class="body">
+            <div>
+<h3>Tutorials</h3>
+<ul>
+<li>
+<a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000">Python教程</a>  (<a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python3版本</a>) by 廖雪峰, <a href="http://www.imooc.com/learn/317">python进阶</a>
+</li>
+<li><a href="https://github.com/qiwsir/StarterLearningPython/blob/master/index.md">零基础学python</a></li>
+<li><a href="http://book.pythontips.com/en/latest/">Intermediate Python</a></li>
+<li><a href="http://anandology.com/python-practice-book/index.html">Python Practice Book</a></li>
+<li><a href="http://pymbook.readthedocs.org/en/latest/">pymbook</a></li>
+<li><a href="http://www.fullstackpython.com/">Full Stack Python</a></li>
+<li>
+<a href="http://python-future.org/compatible_idioms.html">Writing Python 2-3 compatible code</a> | <a href="http://blog.segmentfault.com/yexiaobai/1190000000637180">编写兼容 Python 2 和 Python 3 的代码</a>
+</li>
+<li><a href="http://chimera.labs.oreilly.com/books/1230000000393/index.html">Python Cookbook</a></li>
+<li><a href="http://importpython.com/books/">more books</a></li>
+<li><a href="http://jessenoller.com/good-to-great-python-reads/">good-to-great-python-reads/</a></li>
+<li><a href="http://docs.pythontab.com/python/python3.4/">Python 入门指南</a></li>
+<li><a href="https://github.com/rasbt/python_reference#-plotting-and-visualization">Useful functions, tutorials, and other Python-related things</a></li>
+<li><a href="https://github.com/addfor/tutorials">Training Material | Addfor s.r.l.</a></li>
+<li><a href="http://nb.bianp.net/sort/views/">Notebook Gallery</a></li>
+<li><a href="https://github.com/Wilbeibi/NotesIndex/blob/master/Python_Index.md">Python Notes Collections</a></li>
+<li><a href="http://automatetheboringstuff.com/">Automate the Boring Stuff with Python — Practical Programming for Total Beginners</a></li>
+<li><a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#python">More</a></li>
+<li><a href="http://jessenoller.com/good-to-great-python-reads/">A COLLECTION OF PYTHON “MUST READS”</a></li>
+<li><a href="http://pythontips.com/2013/07/31/10-python-blogs-worth-following/">10 python blogs worth following</a></li>
+<li><a href="http://www.datasciencecentral.com/profiles/blogs/python-for-data-science-vs-python-for-web-development">Python for Data Science vs Python for Web Development</a></li>
+<li><a href="http://people.duke.edu/~ccc14/sta-663/">Computational Statistics in Python</a></li>
+</ul>
+<h3>Comparison to R</h3>
+<ul>
+<li><a href="https://github.com/contravariant/pandas_dplyr">Data munging in R with dplyr and in Python with Pandas: basic structures and going from one to the other</a></li>
+</ul>
+<h3>Coding</h3>
+<ul>
+<li>
+<strong><a href="https://github.com/faif/python-patterns">python-patterns</a></strong> - A collection of design patterns/idioms in Python</li>
+<li>
+<a href="http://docs.python-guide.org/en/latest/writing/style/#code-style">Code Style</a> |  Python代码风格</li>
+<li><a href="http://blog.sina.com.cn/s/blog_62f28d560100xv85.html">Python 变量命名规范</a></li>
+<li><a href="http://www.freebuf.com/articles/web/73669.html">Python安全编码与代码审计</a></li>
+<li><a href="http://python.jobbole.com/81367/">Python命名空间和作用域窥探</a></li>
+<li>
+<a href=":/developers.google.com/edu/python/regular-expressions">regular-expressions</a>, <a href="http://www.imooc.com/article/details/id/1141">Python正则表达式指南</a>, <a href="http://blog.amjith.com/fuzzyfinder-in-10-lines-of-python">FuzzyFinder - in 10 lines of Python</a>
+</li>
+<li><a href="http://lucumr.pocoo.org/2015/11/18/pythons-hidden-re-gems/?">Python's Hidden Regular Expression Gems</a></li>
+<li><a href="https://www.airpair.com/python/posts/python-tips-and-traps">Python Tips and Traps</a></li>
+<li><a href="http://www.fantascienza.net/leonardo/ar/python_best_practices.html">Python best practices</a></li>
+<li><a href="http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/python_patterns/patterns.ipynb">A random collection of useful Python snippets</a></li>
+<li>
+<a href="https://github.com/lobocv/pyperform">pyperform</a> - An easy and convienent way to performance test python code.</li>
+<li>
+<a href="http://www.ch-linghu.me/article/idiomatic/handout_cn.html">像Python专家一样编程: 道地的Python</a>,</li>
+<li><a href="http://python.jobbole.com/81393/">初学者必知的Python中优雅的用法</a></li>
+<li><a href="https://realpython.com/blog/python/the-most-diabolical-python-antipattern/">The Most Diabolical Python Antipattern</a></li>
+<li>
+<a href="https://realpython.com/blog/python/the-most-diabolical-python-antipattern/">The Little Book of Python Anti-Patterns</a>,<a href="https://realpython.com/blog/python/the-most-diabolical-python-antipattern/">The Most Diabolical Python Antipattern</a>
+</li>
+<li><a href="http://nafiulis.me/potential-pythonic-pitfalls.html">Potential Pythonic Pitfalls</a></li>
+<li><a href="https://www.python.org/doc/essays/list2str/">Python Patterns - An Optimization Anecdote</a></li>
+<li><a href="http://xianglong.me/article/python-variable-quote-copy-and-scope/">Python中的变量、引用、拷贝和作用域</a></li>
+<li><a href="http://www.cnblogs.com/jessonluo/p/4732565.html">深入理解Python中的生成器</a></li>
+<li>
+<a href="http://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses">Understanding Python metaclasses</a>, <a href="http://eli.thegreenplace.net/2011/08/14/python-metaclasses-by-example">python-metaclasses-by-example</a>, <a href="http://blog.jobbole.com/21351/">深刻理解Python中的元类(metaclass)</a>, <a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386820064557c69858840b4c48d2b8411bc2ea9099ba000">使用元类</a>
+</li>
+<li>
+<a href="https://codefisher.org/catch/blog/2015/01/27/python-tips-tricks-and-idioms/">Python: Tips, Tricks and Idioms</a>, <a href="https://codefisher.org/catch/blog/2015/02/10/python-decorators-and-context-managers/">part2</a>
+</li>
+<li>
+<a href="https://wiki.python.org/moin/PythonDecoratorLibrary">PythonDecoratorLibrary</a>, <a href="https://github.com/GrahamDumpleton/wrapt/tree/master/blog">more about decorator</a>
+</li>
+<li><a href="http://python.jobbole.com/81108/">Python中的类和对象（中级）</a></li>
+<li><a href="http://python.jobbole.com/82110/">Python自省（反射）指南</a></li>
+<li><a href="http://www.blog.pythonlibrary.org/2014/01/20/python-201-properties/">Properties</a></li>
+<li><a href="http://stackoverflow.com/questions/30353498/python-multiple-inheritance-call-super-on-all">Python Multiple Inheritance: call super on all</a></li>
+<li><a href="http://python.jobbole.com/81105/">Python中的默认参数</a></li>
+<li>
+<a href="https://github.com/qiwsir/StarterLearningPython/blob/master/212.md"><strong>dict</strong> and <strong>slot</strong></a> ， <a href="http://tech.oyster.com/save-ram-with-python-slots/">SAVING 9 GB OF RAM WITH PYTHON’S <strong>SLOTS</strong></a>
+</li>
+<li><a href="http://www.dongwm.com/archives/pythonji-ge-te-bie-de-kai-tou-de-fang-fa/">Python的几个特别的__开头的方法</a></li>
+<li><a href="http://segmentfault.com/a/1190000002928373">[译] 与 Python 无缝集成——基本特殊方法 1</a></li>
+<li><a href="http://pyformat.info/">Using % and .format() for great good!</a></li>
+<li><a href="http://tech.magnetic.com/2015/05/optimize-python-with-closures.html">Optimize Python with Closures</a></li>
+<li><a href="http://lgiordani.com/blog/2015/05/13/python-oop-tdd-example-part1/">A simple example of Python OOP development (with TDD) - Part 1</a></li>
+<li><a href="http://lgiordani.com/blog/2015/03/14/python-3-oop-notebooks/#.VVWuG3W1Gko">Python 3 OOP Notebooks</a></li>
+<li>
+<a href="http://axialcorps.com/2013/08/29/5-simple-rules-for-building-great-python-packages/">5 Simple Rules For Building Great Python Packages</a> | <a href="http://python.jobbole.com/81579/">构建健壮 Python 包的 5 个简单规则</a>
+</li>
+<li><a href="http://segmentfault.com/a/1190000001813992?utm_source=Weibo&amp;utm_medium=shareLink&amp;utm_campaign=socialShare">Python 中的进程、线程、协程、同步、异步、回调</a></li>
+<li><a href="https://realpython.com/blog/python/inner-functions-what-are-they-good-for/">Inner Functions - What Are They Good For?</a></li>
+<li>__init__() 方法 <a href="http://segmentfault.com/a/1190000002706019">1</a>, <a href="http://segmentfault.com/a/1190000002728610">2</a>, <a href="http://segmentfault.com/a/1190000002882408">3</a>, <a href="http://segmentfault.com/a/1190000002905147">4</a>
+</li>
+<li>
+<a href="http://victorlin.me/posts/2012/08/26/good-logging-practice-in-python">Good logging practice in Python</a>  |  <a href="http://python.jobbole.com/81666/">每个 Python 程序员都要知道的日志实践</a>
+</li>
+<li><a href="http://www.pydanny.com/why-doesnt-python-have-switch-case.html">Why Doesn't Python Have Switch/Case?</a></li>
+<li><a href="http://wangwei007.blog.51cto.com/68019/1131610">python编程中常用的12种基础知识总结</a></li>
+<li>
+<a href="http://www.programcreek.com/python/">Python Examples</a> - Get python examples for popular modules.</li>
+<li>
+<a href="http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html">30 Python Language Features and Tricks You May Not Know About</a> | <a href="http://python.jobbole.com/63320/">30个有关Python的小技巧</a>
+</li>
+<li>
+<a href="https://github.com/google/yapf">yapf</a> - A formatter for Python files</li>
+<li><a href="http://stephenvanvreede.com/2013/12/10/2014-tech-job-market/">Python error check graph</a></li>
+<li><a href="http://drops.wooyun.org/tips/7710">Python中eval带来的潜在风险</a></li>
+</ul>
+<h3>Functional Programming</h3>
+<ul>
+<li><a href="https://docs.python.org/3.4/howto/functional.html#functional-programming-howto">Functional Programming HOWTO</a></li>
+<li>
+<a href="http://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming">A practical introduction to functional programming</a> | <a href="http://python.jobbole.com/81075/">函数式编程实战教程（Python版）</a>
+</li>
+<li><a href="http://www.oreilly.com/programming/free/files/functional-programming-python.pdf">functional-programming-python.pdf</a></li>
+<li>
+<a href="http://toolz.readthedocs.org/en/latest/">PyToolz</a> - Toolz provides a set of utility functions for iterators, functions, and dictionaries. <a href="http://matthewrocklin.com/blog/work/2013/11/15/Functional-Wordcount/">example</a>, Derive a Markov model from the human genome in</li>
+</ul>
+<h3>Concurrence Programming</h3>
+<ul>
+<li><a href="http://www.curiousefficiency.org/posts/2015/07/asyncio-background-calls.html">Background tasks in Python 3.5</a></li>
+<li><a href="http://xidui.github.io/2015/10/29/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3python3-4-Asyncio%E5%BA%93%E4%B8%8ENode-js%E7%9A%84%E5%BC%82%E6%AD%A5IO%E6%9C%BA%E5%88%B6/">【译】深入理解python3.4中Asyncio库与Node.js的异步IO机制</a></li>
+</ul>
+<h3>Data science</h3>
+<ul>
+<li><a href="http://www.analyticsvidhya.com/blog/learning-path-data-science-python/">Comprehensive learning path – Data Science in Python</a></li>
+<li><a href="http://nbviewer.ipython.org/github/Syrios12/learningwithdata/blob/master/Python_For_Data_Mining.ipynb">INTRODUCTION TO PYTHON FOR DATA MINING</a></li>
+<li><a href="http://alstatr.blogspot.ca/2015/02/python-getting-started-with-data.html">Python: Getting Started with Data Analysis</a></li>
+<li><a href="http://radimrehurek.com/data_science_python/">Practical Data Science in Python</a></li>
+<li>code_py - A collection of well-commented code snippits for data science</li>
+<li><a href="https://github.com/donnemartin/data-science-ipython-notebooks">data-science-ipython-notebooks</a></li>
+<li><a href="https://datapyr.zeef.com/kranthi.kumar">DataPyR</a></li>
+<li>
+<h3><a href="https://jakevdp.github.io/blog/2015/07/23/learning-seattles-work-habits-from-bicycle-counts/">Learning Seattle's Work Habits from Bicycle Counts (Updated!)</a></h3>
+</li>
+<li><a href="http://www.galvanize.com/blog/2015/07/31/eight-tools-that-show-whats-on-the-horizon-for-the-python-data-ecosystem/#.Vb7R9HWlyko">Eight Tools That Show What’s on the Horizon for the Python Data Ecosystem</a></li>
+</ul>
+<h3>IDE</h3>
+<ul>
+<li>
+<a href="http://nicoddemus.github.io/articles/pycharm/">Things that surprised me in PyCharm</a> | <a href="http://blog.jobbole.com/51498/">Python IDE：PyCharm中的那些实用功能</a>
+</li>
+</ul>
+<h3>Performance</h3>
+<p>packages 1</p>
+<ul>
+<li><a href="http://deeplearning.net/software/theano/tutorial/index.html"><strong>theano</strong></a></li>
+<li>
+<a href="http://numba.pydata.org/">numba</a> - NumPy aware dynamic Python compiler using LLVM</li>
+<li>
+<a href="https://docs.python.org/3/library/multiprocessing.html">multiprocessing</a> - offers both local and remote concurrency, effectively side-stepping the <a href="https://docs.python.org/3/glossary.html#term-global-interpreter-lock">Global Interpreter Lock</a> by using subprocesses instead of threads.  <strong><a href="http://cslocumwx.github.io/blog/2015/02/23/python-multiprocessing/">Multiprocessing: Task parallelism for the masses</a></strong>, <a href="http://sebastianraschka.com/Articles/2014_multiprocessing_intro.html">An introduction to parallel programming</a>, <strong><a href="http://cloga.info/python/2014/01/12/PythonMultiprocessingintro/">Python多进程模块Multiprocessing介绍</a></strong>, <a href="http://pymotw.com/2/multiprocessing/communication.html">Communication Between Processes</a>, <a href="http://www.cnblogs.com/kaituorensheng/p/4445418.html">Python多进程编程</a>
+</li>
+<li><strong><a href="http://blaze.pydata.org/en/latest/_static/presentations/icml-mloss.html#/">Python and Parallelism or Dask</a></strong></li>
+<li>
+<a href="https://github.com/pydata/numexpr">numexpr</a> - Fast numerical array expression evaluator for Python, NumPy, PyTables, pandas, bcolz and more https://github.com/pydata/numexpr/wiki/Numexpr-Users-Guide</li>
+</ul>
+<p>packages 2</p>
+<ul>
+<li>
+<a href="https://github.com/coleifer/huey">huey</a> - a little multi-threaded task queue for python</li>
+<li><a href="https://github.com/Yelp/python-gearman">python-gearman</a></li>
+<li>
+<a href="https://github.com/ContinuumIO/dask">Dask</a> - provides multi-core execution on larger-than-memory datasets using blocked algorithms and task scheduling.</li>
+<li>
+<a href="http://www.ruffus.org.uk/">Ruffus</a>: a lightweight Python library for computational pipelines</li>
+<li>
+<a href="https://github.com/spotify/luigi">Luigi</a> is a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.</li>
+<li>
+<a href="https://github.com/Illumina/pyflow">pyflow</a> - A lightweight parallel task engine http://Illumina.github.io/pyflow/</li>
+</ul>
+<p>packages 3</p>
+<ul>
+<li><a href="https://nylas.com/blog/performance/">How We Reduced CPU Usage by 80% through Python Profiling</a></li>
+</ul>
+<p>tutorials</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/24695645">优化 Python 性能：PyPy、Numba 与 Cython，谁才是目前最优秀的 Python 运算解决方案？</a></li>
+<li><a href="https://www.ibm.com/developerworks/community/blogs/jfp/entry/Python_Meets_Julia_Micro_Performance?lang=en">How To Make Python Run As Fast As Juli</a></li>
+<li>
+<a href="http://www.huyng.com/posts/python-performance-analysis/">A guide to analyzing Python performance</a> | <a href="http://www.oschina.net/translate/python-performance-analysis?print">Python性能分析指南</a>
+</li>
+<li><a href="https://github.com/zokis/Python--Faster-Way">Python: Faster Way http://pythonfasterway.uni.me</a></li>
+<li><a href="https://wiki.python.org/moin/PythonSpeed/PerformanceTips">PerformanceTips</a></li>
+<li>
+<a href="http://www.marinamele.com/7-tips-to-time-python-scripts-and-control-memory-and-cpu-usage?utm_source=Python%20Weekly%20Newsletter&amp;utm_campaign=2bbc6ad4bc-Python_Weekly_Issue_167_November_27_2014&amp;utm_medium=email&amp;utm_term=0_9e26887fc5-2bbc6ad4bc-312702461">7 tips to Time Python scripts and control Memory &amp; CPU usage</a> | 7 个测量 Python 脚本和控制内存以及 CPU 使用率的技巧</li>
+<li>
+<a href="http://maxburstein.com/blog/speeding-up-your-python-code/">Speeding Up Your Python Code</a> | <a href="http://blog.jobbole.com/36701/">加速你的Python代码</a>
+</li>
+<li><a href="http://www.ibm.com/developerworks/cn/linux/l-cn-python-optim/">Python 代码性能优化技巧</a></li>
+<li><a href="https://www.airpair.com/python/posts/optimizing-python-code">Optimizing Python - a Case Study</a></li>
+<li>
+<a href="http://blog.newrelic.com/2015/01/21/python-performance-tips/">6 Python Performance Tips</a> (very new view for me) | <a href="http://saebbs.com/forum.php?mod=viewthread&amp;tid=32312&amp;page=1&amp;extra=#pid214486">提升 Python 程序性能的 6 个技巧</a>
+</li>
+<li><a href="https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/">Why Python is Slow: Looking Under the Hood</a></li>
+<li>
+<a href="http://www.vrplumber.com/programming/runsnakerun/">RunSnakeRun</a> - a small GUI utility that allows you to view (Python) cProfile or Profile profiler dumps in a sortable GUI view</li>
+<li><a href="https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/">Why Python is Slow: Looking Under the Hood</a></li>
+<li><a href="http://my.oschina.net/taogang/blog/389293">使用Python进行并发编程</a></li>
+<li><a href="http://www.cnblogs.com/90zeng/p/python_memory.html">Theano教程：Python的内存管理</a></li>
+<li><strong><a href="http://www.huyng.com/posts/python-performance-analysis/">A guide to analyzing Python performance</a></strong></li>
+<li><a href="http://tech.cnnetsec.com/1010.html">Python多核编程mpi4py实践</a></li>
+</ul>
+<h3>Bigdata</h3>
+<ul>
+<li><a href="http://opensource.com/business/15/3/using-spark-dataframes-large-scale-data-science">Using Spark DataFrames for large scale data science</a></li>
+<li>
+<a href="http://cholerae.com/2015/04/11/-%E7%BF%BB%E8%AF%91-Spark%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97-Python%E7%89%88/Spark%20Programming%20Guide">Spark Programming Guide</a>  | <a href="http://cholerae.com/2015/04/11/-%E7%BF%BB%E8%AF%91-Spark%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97-Python%E7%89%88/">[翻译]Spark编程指南(Python版)</a>
+</li>
+<li><a href="http://kastnerkyle.github.io/posts/using-pytables-for-larger-than-ram-data-processing/">Using PyTables for Larger-Than-RAM Data Processing</a></li>
+<li><a href="http://h5py">h5py</a></li>
+</ul>
+<h3>Database</h3>
+<ul>
+<li>
+<a href="http://labs.codernity.com/codernitydb/">CodernityDB</a> - a more advanced key-value Native Python Database, with multiple key-values indexes in the same engine</li>
+<li>
+<a href="https://github.com/zero-db/zerodb">zerodb</a> - ZeroDB is an end-to-end encrypted database. Data can be stored on untrusted database servers without ever exposing the encryption key. Clients can execute remote queries against the encrypted data without downloading all of it or suffering an excessive performance hit.</li>
+<li><a href="http://www.cnblogs.com/qwj-sysu/p/4428434.html">mongo数据库基本操作-python篇</a></li>
+<li>
+<a href="http://www.zodb.org/en/latest/">ZODB4</a> - ZODB makes it really fast and easy to build and distribute <a href="http://zodb.privacv.com/persistentpython">Persistent Python</a> applications</li>
+</ul>
+<p>orm</p>
+<ul>
+<li>
+<a href="https://peewee.readthedocs.org/en/latest/">peewee</a> - Peewee is a simple and small ORM. It has few (but expressive) concepts, making it easy to learn and intuitive to use.</li>
+</ul>
+<h3>File formats</h3>
+<ul>
+<li><a href="http://districtdatalabs.silvrback.com/simple-csv-data-wrangling-with-python">Simple CSV Data Wrangling with Python</a></li>
+<li><a href="https://github.com/qiwsir/StarterLearningPython/blob/master/234.md">电子表格</a></li>
+<li>
+<a href="https://github.com/JazzCore/python-pdfkit">python-pdfkit</a> - Wkhtmltopdf python wrapper to convert html to pdf</li>
+<li><a href="http://docxtpl.readthedocs.org/en/latest/">python-docx-template</a></li>
+</ul>
+<h3>Others</h3>
+<ul>
+<li><a href="https://glyph.twistedmatrix.com/2015/03/docker-deploy-double-dutch.html">Deploying Python Applications with Docker - A Suggestion</a></li>
+</ul>
+<h3>Kits</h3>
+<ul>
+<li>
+<a href="https://boltons.readthedocs.org">boltons</a> - Like builtins, but boltons. Constructs/recipes/snippets that would be handy in the standard library. Nothing like Michael Bolton. https://boltons.readthedocs.org</li>
+<li>
+<strong><a href="http://www.clips.ua.ac.be/pages/pattern">pattern</a></strong> - Web mining module for Python, with tools for scraping, natural language processing, machine learning, network analysis and visualization. </li>
+</ul>
+<h3>Utils</h3>
+<ul>
+<li><a href="http://labix.org/python-dateutil">dateutil</a></li>
+<li>
+<a href="http://amoffat.github.io/sh/">sh</a> - a full-fledged subprocess interface for Python that allows you to call any program as if it were a function</li>
+<li>
+<a href="https://github.com/tomerfiliba/plumbum">plumbum</a> - Plumbum: Shell Combinators http://plumbum.readthedocs.org</li>
+<li>
+<a href="https://github.com/kislyuk/argcomplete">argcomplete</a> - https://github.com/kislyuk/argcomplete</li>
+<li>
+<a href="https://github.com/carpedm20/emoji">emoji</a> - emoji terminal output for Python (<a href="http://www.emoji-cheat-sheet.com/">EMOJI CHEAT SHEET</a>)</li>
+<li>
+<a href="https://github.com/rholder/retrying">retrying</a> - Retrying is an Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything.</li>
+<li>
+<strong><a href="http://trac.mystic.cacr.caltech.edu/project/pathos/wiki/dill">dill</a></strong> - Dill extends python's 'pickle' module for serializing and de-serializing python objects to the majority of the built-in python types</li>
+</ul>
+<h3>CLI</h3>
+<ul>
+<li>
+<a href="https://github.com/tqdm/tqdm">tqdm</a> - A fast, extensible progress bar for Python https://pypi.python.org/pypi/tqdm</li>
+<li>
+<strong><a href="https://github.com/Russell91/pythonpy">pythonpy</a></strong> - the swiss army knife of the command line</li>
+</ul>
+<h3>Data Science</h3>
+<ul>
+<li>
+<a href="https://dato.com/learn/userguide/index.html">GraphLab Create</a> - powerful and usable data science tools that enable you to go quickly from inspiration to production</li>
+</ul>
+<h3>Statistical and visualization</h3>
+<p>packages</p>
+<ul>
+<li>
+<strong><a href="https://github.com/mwaskom/seaborn">seaborn</a></strong> - Statistical data visualization using matplotlib</li>
+<li>
+<strong><a href="http://statsmodels.sourceforge.net/">Statsmodels</a></strong> - Statsmodels is a Python module that allows users to explore data, estimate statistical models, and perform statistical tests.</li>
+<li>
+<a href="https://github.com/olgabot/prettyplotlib">prettyplotlib</a> - Painlessly create beautiful matplotlib plots</li>
+<li>
+<strong><a href="http://matplotlib.org/">matplotlib</a></strong> - matplotlib is a python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms</li>
+<li>
+<strong><a href="http://ggplot.yhathq.com/">ggplot</a></strong> - ggplot is a plotting system for Python based on R's ggplot2 and the Grammar of Graphics. It is built for making profressional looking, plots quickly with minimal code.</li>
+<li>
+<strong><a href="http://pandas.pydata.org/">pandas</a></strong> - Python Data Analysis Library</li>
+<li>
+<strong><a href="http://www.numpy.org/">NumPy</a></strong> - NumPy is the fundamental package for scientific computing with Python</li>
+<li>
+<strong><a href="https://github.com/bokeh/bokeh">bokeh</a></strong> - Interactive Web Plotting for Python</li>
+<li>
+<a href="http://pygal.org/">pygal</a> - A python SVG Charts Creator</li>
+<li>
+<a href="https://github.com/matplotlib/trendvis">trendvis</a> - TrendVis is a plotting package that uses <a href="http://matplotlib.org/">matplotlib</a> to create information-dense, sparkline-like, quantitative visualizations of multiple disparate data sets in a common plot area against a common variable.</li>
+<li>
+<a href="http://mpld3.github.io/index.html">MPLD3</a> - Bringing Matplotlib to the Browser</li>
+</ul>
+<p>tutorials</p>
+<ul>
+<li><a href="http://work.thaslwanter.at/Stats/html/index.html">an introduction to statistics</a></li>
+<li>
+<a href="http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/tree/master/">scientific-python-lectures</a> <a href="http://sebug.net/paper/books/scipydoc/index.html">中文</a>
+</li>
+<li><a href="http://pbpython.com/visualization-tools-1.html">Overview of Python Visualization Tools</a></li>
+<li><a href="http://pbpython.com/simple-graphing-pandas.html">Simple Graphing with IPython and Pandas</a></li>
+<li><a href="http://nbviewer.ipython.org/gist/jackparmer/7d27637328a93e6d699b">Generate HTML reports with D3 graphs using Python, Plotly, and Pandas</a></li>
+<li><a href="http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/">Frequentism and Bayesianism: A Practical Introduction</a></li>
+</ul>
+<h3>NumPy</h3>
+<ul>
+<li><a href="http://wiki.scipy.org/Tentative_NumPy_Tutorial">Tentative NumPy Tutorial</a></li>
+<li><a href="http://ipython-books.github.io/featured-01/">Getting the Best Performance out of NumPy</a></li>
+<li><a href="http://www.labri.fr/perso/nrougier/teaching/numpy.100/index.html">100 numpy exercises</a></li>
+<li>
+<a href="http://deeplearning.net/software/theano/">theano</a> - a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently</li>
+<li><a href="http://www.erzama.com/scipy-numpy-tutorials-w-12023/">Collection of SciPy and NumPy tutorials</a></li>
+</ul>
+<h3>Pandas</h3>
+<ul>
+<li>official tutorial: <a href="http://pandas.pydata.org/pandas-docs/stable/10min.html">10 Minutes to pandas</a>, <a href="http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook">Cookbook</a>
+</li>
+<li>
+<a href="http://nbviewer.ipython.org/urls/gist.github.com/wesm/4757075/raw/a72d3450ad4924d0e74fb57c9f62d1d895ea4574/PandasTour.ipynb">10-minute tour of pandas</a>, <a href="http://nbviewer.ipython.org/github/donnemartin/data-science-ipython-notebooks/blob/master/pandas/pandas.ipynb">another tutorial</a>
+</li>
+<li><a href="http://www.bigdataexaminer.com/14-best-python-pandas-features/">14 Best Python Pandas Features</a></li>
+<li><a href="https://github.com/jvns/pandas-cookbook">Pandas cookbook</a></li>
+<li>
+<a href="https://github.com/paulgb/sklearn-pandas">sklearn-pandas</a> - Pandas integration with sklearn</li>
+<li><a href="http://shanelynn.ie/index.php/summarising-aggregation-and-grouping-data-in-python-pandas/#comment-159">Summarising, Aggregating, and Grouping data in Python Pandas</a></li>
+<li>
+<a href="http://pbpython.com/pandas-pivot-table-explained.html">Pandas Pivot Table Explained</a> | <a href="http://python.jobbole.com/81212/">Pandas透视表（pivot_table）详解</a>
+</li>
+<li>
+<a href="http://pbpython.com/excel-pandas-comp.html">Common Excel Tasks Demonstrated in Pandas</a> | <a href="http://python.jobbole.com/80870/">用Pandas完成Excel中常见的任务</a>
+</li>
+</ul>
+<h3><a href="http://matplotlib.org/">matplotlib</a></h3>
+<ul>
+<li><a href="http://www.labri.fr/perso/nrougier/teaching/matplotlib/">Matplotlib tutorial</a></li>
+<li><a href="http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb">example</a></li>
+<li>matplotlib-gallery </li>
+<li><a href="http://nbviewer.ipython.org/gist/olgabot/5357268">Implementation of typographic and design principles in matplotlib and iPython notebook</a></li>
+<li><a href="https://github.com/jbmouret/matplotlib_for_papers">matplotlib_for_papers</a></li>
+<li>
+<a href="https://github.com/konstantint/matplotlib-venn">matplotlib-venn</a> - Area-weighted venn-diagrams for Python/matplotlib</li>
+<li>
+<a href="http://mpld3.github.io/index.html">MPLD3</a> - Bringing Matplotlib to the Browser</li>
+<li><a href="https://github.com/jbmouret/matplotlib_for_papers">Creating publication-quality figures with matplotlib</a></li>
+</ul>
+<h3>Plots</h3>
+<ul>
+<li><a href="http://stackoverflow.com/questions/14391959/heatmap-in-matplotlib-with-pcolor">Heatmap in matplotlib with pcolor</a></li>
+<li>
+<a href="http://stanford.edu/~mwaskom/software/seaborn/examples/network_correlations.html">Cortical networks correlation matrix</a>, <a href="https://github.com/drquant/Python_Finance/blob/master/Correlation_Matrix_Example.py">Correlation_Matrix_Example.py</a>
+</li>
+<li><a href="http://blog.yhathq.com/posts/roc-curves.html">ROC Curves in Python and R</a></li>
+<li>How to Create NBA Shot Charts in Python</li>
+</ul>
+<h3>GUI</h3>
+<ul>
+<li>
+<a href="https://bitbucket.org/pyglet/pyglet/wiki/Home">pyglet</a> - a cross-platform windowing and multimedia library for Python.</li>
+</ul>
+<h3>Data structure and Algorithm</h3>
+<ul>
+<li>
+<a href="https://github.com/bitly/dablooms">dablooms</a> - A Scalable, Counting, Bloom Filter. Java, Python, Go edition.</li>
+<li>
+<a href="https://github.com/EverythingMe/inbloom">inbloom</a> - Cross language bloom filter implementation</li>
+<li>
+<a href="https://github.com/mewwts/addict">addit</a> - The Python Dict that's better than heroin.</li>
+<li>
+<a href="https://github.com/jaybaird/python-bloomfilter">python-bloomfilter</a> - Scalable Bloom Filter implemented in Python</li>
+<li>
+<a href="https://github.com/ztane/python-Levenshtein/">python-Levenshtein</a> -The Levenshtein Python C extension module contains functions for fast computation of Levenshtein distance and string similarity | similar package: <a href="https://github.com/aflc/editdistance">editdistance</a>
+</li>
+<li>madoka-python - Memory-efficient Count-Min Sketch Counter (based on Madoka C++ library## )</li>
+<li>
+<a href="https://dato.com/products/create/docs/generated/graphlab.SGraph.html">graphlab.SGraph</a> - A scalable graph data structure. <a href="https://dato.com/learn/userguide/sgraph/sgraph.html">userguide</a>
+</li>
+<li>
+<a href="https://github.com/prakhar1989/Algorithms">Algorithms</a> - Data Structures and Algorithms in Python</li>
+<li><a href="http://kmike.ru/python-data-structures/">Fast Non-Standard Data Structures for Python</a></li>
+<li><a href="http://interactivepython.org/runestone/static/pythonds/index.html">Problem Solving with Algorithms and Data Structures using python</a></li>
+<li>
+<a href="https://github.com/tobgu/pyrsistent">pyrsistent</a> - Persistent/Immutable/Functional data structures for Python</li>
+<li>
+<a href="http://graph-tool.skewed.de/">graph-tool</a>- Efficient network analysis</li>
+<li>
+<a href="https://networkx.github.io/">NetworkX</a> - High-productivity software for complex networks</li>
+<li>
+<a href="https://github.com/jab/bidict">bidict</a> - Efficient, Pythonic bidirectional map implementation and related functionality. https://bidict.readthedocs.org/</li>
+</ul>
+<h3>Machine Learning</h3>
+<p>General</p>
+<ul>
+<li><a href="https://jmetzen.github.io/2015-01-29/ml_advice.html">Advice for applying Machine Learning</a></li>
+<li><a href="http://www.csdn.net/article/2015-12-10/2826435">最好的Python机器学习库</a></li>
+<li>
+<a href="http://www.thebigdata.cn/JieJueFangAn/13317.html">大数据分析与机器学习领域Python兵器谱</a>,  <a href="http://www.52nlp.cn/python-%E7%BD%91%E9%A1%B5%E7%88%AC%E8%99%AB-%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86-%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98">Python 网页爬虫 &amp; 文本处理 &amp; 科学计算 &amp; 机器学习 &amp; 数据挖掘兵器谱</a>
+</li>
+<li><a href="https://jmetzen.github.io/2015-01-29/ml_advice.html">Advice for applying Machine Learning</a></li>
+<li><a href="http://lernpython.de/four-steps-to-master-machine-learning-with-python-including-free-books-resources">Four steps to master machine learning with python (including free books &amp; resource</a></li>
+<li><a href="http://www.nltk.org/book/">Natural Language Processing with Python</a></li>
+<li><a href="http://nbviewer.ipython.org/github/ucsd-scientific-python/user-group/blob/master/presentations/20131016/hierarchical_clustering_heatmaps_gridspec.ipynb">Hierarchical Clustering, Heatmaps, and Gridspec</a></li>
+<li><a href="http://unsupervised-learning.com/linear-svm-classifier-on-recognizing-twitter-users/">Linear SVM Classifier on Twitter User Recognition</a></li>
+<li><a href="http://python.jobbole.com/81215/">在Python中使用线性回归预测数据</a></li>
+<li>
+<a href="http://blog.yhathq.com/posts/random-forests-in-python.html">Random Forests in Python</a>, <a href="http://blog.yhathq.com/posts/comparing-random-forests-in-python-and-r.html">Random Forest Regression and Classification in R and Python</a>, <a href="http://www.analyticsvidhya.com/blog/2015/09/random-forest-algorithm-multiple-challenges/">Powerful Guide to learn Random Forest (with codes in R &amp; Python)</a>, another post: <a href="http://alexhwoods.com/2015/07/01/random-forest-in-scikit-learn/">Random Forest in scikit-learn</a>, <a href="http://dataunion.org/17797.html">机器学习反欺诈实践：Python+scikit-learn+随机森林</a>,  <a href="http://blog.datadive.net/random-forest-interpretation-with-scikit-learn/">Random forest interpretation with scikit-learn</a>
+</li>
+<li><a href="http://www.analyticsvidhya.com/blog/2015/09/naive-bayes-explained/">6 Easy Steps to Learn Naive Bayes Algorithm (with code in Python)</a></li>
+<li><a href="http://www.analyticsvidhya.com/blog/2015/05/k-fold-cross-validation-simple/">k-Fold Cross Validation made simple</a></li>
+</ul>
+<p>packages</p>
+<ul>
+<li>
+<a href="https://github.com/rasbt/mlxtend">mlxtend</a> - A library of extension and helper modules for Python's data analysis and machine learning libraries.</li>
+<li>
+<a href="https://github.com/pymc-devs/pymc3">PyMC3</a> -a python module for Bayesian statistical modeling and model fitting which focuses on advanced Markov chain Monte Carlo fitting algorithms. Its flexibility and extensibility make it applicable to a large suite of problems.</li>
+</ul>
+<p>Scikit-learn</p>
+<ul>
+<li>
+<a href="http://scikit-learn.org/stable/">scikit-learn</a>, <a href="http://nbviewer.ipython.org/github/jakevdp/sklearn_scipy2013/blob/master/rendered_notebooks/01.1_setup_and_introduction.ipynb">Scikit-learn tutorials for the Scipy 2013 conference</a>, I<a href="http://kukuruku.co/hub/python/introduction-to-machine-learning-with-python-andscikit-learn">ntroduction to Machine Learning with Python and Scikit-Learn</a>,   <a href="http://nbviewer.ipython.org/github/gmonce/scikit-learn-book/tree/master">scikit-learn-book</a>,  [结合Scikit-learn介绍几种常用的特征选择方法][8],  <a href="http://muxuezi.github.io/posts/0-perface.html">Scikit-learn机器学习</a>
+</li>
+<li><a href="http://dataunion.org/14072.html">结合Scikit-learn介绍几种常用的特征选择方法</a></li>
+<li><a href="https://github.com/ogrisel/parallel_ml_tutorial">Tutorial on scikit-learn and IPython for parallel machine learning</a></li>
+</ul>
+<p>Theano</p>
+<ul>
+<li><a href="http://un-mindlab.blogspot.com/2013/07/matrix-factorization-with-theano.html">Matrix factorization with Theano</a></li>
+</ul>
+<p>examples</p>
+<ul>
+<li><a href="http://dataunion.org/14821.html">不到100行代码实现一个简单的推荐系统</a></li>
+<li><a href="http://iamtrask.github.io/2015/07/12/basic-python-network/">A Neural Network in 11 lines of Python (Part 1)</a></li>
+<li><a href="http://outlace.com/Simple-Genetic-Algorithm-in-15-lines-of-Python/">Simple Genetic Algorithm In 15 Lines Of Python</a></li>
+</ul>
+<h3>NLP</h3>
+<ul>
+<li><a href="https://github.com/isnowfy/snownlp">Python library for processing Chinese text</a></li>
+<li>newspaper - News, full-text, and article metadata extraction</li>
+<li><a href="http://blog.csdn.net/qinbaby/article/details/23201883">python利用utf-8编码判断中文英文字符(转)</a></li>
+<li><a href="https://github.com/mozillazg/python-pinyin">python-pinyin</a></li>
+</ul>
+<h3>Deep learning</h3>
+<ul>
+<li><a href="https://github.com/mnielsen/neural-networks-and-deep-learning">neural-networks-and-deep-learning</a></li>
+<li><a href="http://deeplearning.net/software/theano/tutorial/index.html">theano</a></li>
+<li>
+<a href="https://github.com/fchollet/keras">keras</a> -  Theano-based Deep Learning library (convnets, recurrent neural networks, and more). Runs on Theano and TensorFlow.  <a href="http://keras.io/">http://keras.io/</a> <a href="http://blog.csdn.net/u012162613/article/details/45397033">DeepLearning tutorial（6）易用的深度学习框架Keras简介</a> <a href="http://blog.csdn.net/u012162613/article/details/45581421">DeepLearning tutorial（7）深度学习框架Keras的使用-进阶</a>
+</li>
+<li>
+<a href="https://github.com/dnouri/nolearn">nolearn</a> - Abstractions around neural net libraries, most notably Lasagne. http://pythonhosted.org/nolearn/\</li>
+<li><a href="http://www.csdn.net/article/2015-08-01/2825362">从Theano到Lasagne：基于Python的深度学习的框架和库</a></li>
+<li>Quick Coding Intro to Neural Networks</li>
+<li><a href="http://deeplearning.net/software/theano/tutorial/">利用python的theano库刷kaggle mnist排行榜</a></li>
+<li><a href="http://www.csdn.net/article/2015-08-07/2825415">使用GPU和Theano加速深度学习</a></li>
+<li><a href="http://dataunion.org/11692.html">技术向：一文读懂卷积神经网络CNN</a></li>
+<li><a href="http://www.teglor.com/b/deep-learning-libraries-language-cm569/">Deep Learning Libraries by Language</a></li>
+<li><a href="http://www.cs.cmu.edu/~ymiao/pdnntk.html">PDNN: A Python Toolkit for Deep Learning</a></li>
+</ul>
+<h3>Image</h3>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/scikit-image/skimage-tutorials/tree/master/lectures/">Scikit-Image Tutorials</a></li>
+<li>Pillow - The friendly PIL fork <a href="http://python-pillow.github.io/">http://python-pillow.github.io/</a>
+</li>
+<li><a href="http://docs.opencv.org/trunk/doc/py_tutorials/py_tutorials.html">OpenCV</a></li>
+<li>
+<a href="http://zulko.github.io/blog/2015/02/01/extracting-perfectly-looping-gifs-from-videos-with-python-and-moviepy/">An Algorithm to Extract Looping GIFs From Videos</a> | <a href="http://blog.jobbole.com/84778/">从视频提取循环播放式GIF动画的算法</a>
+</li>
+<li>Basic motion detection and tracking with Python and OpenCV  (part <a href="http://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/">1</a>, <a href="http://www.pyimagesearch.com/2015/06/01/home-surveillance-and-motion-detection-with-the-raspberry-pi-python-and-opencv/">2</a>)| 用 Python 和 OpenCV 检测和跟踪运动对象(<a href="http://python.jobbole.com/81593/">上</a>，<a href="http://python.jobbole.com/81645/">下</a>)</li>
+<li><a href="https://www.hackerearth.com/notes/beautiful-python-a-simple-ascii-art-generator-from-images/">Beautiful Python: A Simple ASCII Art Generator from Images</a></li>
+<li><a href="http://python.jobbole.com/83685/">Python编程中使用Pillow来处理图像的基础教程</a></li>
+</ul>
+<h3>GEO</h3>
+<ul>
+<li>
+<a href="https://github.com/andrea-cuttone/geoplotlib">geoplotlib</a> - python toolbox for visualizing geographical data and making maps</li>
+</ul>
+<h3>Web</h3>
+<h4>Flask</h4>
+<ul>
+<li>
+<a href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">the-flask-mega-tutorial</a>  | <a href="http://www.pythondoc.com/flask-mega-tutorial/">Flask大型教程项目</a>, <a href="http://docs.jinkan.org/docs/flask/">Flask 文档</a>, awesome-flask, <a href="http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask">Designing a RESTful API with Python and Flask</a>, <a href="https://realpython.com/blog/python/handling-user-authentication-with-angular-and-flask/">Handling User Authentication With Angular and Flask</a>
+</li>
+<li><a href="https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/?utm_content=buffer30cab&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">Build an API under 30 lines of code with Python and Flask</a></li>
+<li><a href="http://www.jeffknupp.com/blog/2014/01/18/python-and-flask-are-ridiculously-powerful/">python-and-flask-are-ridiculously-powerful</a></li>
+<li>
+<p><a href="http://www.cnblogs.com/pythontesting/p/5016495.html">Flask web开发笔记</a></p>
+</li>
+<li>
+<p><a href="https://github.com/stitchfix/pyxley">pyxley</a> Python helpers for building dashboards using Flask and React</p>
+</li>
+</ul>
+<h4>Comparison</h4>
+<ul>
+<li><a href="https://www.airpair.com/python/posts/django-flask-pyramid">Django vs Flask vs Pyramid: Choosing a Python Web Framework</a></li>
+</ul>
+<h4>Others</h4>
+<ul>
+<li>
+<a href="https://realpython.com/blog/python/web-scraping-with-scrapy-and-mongodb/">Web Scraping With Scrapy and MongoDB</a>, <a href="https://realpython.com/blog/python/web-scraping-and-crawling-with-scrapy-and-mongodb/">part2</a>
+</li>
+<li>
+<a href="http://packages.python.org/pyquery/">pyquery</a>, <a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>
+</li>
+<li>
+<a href="http://ruslanspivak.com/lsbaws-part1/">Let’s Build A Web Server</a>(<a href="http://ruslanspivak.com/lsbaws-part2/">part2</a>)</li>
+<li>
+<a href="https://github.com/vertical-knowledge/ripozo">ripozo</a> - A tool for quickly creating REST/HATEOAS/Hypermedia APIs in python <a href="http://ripozo.readthedocs.org/">http://ripozo.readthedocs.org/</a>
+</li>
+<li><a href="http://multithreaded.stitchfix.com/blog/2015/07/16/pyxley/">Pyxley: Python Powered Dashboards</a></li>
+<li><a href="http://kazuar.github.io/scraping-tutorial/">How to scrape a website that requires login with Python</a></li>
+<li><a href="https://realpython.com/blog/python/python-ruby-and-golang-a-web-Service-application-comparison/?utm_content=buffer21b05&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">Python, Ruby, and Golang: A Web Service Application Comparison</a></li>
+<li>
+<a href="https://github.com/lorien/grab">grab</a> - Web Scraping Framework <a href="http://grablib.org/">http://grablib.org</a>
+</li>
+</ul>
+<h3>Fun</h3>
+<ul>
+<li><a href="https://github.com/debugger22/Jarvis">Jarvis</a></li>
+<li><a href="https://github.com/JelteF/PyLaTeX">PyLatex</a></li>
+<li>pyautogui - a Python module for programmatically controlling the mouse and keyboard.</li>
+</ul>
+<h3>Finance</h3>
+<ul>
+<li><a href="http://blog.quantopian.com/markowitz-portfolio-optimization-2/">The Efficient Frontier: Markowitz portfolio optimization in Python</a></li>
+</ul>
+<h3>More</h3>
+<ul>
+<li><a href="https://github.com/vinta/awesome-python">awesome-python</a></li>
+<li><a href="https://python.zeef.com/alan.richmond"> 非常干货之Python资源大全</a></li>
+<li><a href="http://codecloud.net/python-resource-2109.html">Python框架、库和软件资源大全(整理篇)</a></li>
+</ul>
+<h3>Misc</h3>
+<p>update all packages:</p>
+<ul>
+<li>pip upgrade all  <code>sudo pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install -U</code>
+</li>
+</ul>
+<p><a href="http://stiglerdiet.com/blog/2015/Nov/24/my-python-environment-workflow-with-conda/">My Python Environment Workflow with Conda</a></p>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="nikola-install4me.html" rel="prev" title="nikola build 报错">前一篇</a>
+            </li>
+            <li class="next">
+                <a href="rodeo-install.html" rel="next" title=" Rodeo">后一篇</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="/posts/python.html",
+        disqus_title=" Python",
+        disqus_identifier="cache\posts\python.html",
+        disqus_config = function () {
+            this.language = "zh_cn";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p>Contents © 2016         <a href="mailto:539234@qq.com">七</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/jquery.timeago.js" type="text/javascript"></script><script src="../assets/js/mathjax.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

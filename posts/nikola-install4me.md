@@ -1,5 +1,6 @@
  nikola build 报错
- ########################################
+=====
+```shell
 TaskError - taskid:_scan_locs:sitemap
 PythonAction Error
 Traceback (most recent call last):
@@ -32,7 +33,7 @@ Traceback (most recent call last):
 
 UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-4: ordinal not in range(256)
 
-
+```
 
 https://github.com/getnikola/nikola/issues/1806
 	https://github.com/dateutil/dateutil/issues/92

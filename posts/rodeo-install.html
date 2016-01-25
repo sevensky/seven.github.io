@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="zh_cn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title> Rodeo | 博客</title>
+<link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="#">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="七">
+<meta property="og:site_name" content="博客">
+<meta property="og:title" content=" Rodeo">
+<meta property="og:url" content="/posts/rodeo-install.html">
+<meta property="og:description" content="初始化
+conda install jupyter
+conda install matplotlib
+for %i in (python.exe) do @echo. %~$PATH:i
+F:\Anaconda2\envs\dev27\python.exe
+conda install pandas
+conda install lxml
+
+
+
+console
+内置console执行系统命令前面加!
+">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-01-25T00:00:00+08:00">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name"> Rodeo</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2016-01-25T00:00:00+08:00">2016-01-25 00:00</time>
+            
+                      |  
+        <a href="rodeo-install.md" id="sourcelink">源代码</a>
+
+            </div>
+            
+        </div>
+        <div class="body">
+            <div>
+<h3>初始化</h3>
+<pre class="code literal-block"><span class="x">conda install jupyter</span>
+<span class="x">conda install matplotlib</span>
+<span class="x">for %i in (python.exe) do @echo. %~</span><span class="p">$</span><span class="nv">PATH</span><span class="x">:i</span>
+<span class="x">F:\Anaconda2\envs\dev27\python.exe</span>
+<span class="x">conda install pandas</span>
+<span class="x">conda install lxml</span>
+</pre>
+
+
+<h3>console</h3>
+<p>内置console执行系统命令前面加!
+    eg. !activate dev27</p>
+<p neue_='Neue",
+' _="
+" _1.2.1_='"1.2.1",
+' _39.08523908523909_='"39.08523908523909%",
+' _44.6985446985447_='"44.6985446985447%",
+' _54.569327731092436_='"54.569327731092436%",
+' _662148f0bedf11e58326b1cbea06dd93_='"662148f0bedf11e58326b1cbea06dd93",
+' _e:_92_1github_92_python_92_5rodeo_='"E:\1GitHub\Python\5rodeo",
+' _f:_92_anaconda2_92_envs_92_dev27_92_python.exe_='"F:\Anaconda2\envs\dev27\python.exe",
+' _helvetica='"Helvetica' _ace_theme_monokai_='"ace/theme/monokai"
+' _autosave_:='"autoSave":' _css_styles-dark.css_='"css/styles-dark.css",
+' _defaultwd_:='"defaultWd":' _displaydotfiles_:='"displayDotFiles":' _editortheme_:='"editorTheme":' _fontsize_:='"fontSize":' _fonttype_:='"fontType":' _id_:='"id":' _panehorizontalleft_:='"paneHorizontalLeft":' _panehorizontalright_:='"paneHorizontalRight":' _panevertical_:='"paneVertical":' _pythoncmd_:='"pythonCmd":' _theme_:='"theme":' _version_:='"version":' false_="false,
+"><a href="C:%5CUsers%5CAdministrator">~目录</a>
+start notepad ".rodeorc"</p>
+<h3>全局加载配置</h3>
+<p>~/.rodeoprofile </p>
+<h3>env 环境</h3>
+<p>在Conda env 环境运行需要加入PYTHONPATH</p>
+<pre class="code literal-block">echo set PYTHONPATH=F:\Anaconda2\envs\dev27\^&amp;start C:\PROGRA~2\Rodeo\rodeo.exe &gt; C:\PROGRA~2\Rodeo\run2.bat
+</pre>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="python.html" rel="prev" title=" Python">前一篇</a>
+            </li>
+            <li class="next">
+                <a href="liang-hua-zhong-de-ming-ci.html" rel="next" title="量化中的名词">后一篇</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="nikolademo",
+            disqus_url="/posts/rodeo-install.html",
+        disqus_title=" Rodeo",
+        disqus_identifier="cache\posts\rodeo-install.html",
+        disqus_config = function () {
+            this.language = "zh_cn";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p>Contents © 2016         <a href="mailto:539234@qq.com">七</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/jquery.timeago.js" type="text/javascript"></script><script src="../assets/js/mathjax.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>
